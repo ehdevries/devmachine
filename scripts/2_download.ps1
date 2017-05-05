@@ -1,4 +1,4 @@
-### Download anything that we didn't install with Chocolatey so that it can be installed manually
+### Download any software that needs to be installed manually
 ### This script does not require an administrative shell
 
 $downDir = New-Item -Path $([Environment]::GetFolderPath("Desktop")) -Name "to_install" -ItemType Directory -Force
