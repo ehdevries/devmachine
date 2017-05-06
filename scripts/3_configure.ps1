@@ -18,6 +18,6 @@ Write-Output ""
 Write-Output "Restoring the following configuration files"
 Copy-Item -Path "$configDir\.gitconfig" -Destination $home -PassThru | Split-Path -Leaf
 Copy-Item -Path "$configDir\.hyper.js" -Destination $home -PassThru | Split-Path -Leaf
-Copy-Item -Path "$configDir\ed_servers.rdg" -Destination $home -PassThru | Split-Path -Leaf
+Copy-Item -Path "$configDir\servers.rdg" -Destination $home -PassThru | Split-Path -Leaf
 Get-ChildItem -Path $configDir\VSCode\*.json | Copy-Item -Destination "$env:APPDATA\Code\User" -PassThru | Split-Path -Leaf
 Get-ChildItem -Path $configDir\WindowsPowerShell\*.ps1 | Copy-Item -Destination "$home\Documents\WindowsPowerShell" -PassThru | Split-Path -Leaf
