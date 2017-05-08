@@ -2,7 +2,7 @@
 ### This script does not require an administrative shell
 
 # Location of my configuration files
-$configDir = "$home\Source\Repos\devconfig\config"
+$configDir = "$home\Source\devconfig\config"
 
 # Install VS Code extensions
 Write-Output ""
