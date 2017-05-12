@@ -20,6 +20,7 @@ choco install -y notepadplusplus
 choco install -y poshgit
 choco install -y rdcman
 choco install -y slack
+choco install -y sql-server-management-studio
 #choco install -y toggl         # The Toggl Desktop Chocolatey package is significantly behind as of May 2017, so I'll install it manually
 choco install -y visualstudiocode
 RefreshEnv.cmd
