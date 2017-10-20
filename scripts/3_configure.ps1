@@ -7,15 +7,14 @@ $configDir = "$home\Source\devconfig\config"
 # Install VS Code extensions
 Write-Output ""
 Write-Output "Installing VS Code extensions"
+code --install-extension CoenraadS.bracket-pair-colorizer
+code --install-extension EditorConfig.editorconfig
 code --install-extension johnpapa.angular-essentials
 code --install-extension ms-mssql.mssql
 code --install-extension ms-vscode.csharp
 code --install-extension ms-vscode.powershell
-
-# I use these extensions, but they don't need to be installed because they're currently bundled with John Papa's Angular Essentials as of September 2017
-#code --install-extension CoenraadS.bracket-pair-colorizer
-#code --install-extension EditorConfig.editorconfig
-#code --install-extension PKief.material-icon-theme
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension PKief.material-icon-theme
 
 # Copy config files to their normal directories
 Write-Output ""
