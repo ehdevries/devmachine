@@ -15,9 +15,10 @@ choco install -y googlechrome
 choco install -y hyper
 choco install -y keepass
 choco install -y linqpad
-choco install -y nodejs
+choco install -y nodejs-lts
 choco install -y notepadplusplus
 choco install -y poshgit
+choco install -y postman
 choco install -y rdcman
 choco install -y slack
 choco install -y sql-server-management-studio
