@@ -8,6 +8,7 @@ Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://cho
 
 # Install some software
 choco install -y 7zip
+choco install -y dotnetcore-sdk
 choco install -y git
 #choco install -y github-desktop    # Github Desktop gets updates so often that it's hard for the Chocolatey package to keep up
 choco install -y gitkraken
