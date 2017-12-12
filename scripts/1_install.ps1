@@ -6,7 +6,7 @@ Set-ExecutionPolicy RemoteSigned
 # Install Chocolatey
 Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
-# Install some software
+# Install some software with Chocolatey
 choco install -y 7zip
 choco install -y dotnetcore-sdk
 choco install -y git
@@ -26,3 +26,7 @@ choco install -y sql-server-management-studio
 #choco install -y toggl             # The Toggl Desktop Chocolatey package is significantly behind as of May 2017, so I'll install it manually
 #choco install -y visualstudiocode  # VS Code gets updates so often that it's hard for the Chocolatey package to keep up
 RefreshEnv.cmd
+
+# Install some software with npm
+npm install -g @angular/cli
+npm install -g typescript
