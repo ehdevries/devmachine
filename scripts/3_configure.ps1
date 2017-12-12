@@ -10,7 +10,6 @@ Write-Output "Installing VS Code extensions"
 code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension EditorConfig.editorconfig
 code --install-extension johnpapa.angular-essentials
-code --install-extension ms-mssql.mssql
 code --install-extension ms-vscode.csharp
 code --install-extension ms-vscode.powershell
 code --install-extension msjsdiag.debugger-for-chrome
