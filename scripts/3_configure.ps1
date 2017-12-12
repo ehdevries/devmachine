@@ -7,8 +7,12 @@ $configDir = "$home\Source\devconfig\config"
 # Install VS Code extensions
 Write-Output ""
 Write-Output "Installing VS Code extensions"
+code --install-extension Angular.ng-template
+code --install-extension christian-kohler.path-intellisense
 code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension EditorConfig.editorconfig
+code --install-extension eg2.tslint
+code --install-extension esbenp.prettier-vscode
 code --install-extension johnpapa.angular-essentials
 code --install-extension ms-vscode.csharp
 code --install-extension ms-vscode.powershell
