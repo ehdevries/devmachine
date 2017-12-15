@@ -21,7 +21,7 @@ choco install -y notepadplusplus
 choco install -y poshgit
 choco install -y postman
 choco install -y rdcman
-choco install -y slack
+#choco install -y slack             # Slack gets updates so often that it's annoying to have Chocolatey reinstall it each time
 choco install -y sql-server-management-studio
 #choco install -y toggl             # The Toggl Desktop Chocolatey package is significantly behind as of May 2017, so I'll install it manually
 #choco install -y visualstudiocode  # VS Code gets updates so often that it's hard for the Chocolatey package to keep up

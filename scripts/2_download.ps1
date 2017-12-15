@@ -5,6 +5,7 @@ $downDir = New-Item -Path $([Environment]::GetFolderPath("Desktop")) -Name "to_i
 $webClient = New-Object System.Net.WebClient
 
 $webClient.DownloadFile("https://central.github.com/deployments/desktop/desktop/latest/win32", "$downDir\GitHubDesktopSetup.exe")
+$webClient.DownloadFile("https://slack.com/ssb/download-win64", "$downDir\SlackSetup.exe")
 $webClient.DownloadFile("https://go.microsoft.com/fwlink/?linkid=862648", "$downDir\SqlOpsWindows.zip")
 $webClient.DownloadFile("https://www.toggl.com/api/v8/installer?app=td&platform=windows&channel=stable", "$downDir\TogglDesktopInstaller.exe")
 $webClient.DownloadFile("https://go.microsoft.com/fwlink/?Linkid=852157", "$downDir\VSCodeSetup.exe")
