@@ -14,6 +14,7 @@ choco install -y git
 choco install -y gitkraken
 choco install -y googlechrome
 choco install -y hyper
+choco install -y insomnia-rest-api-client
 choco install -y keepass
 choco install -y linqpad
 choco install -y nodejs-lts
