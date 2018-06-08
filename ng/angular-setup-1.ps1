@@ -1,4 +1,4 @@
-### Install and configure some handy tools for building Angular applications
+### Install and configure some handy tools for building Angular applications - part 1
 ### Run this script from an administrative shell
 
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
@@ -17,10 +17,6 @@ Write-Output ""
 Write-Output "Installing Visual Studio Code editor"
 choco install -y visualstudiocode
 RefreshEnv.cmd
-
-Write-Output ""
-Write-Output "Installing VS Code extensions for Angular development"
-code --install-extension johnpapa.angular-essentials
 
 Write-Output ""
 Write-Output "Installing the Angular command line interface"
