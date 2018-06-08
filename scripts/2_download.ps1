@@ -5,7 +5,13 @@ $downDir = New-Item -Path $([Environment]::GetFolderPath("Desktop")) -Name "to_i
 $webClient = New-Object System.Net.WebClient
 
 $webClient.DownloadFile("https://central.github.com/deployments/desktop/desktop/latest/win32", "$downDir\GitHubDesktopSetup.exe")
+$webClient.DownloadFile("https://www.gitkraken.com/download/windows64", "$downDir\GitKrakenSetup.exe")
+$webClient.DownloadFile("https://releases.hyper.is/download/win", "$downDir\HyperSetup.exe")
+$webClient.DownloadFile("https://insomnia.rest/download/#windows", "$downDir\InsomniaSetup.exe")
+$webClient.DownloadFile("https://app.getpostman.com/app/download/win64", "$downDir\PostmanSetup.exe")
 $webClient.DownloadFile("https://slack.com/ssb/download-win64", "$downDir\SlackSetup.exe")
 $webClient.DownloadFile("https://go.microsoft.com/fwlink/?linkid=862648", "$downDir\SqlOpsWindows.zip")
 $webClient.DownloadFile("https://www.toggl.com/api/v8/installer?app=td&platform=windows&channel=stable", "$downDir\TogglDesktopInstaller.exe")
 $webClient.DownloadFile("https://go.microsoft.com/fwlink/?Linkid=852157", "$downDir\VSCodeSetup.exe")
+
+Start-Process https://www.google.com/chrome/
