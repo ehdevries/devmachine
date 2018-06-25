@@ -9,6 +9,7 @@ Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://cho
 # Install some software with Chocolatey
 choco install -y 7zip
 choco install -y dotnetcore-sdk
+choco install -y firacode
 choco install -y git
 choco install -y keepass
 choco install -y linqpad
