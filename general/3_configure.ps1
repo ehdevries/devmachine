@@ -17,6 +17,7 @@ code --install-extension esbenp.prettier-vscode
 code --install-extension johnpapa.angular-essentials
 code --install-extension ms-vscode.csharp
 code --install-extension ms-vscode.powershell
+code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension PKief.material-icon-theme
 
