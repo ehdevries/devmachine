@@ -13,6 +13,6 @@ $webClient.DownloadFile("https://app.getpostman.com/app/download/win64",        
 $webClient.DownloadFile("https://slack.com/ssb/download-win64",                                          "$downDir\SlackSetup.exe")
 $webClient.DownloadFile("https://go.microsoft.com/fwlink/?linkid=875602",                                "$downDir\SqlOpsSetup.exe")
 $webClient.DownloadFile("https://www.toggl.com/api/v8/installer?app=td&platform=windows&channel=stable", "$downDir\TogglDesktopSetup.exe")
-$webClient.DownloadFile("https://go.microsoft.com/fwlink/?Linkid=852157",                                "$downDir\VSCodeSetup.exe")
+$webClient.DownloadFile("https://aka.ms/win32-x64-user-stable",                                          "$downDir\VSCodeSetup.exe")
 
 Start-Process https://www.google.com/chrome/
