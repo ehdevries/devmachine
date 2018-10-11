@@ -17,3 +17,4 @@ $webClient.DownloadFile("https://aka.ms/win32-x64-user-stable",                 
 
 Start-Process https://www.google.com/chrome/
 Start-Process https://github.com/coreybutler/nvm-windows
+Start-Process https://docs.microsoft.com/en-us/powershell/scripting/setup/installing-powershell-core-on-windows
