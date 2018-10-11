@@ -13,7 +13,7 @@ choco install -y firacode
 choco install -y git
 choco install -y keepass
 choco install -y linqpad
-choco install -y nodejs-lts
+choco install -y nodejs-lts  # Remove if you plan to use Node Version Manager (see 2_download.ps1)
 choco install -y notepadplusplus
 choco install -y poshgit
 choco install -y rdcman

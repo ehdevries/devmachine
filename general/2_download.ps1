@@ -16,3 +16,4 @@ $webClient.DownloadFile("https://www.toggl.com/api/v8/installer?app=td&platform=
 $webClient.DownloadFile("https://aka.ms/win32-x64-user-stable",                                          "$downDir\VSCodeSetup.exe")
 
 Start-Process https://www.google.com/chrome/
+Start-Process https://github.com/coreybutler/nvm-windows
