@@ -30,3 +30,8 @@ Copy-Item -Path "$configDir\servers.rdg" -Destination $home -PassThru | Split-Pa
 Get-ChildItem -Path $configDir\AzureDataStudio\*.json  | Copy-Item -Destination "$env:APPDATA\azuredatastudio\User" -PassThru | Split-Path -Leaf
 Get-ChildItem -Path $configDir\VSCode\*.json           | Copy-Item -Destination "$env:APPDATA\Code\User"            -PassThru | Split-Path -Leaf
 Get-ChildItem -Path $configDir\WindowsPowerShell\*.ps1 | Copy-Item -Destination "$home\Documents\WindowsPowerShell" -PassThru | Split-Path -Leaf
+
+# Install posh-git for PowerShell Core and add it to all console hosts (including regular console and VS Code integrated terminal)
+pwsh -Command "& {Install-Module PowerShellGet -Scope CurrentUser -Force -AllowClobber}"
+pwsh -Command "& {PowerShellGet\Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force}"
+pwsh -Command "& {Add-PoshGitToProfile -AllHosts}"
