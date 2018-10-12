@@ -16,6 +16,7 @@ choco install -y linqpad
 choco install -y nodejs-lts  # Remove if you plan to use Node Version Manager (see 2_download.ps1)
 choco install -y notepadplusplus
 choco install -y poshgit
+choco install -y powershell-core --install-arguments='"ADDEXPLORERCONTEXTMENUOPENPOWERSHELL=1"'
 choco install -y rdcman
 choco install -y sql-server-management-studio
 RefreshEnv.cmd
