@@ -11,6 +11,7 @@ choco install -y 7zip
 choco install -y dotnetcore-sdk
 choco install -y firacode
 choco install -y git
+choco install -y git-credential-manager-for-windows
 choco install -y keepass
 choco install -y linqpad
 choco install -y nodejs-lts  # Remove if you plan to use Node Version Manager (see 2_download.ps1)
