@@ -1,7 +1,6 @@
 ### Install handy tools and apps for my dev machine
-### Run this script from an administrative shell
-
-Set-ExecutionPolicy RemoteSigned
+###   1) Set the execution policy to allow scripts, i.e. Set-ExecutionPolicy RemoteSigned
+###   2) Run this script from an administrative shell
 
 # Install Chocolatey
 Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
