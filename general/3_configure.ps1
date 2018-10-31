@@ -1,10 +1,6 @@
-### Restore configuration files and install extensions
+### Restore configuration files and install extensions & tools
 ### This script does not require an administrative shell
 
-# Location of my configuration files
-$configDir = "$home\Source\devconfig\config"
-
-# Install VS Code extensions
 Write-Output ""
 Write-Output "Installing VS Code extensions"
 code --install-extension Angular.ng-template
@@ -21,7 +17,18 @@ code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension PKief.material-icon-theme
 
-# Copy config files to their normal directories
+Write-Output ""
+Write-Output "Installing npm global tools"
+npm install -g @angular/cli
+npm install -g typescript
+
+Write-Output ""
+Write-Output "Installing posh-git for PowerShell Core and adding it to all console hosts"
+pwsh -Command "& {Install-Module PowerShellGet -Scope CurrentUser -Force -AllowClobber}"
+pwsh -Command "& {PowerShellGet\Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force}"
+pwsh -Command "& {Add-PoshGitToProfile -AllHosts}"
+
+$configDir = "$home\Source\devconfig\config"  # Location of my configuration files - change as needed
 Write-Output ""
 Write-Output "Restoring the following configuration files"
 Copy-Item -Path "$configDir\.gitconfig"  -Destination $home -PassThru | Split-Path -Leaf
@@ -30,8 +37,3 @@ Copy-Item -Path "$configDir\servers.rdg" -Destination $home -PassThru | Split-Pa
 Get-ChildItem -Path $configDir\AzureDataStudio\*.json  | Copy-Item -Destination "$env:APPDATA\azuredatastudio\User" -PassThru | Split-Path -Leaf
 Get-ChildItem -Path $configDir\VSCode\*.json           | Copy-Item -Destination "$env:APPDATA\Code\User"            -PassThru | Split-Path -Leaf
 Get-ChildItem -Path $configDir\WindowsPowerShell\*.ps1 | Copy-Item -Destination "$home\Documents\WindowsPowerShell" -PassThru | Split-Path -Leaf
-
-# Install posh-git for PowerShell Core and add it to all console hosts (including regular console and VS Code integrated terminal)
-pwsh -Command "& {Install-Module PowerShellGet -Scope CurrentUser -Force -AllowClobber}"
-pwsh -Command "& {PowerShellGet\Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force}"
-pwsh -Command "& {Add-PoshGitToProfile -AllHosts}"

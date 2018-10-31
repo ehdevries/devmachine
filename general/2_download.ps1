@@ -1,4 +1,5 @@
-### Download any software that needs to be installed manually
+### Skip Chocolatey for anything that has a good auto-updater or needs to be installed manually
+### Installers will show up in a "to_install" folder on the desktop
 ### This script does not require an administrative shell
 
 $downDir = New-Item -Path $([Environment]::GetFolderPath("Desktop")) -Name "to_install" -ItemType Directory -Force
