@@ -18,3 +18,4 @@ $webClient.DownloadFile("https://aka.ms/win32-x64-user-stable",                 
 Start-Process https://www.google.com/chrome/
 Start-Process https://github.com/coreybutler/nvm-windows
 Start-Process https://draculatheme.com/notepad-plus-plus/
+Start-Process https://store.docker.com/editions/community/docker-ce-desktop-windows
