@@ -22,12 +22,6 @@ Write-Output "Installing npm global tools"
 npm install -g @angular/cli
 npm install -g typescript
 
-Write-Output ""
-Write-Output "Installing posh-git for PowerShell Core and adding it to all console hosts"
-pwsh -Command "& {Install-Module PowerShellGet -Scope CurrentUser -Force -AllowClobber}"
-pwsh -Command "& {PowerShellGet\Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force}"
-pwsh -Command "& {Add-PoshGitToProfile -AllHosts}"
-
 $configDir = "$home\Source\devconfig\config"  # Location of my configuration files - change as needed
 Write-Output ""
 Write-Output "Restoring the following configuration files"
