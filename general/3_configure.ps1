@@ -16,6 +16,8 @@ code --install-extension ms-vscode.powershell
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension PKief.material-icon-theme
+code --install-extension sfodje.perlcritic
+code --install-extension sfodje.perltidy
 
 Write-Output ""
 Write-Output "Installing npm global tools"
