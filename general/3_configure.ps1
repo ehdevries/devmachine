@@ -33,3 +33,8 @@ Copy-Item -Path "$configDir\.hyper.js"   -Destination "$env:APPDATA\Hyper" -Pass
 Get-ChildItem -Path $configDir\AzureDataStudio\*.json  | Copy-Item -Destination "$env:APPDATA\azuredatastudio\User" -PassThru | Split-Path -Leaf
 Get-ChildItem -Path $configDir\VSCode\*.json           | Copy-Item -Destination "$env:APPDATA\Code\User"            -PassThru | Split-Path -Leaf
 Get-ChildItem -Path $configDir\WindowsPowerShell\*.ps1 | Copy-Item -Destination "$home\Documents\WindowsPowerShell" -PassThru | Split-Path -Leaf
+
+Write-Output ""
+Write-Output "Adding posh-git to all console hosts"
+Add-PoshGitToProfile -AllHosts
+# pwsh -Command "& {Add-PoshGitToProfile -AllHosts}"

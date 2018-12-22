@@ -20,13 +20,11 @@ choco install -y rdcman
 choco install -y sql-server-management-studio
 
 Write-Output ""
-Write-Output "Installing posh-git for Windows PowerShell and adding it to all console hosts"
+Write-Output "Installing posh-git for Windows PowerShell"
 Install-Module PowerShellGet -Scope CurrentUser -Force -AllowClobber
 PowerShellGet\Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force
-Add-PoshGitToProfile -AllHosts
 
 # Write-Output ""
-# Write-Output "Installing posh-git for PowerShell Core and adding it to all console hosts"
+# Write-Output "Installing posh-git for PowerShell Core"
 # pwsh -Command "& {Install-Module PowerShellGet -Scope CurrentUser -Force -AllowClobber}"
 # pwsh -Command "& {PowerShellGet\Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force}"
-# pwsh -Command "& {Add-PoshGitToProfile -AllHosts}"
