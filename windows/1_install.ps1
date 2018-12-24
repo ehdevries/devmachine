@@ -28,3 +28,5 @@ PowerShellGet\Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force
 # Write-Output "Installing posh-git for PowerShell Core"
 # pwsh -Command "& {Install-Module PowerShellGet -Scope CurrentUser -Force -AllowClobber}"
 # pwsh -Command "& {PowerShellGet\Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force}"
+
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
