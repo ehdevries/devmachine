@@ -27,7 +27,7 @@ echo "
 echo $(lsb_release -ds) $(lsb_release -cs) # Ubuntu version
 df -h /                                    # disk usage" >> ~/.bashrc
 echo "alias cls=clear
-alias check=sudo apt update && apt list --upgradable
+alias check='sudo apt update && apt list --upgradable'
 alias uv='echo $(lsb_release -ds) $(lsb_release -cs)'" >> ~/.bash_aliases
 
 source ~/.bashrc
