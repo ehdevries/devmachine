@@ -13,6 +13,9 @@ sudo apt update && sudo apt upgrade
 # install Node.js LTS as a snap
 sudo snap install node --channel=10/stable --classic
 
+# install Slack as a snap
+sudo snap install slack --classic
+
 # install bash-git-prompt
 git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
 echo "
