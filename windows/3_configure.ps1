@@ -10,6 +10,7 @@ code --install-extension eamodio.gitlens
 code --install-extension EditorConfig.editorconfig
 code --install-extension eg2.tslint
 code --install-extension esbenp.prettier-vscode
+code --install-extension glen-84.sass-lint
 code --install-extension johnpapa.angular-essentials
 code --install-extension ms-vscode.csharp
 code --install-extension ms-vscode.powershell
