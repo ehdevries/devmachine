@@ -23,6 +23,7 @@ code --install-extension sfodje.perltidy
 Write-Output ""
 Write-Output "Installing npm global tools"
 npm install -g @angular/cli
+npm install -g sass-lint
 npm install -g typescript
 
 $configDir = "$home\Source\devconfig\config"  # Location of my configuration files - change as needed
