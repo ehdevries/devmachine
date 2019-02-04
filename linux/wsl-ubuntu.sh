@@ -9,7 +9,7 @@ sudo add-apt-repository ppa:git-core/ppa
 sudo apt update && sudo apt upgrade
 
 # install Node.js LTS using Node Version Manager
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 source ~/.bashrc
 nvm install --lts
 nvm use --lts
