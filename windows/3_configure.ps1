@@ -5,6 +5,7 @@ Write-Output ""
 Write-Output "Installing VS Code extensions"
 code --install-extension Angular.ng-template
 code --install-extension CoenraadS.bracket-pair-colorizer-2
+code --install-extension DavidAnson.vscode-markdownlint
 code --install-extension eamodio.gitlens
 code --install-extension EditorConfig.editorconfig
 code --install-extension esbenp.prettier-vscode
