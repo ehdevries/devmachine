@@ -10,6 +10,9 @@ sudo add-apt-repository ppa:git-core/ppa
 # update all packages
 sudo apt update && sudo apt upgrade
 
+# install Fira Code font
+sudo apt install fonts-firacode
+
 # install VS Code as a snap
 sudo snap install code --classic
 
