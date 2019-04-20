@@ -10,6 +10,9 @@ sudo add-apt-repository ppa:git-core/ppa
 # update all packages
 sudo apt update && sudo apt upgrade
 
+# install VS Code as a snap
+sudo snap install code --classic
+
 # install Node.js LTS as a snap
 sudo snap install node --channel=10/stable --classic
 
@@ -42,6 +45,3 @@ echo
 echo "REMINDERS:"
 echo " - Run the next script to generate SSH keys"
 echo " - Run 'sudo apt autoremove' if you want to clean up unused packages"
-echo " - Install VS Code: https://code.visualstudio.com/docs/setup/linux"
-
-xdg-open "https://code.visualstudio.com/docs/setup/linux"
