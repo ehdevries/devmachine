@@ -6,12 +6,14 @@ Write-Output "Installing VS Code extensions"
 code --install-extension Angular.ng-template
 code --install-extension CoenraadS.bracket-pair-colorizer-2
 code --install-extension DavidAnson.vscode-markdownlint
+code --install-extension dotjoshjohnson.xml
 code --install-extension eamodio.gitlens
 code --install-extension EditorConfig.editorconfig
 code --install-extension eg2.vscode-npm-script
 code --install-extension esbenp.prettier-vscode
 code --install-extension formulahendry.code-runner
 code --install-extension glen-84.sass-lint
+code --install-extension ionide.ionide-fsharp
 code --install-extension johnpapa.angular-essentials
 code --install-extension johnpapa.vscode-peacock
 code --install-extension ms-vscode.csharp
@@ -21,6 +23,7 @@ code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension nrwl.angular-console
 code --install-extension PKief.material-icon-theme
+code --install-extension robbowen.synthwave-vscode
 code --install-extension sfodje.perlcritic
 code --install-extension sfodje.perltidy
 
