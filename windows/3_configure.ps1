@@ -19,6 +19,7 @@ code --install-extension johnpapa.vscode-peacock
 code --install-extension ms-vscode.csharp
 code --install-extension ms-vscode.powershell
 code --install-extension ms-vscode.vscode-typescript-tslint-plugin
+code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension nrwl.angular-console
