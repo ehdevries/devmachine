@@ -34,6 +34,11 @@ npm install -g @angular/cli
 npm install -g sass-lint
 npm install -g typescript
 
+Write-Output ""
+Write-Output "Installing dotnet global tools"
+dotnet tool install -g fake-cli
+dotnet tool install -g fantomas-tool
+
 $configDir = "$home\Source\devconfig\config"  # Location of my configuration files - change as needed
 Write-Output ""
 Write-Output "Restoring the following configuration files"
