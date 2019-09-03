@@ -11,6 +11,7 @@ code --install-extension eamodio.gitlens
 code --install-extension editorconfig.editorconfig
 code --install-extension eg2.vscode-npm-script
 code --install-extension esbenp.prettier-vscode
+code --install-extension paolodellepiane.fantomas-fmt
 code --install-extension formulahendry.code-runner
 code --install-extension glen-84.sass-lint
 code --install-extension ionide.ionide-fsharp
