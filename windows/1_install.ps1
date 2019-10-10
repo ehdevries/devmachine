@@ -7,7 +7,7 @@ Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://cho
 choco install -y 7zip
 choco install -y dejavufonts
 choco install -y docker-desktop
-choco install -y dotnetcore-sdk
+# choco install -y dotnetcore-sdk  # Un-comment this line if you're going to skip Visual Studio (see 2_download.ps1)
 choco install -y firacode
 choco install -y git
 choco install -y git-credential-manager-for-windows
