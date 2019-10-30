@@ -13,11 +13,17 @@ sudo apt update && sudo apt upgrade
 # install Fira Code font
 sudo apt install fonts-firacode
 
+# install the best dang Linux game around
+sudo apt install extremetuxracer
+
 # install VS Code as a snap
 sudo snap install code --classic
 
 # install Node.js LTS as a snap
 sudo snap install node --channel=12/stable --classic
+
+# install .NET Core SDK as a snap
+sudo snap install dotnet-sdk --classic
 
 # install Slack as a snap
 sudo snap install slack --classic

@@ -3,29 +3,42 @@
 
 Write-Output ""
 Write-Output "Installing VS Code extensions"
-code --install-extension angular.ng-template
+
+# Common
 code --install-extension coenraads.bracket-pair-colorizer-2
 code --install-extension davidanson.vscode-markdownlint
-code --install-extension dotjoshjohnson.xml
 code --install-extension eamodio.gitlens
 code --install-extension editorconfig.editorconfig
-code --install-extension eg2.vscode-npm-script
 code --install-extension esbenp.prettier-vscode
-code --install-extension paolodellepiane.fantomas-fmt
 code --install-extension formulahendry.code-runner
-code --install-extension glen-84.sass-lint
-code --install-extension ionide.ionide-fsharp
-code --install-extension johnpapa.angular-essentials
 code --install-extension johnpapa.vscode-peacock
-code --install-extension ms-vscode.csharp
-code --install-extension ms-vscode.powershell
-code --install-extension ms-vscode.vscode-typescript-tslint-plugin
-code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 code --install-extension ms-vsliveshare.vsliveshare
-code --install-extension msjsdiag.debugger-for-chrome
-code --install-extension nrwl.angular-console
 code --install-extension pkief.material-icon-theme
 code --install-extension robbowen.synthwave-vscode
+
+# .NET
+code --install-extension ionide.ionide-fsharp
+code --install-extension ms-vscode.csharp
+code --install-extension paolodellepiane.fantomas-fmt
+
+# Web dev
+code --install-extension angular.ng-template
+code --install-extension auchenberg.vscode-browser-preview
+code --install-extension burkeholland.simple-react-snippets
+code --install-extension eg2.vscode-npm-script
+code --install-extension firefox-devtools.vscode-firefox-debug
+code --install-extension glen-84.sass-lint
+code --install-extension johnpapa.angular-essentials
+code --install-extension ms-vscode.vscode-typescript-tslint-plugin
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension nrwl.angular-console
+
+# Windows
+code --install-extension ms-vscode.powershell
+code --install-extension ms-vscode-remote.vscode-remote-extensionpack
+
+# Linux
+code --install-extension ms-python.python
 code --install-extension sfodje.perlcritic
 code --install-extension sfodje.perltidy
 
