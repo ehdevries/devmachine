@@ -18,3 +18,4 @@ Start-Process https://www.google.com/chrome/
 Start-Process https://github.com/coreybutler/nvm-windows
 Start-Process https://draculatheme.com/notepad-plus-plus/
 Start-Process https://visualstudio.microsoft.com/downloads/
+Start-Process https://github.com/Microsoft/Terminal
