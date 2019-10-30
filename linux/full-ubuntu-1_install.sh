@@ -17,7 +17,7 @@ sudo apt install fonts-firacode
 sudo snap install code --classic
 
 # install Node.js LTS as a snap
-sudo snap install node --channel=10/stable --classic
+sudo snap install node --channel=12/stable --classic
 
 # install Slack as a snap
 sudo snap install slack --classic
