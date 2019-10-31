@@ -53,12 +53,12 @@ dotnet tool install -g fake-cli
 dotnet tool install -g fantomas-tool
 
 echo
-configDir="~/source/devconfig/config"  # Location of my configuration files - change as needed
-if [ -d  "$configDir"]
+configDir="source/devconfig/config"  # Location of my configuration files - change as needed
+if [ -d  ~/$configDir ]
 then
   echo "Restoring configuration files"
-  cp $configDir/.gitconfig ~
-  cp $configDir/VSCode/keybindings.json $configDir/VSCode/settings.json ~/.config/Code/User
+  cp ~/$configDir/.gitconfig ~
+  cp ~/$configDir/VSCode/keybindings.json ~/$configDir/VSCode/settings.json ~/.config/Code/User
 else
   echo "Configuration files not found in $configDir"
   echo "If they're somewhere else, edit this script and try again"
