@@ -10,22 +10,16 @@ sudo add-apt-repository ppa:git-core/ppa
 # update all packages
 sudo apt update && sudo apt upgrade
 
-# install Fira Code font
-sudo apt install fonts-firacode
-
-# install the best dang Linux game around
+# install apt packages
 sudo apt install extremetuxracer
+sudo apt install fonts-firacode
+sudo apt install git
+sudo apt install vim
 
-# install VS Code as a snap
+# install snap packages
 sudo snap install code --classic
-
-# install Node.js LTS as a snap
-sudo snap install node --channel=12/stable --classic
-
-# install .NET Core SDK as a snap
 sudo snap install dotnet-sdk --classic
-
-# install Slack as a snap
+sudo snap install node --channel=12/stable --classic
 sudo snap install slack --classic
 
 # install bash-git-prompt
