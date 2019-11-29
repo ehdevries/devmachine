@@ -25,11 +25,11 @@ source ~/.bash-git-prompt/gitprompt.sh" >> ~/.bashrc
 # customize your shell experience
 echo "
 # show useful info when the shell launches
-echo $(lsb_release -ds) $(lsb_release -cs) # Ubuntu version
+echo \$(lsb_release -ds) \$(lsb_release -cs) # Ubuntu version
 df -h /                                    # disk usage" >> ~/.bashrc
 echo "alias cls=clear
 alias check='sudo apt update && apt list --upgradable'
-alias uv='echo $(lsb_release -ds) $(lsb_release -cs)'" >> ~/.bash_aliases
+alias uv='echo \$(lsb_release -ds) \$(lsb_release -cs)'" >> ~/.bash_aliases
 
 # create a symbolic link to your source code in Windows
 sourcePathDefault="/mnt/c/Users/$(whoami)/Source/"
