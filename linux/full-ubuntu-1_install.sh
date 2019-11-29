@@ -37,10 +37,15 @@ echo $(lsb_release -ds) $(lsb_release -cs) # Ubuntu version
 df -h /                                    # disk usage" >> ~/.bashrc
 echo "alias cls=clear
 alias check='sudo apt update && apt list --upgradable'
-alias dotnet=dotnet-sdk.dotnet
 alias uv='echo $(lsb_release -ds) $(lsb_release -cs)'" >> ~/.bash_aliases
+echo "
+# set PATH so it includes dotnet core sdk snap
+if [ -d /snap/dotnet-sdk/current ]
+then
+  PATH=\"\$PATH:/snap/dotnet-sdk/current\"
+fi" >> ~/.profile
 
-source ~/.bashrc
+source ~/.profile
 
 # show reminders of stuff that must be done manually
 echo
