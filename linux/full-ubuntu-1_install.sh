@@ -39,10 +39,14 @@ echo "alias cls=clear
 alias check='sudo apt update && apt list --upgradable'
 alias uv='echo \$(lsb_release -ds) \$(lsb_release -cs)'" >> ~/.bash_aliases
 echo "
-# set PATH so it includes dotnet core sdk snap
+# set PATH so it includes dotnet core sdk snap and tools
 if [ -d /snap/dotnet-sdk/current ]
 then
   PATH=\"\$PATH:/snap/dotnet-sdk/current\"
+fi
+if [ -d \$HOME/.dotnet/tools ]
+then
+  PATH=\"\$PATH:\$HOME/.dotnet/tools\"
 fi" >> ~/.profile
 
 source ~/.profile
