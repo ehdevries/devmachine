@@ -1,5 +1,12 @@
 # before you run this script, make it executable: chmod +x wsl-ubuntu.sh
 
+# if you're at work and 'sudo apt update' fails, you might need to configure a proxy for http(s) traffic
+# un-comment the following lines and replace the URL to point to your proxy
+# cd /etc/apt/apt.conf.d
+# sudo touch 80proxy
+# sudo echo 'Acquire::http::proxy "http://proxy.example.com:8080/";' >> 80proxy
+# sudo echo 'Acquire::https::proxy "https://proxy.example.com:8080/";' >> 80proxy
+
 cd
 
 # add package source for Git stable channel
@@ -9,7 +16,7 @@ sudo add-apt-repository ppa:git-core/ppa
 sudo apt update && sudo apt upgrade
 
 # install Node.js LTS using Node Version Manager
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 source ~/.bashrc
 nvm install --lts
 nvm use --lts
