@@ -59,6 +59,8 @@ then
   echo "Restoring configuration files"
   cp ~/$configDir/.gitconfig ~
   cp ~/$configDir/starship.toml ~/.config
+  cp ~/$configDir/Vim/.gvimrc ~
+  cp ~/$configDir/Vim/.vimrc ~
   cp ~/$configDir/VSCode/keybindings.json ~/$configDir/VSCode/settings.json ~/.config/Code/User
 else
   echo "Configuration files not found in $configDir"
