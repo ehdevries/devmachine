@@ -39,7 +39,7 @@ alias check='sudo apt update && apt list --upgradable'
 alias uv='echo \$(lsb_release -ds) \$(lsb_release -cs)'" >> ~/.bash_aliases
 
 # create a symbolic link to your source code in Windows
-sourcePathDefault="/mnt/c/Users/$(whoami)/Source/"
+sourcePathDefault="/mnt/c/Users/$(whoami)/source/"
 echo "Where do you keep your source code in Windows?"
 echo "[press Enter to accept default: $sourcePathDefault]"
 read sourcePathInput
