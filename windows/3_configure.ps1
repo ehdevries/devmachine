@@ -58,7 +58,6 @@ Write-Output ""
 Write-Output "Restoring the following configuration files"
 Copy-Item -Path "$configDir\.gitconfig"     -Destination $home                  -PassThru | Split-Path -Leaf
 Copy-Item -Path "$configDir\.hyper.js"      -Destination "$env:APPDATA\Hyper"   -PassThru | Split-Path -Leaf
-Copy-Item -Path "$configDir\servers.rdg"    -Destination $home                  -PassThru | Split-Path -Leaf
 Copy-Item -Path "$configDir\starship.toml"  -Destination "$home\.config"        -PassThru | Split-Path -Leaf
 Copy-Item -Path "$configDir\Vim\.gvimrc"    -Destination "$home\_gvimrc"        -PassThru | Split-Path -Leaf
 Copy-Item -Path "$configDir\Vim\.vimrc"     -Destination "$home\_vimrc"         -PassThru | Split-Path -Leaf
