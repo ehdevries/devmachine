@@ -29,7 +29,6 @@ code --install-extension eg2.vscode-npm-script
 code --install-extension firefox-devtools.vscode-firefox-debug
 code --install-extension glen-84.sass-lint
 code --install-extension johnpapa.angular-essentials
-code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension nrwl.angular-console
 
 # Windows
