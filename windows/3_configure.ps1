@@ -18,7 +18,7 @@ code --install-extension robbowen.synthwave-vscode
 
 # .NET
 code --install-extension ionide.ionide-fsharp
-code --install-extension ms-vscode.csharp
+code --install-extension ms-dotnettools.csharp
 
 # Web dev
 code --install-extension angular.ng-template
