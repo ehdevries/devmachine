@@ -16,7 +16,6 @@ choco install -y linqpad
 # choco install -y nodejs-lts  # Un-comment this line if you're going to skip Node Version Manager (see 2_download.ps1)
 choco install -y notepadplusplus
 # choco install -y powershell-core --install-arguments='"ADDEXPLORERCONTEXTMENUOPENPOWERSHELL=1"'
-choco install -y rdcman
 choco install -y sql-server-management-studio
 
 Write-Output ""
