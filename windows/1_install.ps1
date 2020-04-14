@@ -9,25 +9,15 @@ Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://cho
 choco install -y 7zip
 choco install -y dejavufonts
 choco install -y docker-desktop
-# choco install -y dotnetcore-sdk  # Un-comment this line if you're going to skip Visual Studio (see 2_download.ps1)
 choco install -y firacode
 choco install -y git
 choco install -y git-credential-manager-for-windows
-choco install -y keepass
-choco install -y linqpad
-# choco install -y nodejs-lts  # Un-comment this line if you're going to skip Node Version Manager (see 2_download.ps1)
 choco install -y notepadplusplus
-# choco install -y powershell-core --install-arguments='"ADDEXPLORERCONTEXTMENUOPENPOWERSHELL=1"'
 choco install -y sql-server-management-studio
 
 Write-Output ""
 Write-Output "Installing posh-git for Windows PowerShell"
 Install-Module PowerShellGet -Scope CurrentUser -Force -AllowClobber
 PowerShellGet\Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force
-
-# Write-Output ""
-# Write-Output "Installing posh-git for PowerShell Core"
-# pwsh -Command "& {Install-Module PowerShellGet -Scope CurrentUser -Force -AllowClobber}"
-# pwsh -Command "& {PowerShellGet\Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force}"
 
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
