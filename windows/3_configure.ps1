@@ -17,6 +17,7 @@ code --install-extension pkief.material-icon-theme
 code --install-extension robbowen.synthwave-vscode
 
 # .NET
+code --install-extension adrianwilczynski.user-secrets
 code --install-extension ionide.ionide-fsharp
 code --install-extension ms-dotnettools.csharp
 
@@ -65,7 +66,6 @@ Get-ChildItem -Path $configDir\WindowsPowerShell\*.ps1 | Copy-Item -Destination 
 Write-Output ""
 Write-Output "Adding posh-git to all console hosts"
 Add-PoshGitToProfile -AllHosts
-# pwsh -Command "& {Add-PoshGitToProfile -AllHosts}"
 
 Write-Output ""
 Write-Output "Adding Windows-specific Git configuration"
