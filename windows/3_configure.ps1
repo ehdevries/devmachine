@@ -35,8 +35,9 @@ code --install-extension nrwl.angular-console
 code --install-extension ms-vscode.powershell
 code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 
-# Linux
+# Other Languages
 code --install-extension ms-python.python
+code --install-extension rust-lang.rust
 code --install-extension sfodje.perlcritic
 code --install-extension sfodje.perltidy
 
