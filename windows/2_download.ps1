@@ -1,19 +1,16 @@
 ### Skip Chocolatey for anything that has a good auto-updater or needs to be installed manually
-### Installers will show up in a "to_install" folder on the desktop
 ### This script does not require an administrative shell
 
-$downDir = New-Item -Path $([Environment]::GetFolderPath("Desktop")) -Name "to_install" -ItemType Directory -Force
-$webClient = New-Object System.Net.WebClient
-
-$webClient.DownloadFile("https://go.microsoft.com/fwlink/?linkid=2105135",                      "$downDir\AzureDataStudioSetup.exe")
-$webClient.DownloadFile("https://download.mozilla.org/?product=firefox-stub&os=win&lang=en-US", "$downDir\FirefoxSetup.exe")
-$webClient.DownloadFile("https://central.github.com/deployments/desktop/desktop/latest/win32",  "$downDir\GitHubDesktopSetup.exe")
-$webClient.DownloadFile("https://insomnia.rest/download/#windows",                              "$downDir\InsomniaSetup.exe")
-$webClient.DownloadFile("https://slack.com/ssb/download-win64",                                 "$downDir\SlackSetup.exe")
-$webClient.DownloadFile("https://toggl.github.io/toggldesktop/download/windows64-stable/",      "$downDir\TogglDesktopSetup.exe")
-$webClient.DownloadFile("https://aka.ms/win32-x64-user-stable",                                 "$downDir\VSCodeSetup.exe")
-
-Start-Process https://github.com/coreybutler/nvm-windows
+Start-Process https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio
+Start-Process https://www.docker.com/products/docker-desktop
 Start-Process https://draculatheme.com/notepad-plus-plus/
+Start-Process https://www.mozilla.org/en-US/firefox/new/
+Start-Process https://desktop.github.com/
+Start-Process https://insomnia.rest/
+Start-Process https://github.com/coreybutler/nvm-windows
+Start-Process https://slack.com/downloads/windows
+Start-Process https://toggl.com/toggl-desktop/
 Start-Process https://visualstudio.microsoft.com/downloads/
+Start-Process https://code.visualstudio.com/
 Start-Process https://github.com/Microsoft/Terminal
+Start-Process https://aka.ms/windowsterminal
