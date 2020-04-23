@@ -16,7 +16,7 @@ sudo add-apt-repository ppa:git-core/ppa
 sudo apt update && sudo apt upgrade
 
 # install Node.js LTS using Node Version Manager
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 source ~/.bashrc
 nvm install --lts
 nvm use --lts

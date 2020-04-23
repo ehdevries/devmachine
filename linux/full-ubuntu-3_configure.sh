@@ -20,6 +20,7 @@ code --install-extension pkief.material-icon-theme
 code --install-extension robbowen.synthwave-vscode
 
 # .NET
+code --install-extension adrianwilczynski.user-secrets
 code --install-extension ionide.ionide-fsharp
 code --install-extension ms-dotnettools.csharp
 
@@ -33,8 +34,9 @@ code --install-extension glen-84.sass-lint
 code --install-extension johnpapa.angular-essentials
 code --install-extension nrwl.angular-console
 
-# Linux
+# Other Languages
 code --install-extension ms-python.python
+code --install-extension rust-lang.rust
 code --install-extension sfodje.perlcritic
 code --install-extension sfodje.perltidy
 
