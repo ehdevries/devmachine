@@ -8,6 +8,7 @@ Start-Process https://www.mozilla.org/en-US/firefox/new/
 Start-Process https://desktop.github.com/
 Start-Process https://insomnia.rest/
 Start-Process https://github.com/coreybutler/nvm-windows
+Start-Process https://www.rust-lang.org/tools/install
 Start-Process https://slack.com/downloads/windows
 Start-Process https://toggl.com/toggl-desktop/
 Start-Process https://visualstudio.microsoft.com/downloads/

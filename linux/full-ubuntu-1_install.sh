@@ -23,6 +23,9 @@ sudo snap install node --channel=12/stable --classic
 sudo snap install slack --classic
 sudo snap install supertuxkart
 
+# install rust using rustup
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 # install bash-git-prompt
 git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
 echo "

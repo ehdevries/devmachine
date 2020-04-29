@@ -21,6 +21,9 @@ source ~/.bashrc
 nvm install --lts
 nvm use --lts
 
+# install rust using rustup
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 # install bash-git-prompt
 git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
 echo "
