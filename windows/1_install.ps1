@@ -12,7 +12,6 @@ choco install -y firacode
 choco install -y git
 choco install -y git-credential-manager-for-windows
 choco install -y notepadplusplus
-choco install -y sql-server-management-studio
 
 Write-Output ""
 Write-Output "Installing posh-git for Windows PowerShell"

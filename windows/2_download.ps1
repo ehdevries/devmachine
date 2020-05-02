@@ -10,6 +10,7 @@ Start-Process https://insomnia.rest/
 Start-Process https://github.com/coreybutler/nvm-windows
 Start-Process https://www.rust-lang.org/tools/install
 Start-Process https://slack.com/downloads/windows
+Start-Process https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms
 Start-Process https://toggl.com/toggl-desktop/
 Start-Process https://visualstudio.microsoft.com/downloads/
 Start-Process https://code.visualstudio.com/
