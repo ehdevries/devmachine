@@ -7,6 +7,7 @@ Start-Process https://draculatheme.com/notepad-plus-plus/
 Start-Process https://www.mozilla.org/en-US/firefox/new/
 Start-Process https://desktop.github.com/
 Start-Process https://insomnia.rest/
+Start-Process https://www.nushell.sh/installation.html
 Start-Process https://github.com/coreybutler/nvm-windows
 Start-Process https://www.rust-lang.org/tools/install
 Start-Process https://slack.com/downloads/windows
