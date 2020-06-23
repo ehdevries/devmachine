@@ -2,10 +2,6 @@
 ###   1) Set the execution policy to allow scripts, i.e. Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 ###   2) Run this script from an administrative shell
 
-Set-ExecutionPolicy Bypass -Scope Process -Force
-[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
-Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-
 choco install -y dejavufonts
 choco install -y firacode
 choco install -y git
