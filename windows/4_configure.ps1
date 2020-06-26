@@ -46,6 +46,7 @@ npm install -g typescript
 
 Write-Output ""
 Write-Output "Installing dotnet global tools"
+dotnet tool install -g dotnet-ef
 dotnet tool install -g fake-cli
 dotnet tool install -g fantomas-tool
 
