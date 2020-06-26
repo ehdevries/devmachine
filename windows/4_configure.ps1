@@ -16,12 +16,11 @@ code --install-extension robbowen.synthwave-vscode
 
 # .NET
 code --install-extension adrianwilczynski.user-secrets
-code --install-extension ionide.ionide-fsharp
 code --install-extension ms-dotnettools.csharp
+code --install-extension ionide.ionide-fsharp
 
 # Web dev
 code --install-extension angular.ng-template
-code --install-extension auchenberg.vscode-browser-preview
 code --install-extension burkeholland.simple-react-snippets
 code --install-extension eg2.vscode-npm-script
 code --install-extension firefox-devtools.vscode-firefox-debug
