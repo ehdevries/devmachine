@@ -1,5 +1,10 @@
 ### Set-ExecutionPolicy Bypass -Scope Process -Force; .\2_install-part-two.ps1
 
+Write-Output ""
+Write-Output "Installing PowerShellGet for Windows PowerShell"
+Write-Output ""
+Install-Module PowerShellGet -Scope CurrentUser -Force -AllowClobber
+
 Start-Process https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio
 Start-Process https://www.docker.com/products/docker-desktop
 Start-Process https://draculatheme.com/notepad-plus-plus/
