@@ -19,6 +19,7 @@ Start-Process https://github.com/microsoft/PowerToys
 Start-Process https://www.rust-lang.org/tools/install
 Start-Process https://slack.com/downloads/windows
 Start-Process https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms
+Start-Process https://www.microsoft.com/en-us/p/microsoft-to-do-lists-tasks-reminders/9nblggh5r558
 Start-Process https://toggl.com/toggl-desktop/
 Start-Process https://visualstudio.microsoft.com/downloads/
 Start-Process https://code.visualstudio.com/
