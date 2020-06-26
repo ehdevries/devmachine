@@ -1,5 +1,4 @@
-### Restore configuration files and install extensions & tools
-### This script does not require an administrative shell
+### Set-ExecutionPolicy Bypass -Scope Process -Force; .\4_configure.ps1
 
 Write-Output ""
 Write-Output "Installing VS Code extensions"

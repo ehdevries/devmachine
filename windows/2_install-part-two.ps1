@@ -1,5 +1,4 @@
-### Skip Chocolatey for anything that has a good auto-updater or needs to be installed manually
-### This script does not require an administrative shell
+### Set-ExecutionPolicy Bypass -Scope Process -Force; .\2_install-part-two.ps1
 
 Start-Process https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio
 Start-Process https://www.docker.com/products/docker-desktop

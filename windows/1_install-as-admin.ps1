@@ -1,6 +1,5 @@
-### Install handy tools and apps for my dev machine
-###   1) Set the execution policy to allow scripts, i.e. Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
-###   2) Run this script from an administrative shell
+### 1) Open an administrative shell
+### 2) Set-ExecutionPolicy Bypass -Scope Process -Force; .\1_install-as-admin.ps1
 
 choco install -y dejavufonts
 choco install -y firacode
