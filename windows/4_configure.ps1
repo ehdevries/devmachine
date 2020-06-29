@@ -47,7 +47,6 @@ npm install -g typescript
 Write-Output ""
 Write-Output "Installing dotnet global tools"
 dotnet tool install -g dotnet-ef
-dotnet tool install -g fake-cli
 
 $configDir = "$home\source\devconfig\config"  # Location of my configuration files - change as needed
 Write-Output ""
