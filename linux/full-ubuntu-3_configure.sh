@@ -6,6 +6,7 @@ cd
 
 echo
 echo "Installing VS Code extensions"
+echo
 
 # Common
 code --install-extension coenraads.bracket-pair-colorizer-2
@@ -13,7 +14,6 @@ code --install-extension davidanson.vscode-markdownlint
 code --install-extension eamodio.gitlens
 code --install-extension editorconfig.editorconfig
 code --install-extension esbenp.prettier-vscode
-code --install-extension formulahendry.code-runner
 code --install-extension johnpapa.vscode-peacock
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension pkief.material-icon-theme
@@ -26,7 +26,6 @@ code --install-extension ms-dotnettools.csharp
 
 # Web dev
 code --install-extension angular.ng-template
-code --install-extension auchenberg.vscode-browser-preview
 code --install-extension burkeholland.simple-react-snippets
 code --install-extension eg2.vscode-npm-script
 code --install-extension firefox-devtools.vscode-firefox-debug
@@ -42,14 +41,15 @@ code --install-extension sfodje.perltidy
 
 echo
 echo "Installing npm global tools"
+echo
 npm install -g @angular/cli
 npm install -g sass-lint
 npm install -g typescript
 
 echo
 echo "Installing dotnet global tools"
-dotnet tool install -g fake-cli
-dotnet tool install -g fantomas-tool
+echo
+dotnet tool install -g dotnet-ef
 
 echo
 configDir="source/devconfig/config"  # Location of my configuration files - change as needed
