@@ -30,7 +30,6 @@ code --install-extension angular.ng-template
 code --install-extension burkeholland.simple-react-snippets
 code --install-extension eg2.vscode-npm-script
 code --install-extension firefox-devtools.vscode-firefox-debug
-code --install-extension glen-84.sass-lint
 code --install-extension johnpapa.angular-essentials
 code --install-extension nrwl.angular-console
 
@@ -48,7 +47,6 @@ Write-Output ""
 Write-Output "Installing npm global tools"
 Write-Output ""
 npm install -g @angular/cli
-npm install -g sass-lint
 npm install -g typescript
 
 Write-Output ""
