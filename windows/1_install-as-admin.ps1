@@ -11,6 +11,6 @@ choco install -y git-credential-manager-for-windows
 choco install -y notepadplusplus
 
 Write-Output ""
-Write-Output "Enabling Windows Subsystem for Linux"
+Write-Output "Enabling Windows Subsystem for Linux 2"
 Write-Output ""
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+wsl --set-default-version 2
