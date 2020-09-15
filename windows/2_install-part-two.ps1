@@ -20,6 +20,7 @@ Start-Process https://www.linqpad.net/
 Start-Process https://www.nushell.sh/installation.html
 Start-Process https://github.com/coreybutler/nvm-windows
 Start-Process https://www.microsoft.com/en-us/p/onenote-for-windows-10/9wzdncrfhvjl
+Start-Process https://www.papercut-smtp.com/
 Start-Process https://github.com/microsoft/PowerToys
 Start-Process https://www.rust-lang.org/tools/install
 Start-Process https://slack.com/downloads/windows
