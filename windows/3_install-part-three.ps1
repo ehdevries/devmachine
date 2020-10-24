@@ -44,7 +44,7 @@ code --install-extension ms-vscode-remote.remote-containers
 
 # Windows
 code --install-extension ms-vscode.powershell
-code --install-extension ms-vscode-remote.vscode-remote-extensionpack
+code --install-extension ms-vscode-remote.remote-wsl
 
 # Other Languages
 code --install-extension ms-python.python
