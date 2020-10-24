@@ -19,7 +19,7 @@ sudo apt install vim
 # install snap packages
 sudo snap install code --classic
 sudo snap install dotnet-sdk --classic
-sudo snap install node --channel=12/stable --classic
+sudo snap install node --channel=14/stable --classic
 sudo snap install slack --classic
 sudo snap install supertuxkart
 
