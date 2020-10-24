@@ -17,12 +17,15 @@ code --install-extension esbenp.prettier-vscode
 code --install-extension johnpapa.vscode-peacock
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension pkief.material-icon-theme
+
+# Themes
+code --install-extension liviuschera.noctis
 code --install-extension robbowen.synthwave-vscode
 
 # .NET
 code --install-extension adrianwilczynski.user-secrets
-code --install-extension ionide.ionide-fsharp
 code --install-extension ms-dotnettools.csharp
+code --install-extension ionide.ionide-fsharp
 
 # Web dev
 code --install-extension angular.ng-template
