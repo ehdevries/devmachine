@@ -9,6 +9,7 @@ echo "Installing VS Code extensions"
 echo
 
 # Common
+code --install-extension be5invis.toml
 code --install-extension coenraads.bracket-pair-colorizer-2
 code --install-extension davidanson.vscode-markdownlint
 code --install-extension eamodio.gitlens
