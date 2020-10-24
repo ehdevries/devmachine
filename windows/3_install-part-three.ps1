@@ -38,6 +38,10 @@ code --install-extension firefox-devtools.vscode-firefox-debug
 code --install-extension johnpapa.angular-essentials
 code --install-extension nrwl.angular-console
 
+# Docker
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-vscode-remote.remote-containers
+
 # Windows
 code --install-extension ms-vscode.powershell
 code --install-extension ms-vscode-remote.vscode-remote-extensionpack
