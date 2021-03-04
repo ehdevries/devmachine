@@ -7,7 +7,6 @@ Write-Output ""
 choco install -y dejavufonts
 choco install -y firacode
 choco install -y git
-choco install -y git-credential-manager-for-windows
 choco install -y notepadplusplus
 
 Write-Output ""
