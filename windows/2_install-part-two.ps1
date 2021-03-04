@@ -6,6 +6,11 @@ Write-Output ""
 Install-Module PowerShellGet -Scope CurrentUser -Force -AllowClobber
 
 Write-Output ""
+Write-Output "Installing Scoop"
+Write-Output ""
+Invoke-WebRequest https://get.scoop.sh -useb | Invoke-Expression
+
+Write-Output ""
 Write-Output "Installing Deno"
 Write-Output ""
 Invoke-WebRequest https://deno.land/x/install/install.ps1 -useb | Invoke-Expression
@@ -18,7 +23,6 @@ Start-Process https://desktop.github.com/
 Start-Process https://insomnia.rest/
 Start-Process https://www.linqpad.net/
 Start-Process https://www.microsoft.com/en-us/p/microsoft-remote-desktop/9wzdncrfj3ps
-Start-Process https://www.nushell.sh/installation.html
 Start-Process https://github.com/coreybutler/nvm-windows
 Start-Process https://www.microsoft.com/en-us/p/onenote-for-windows-10/9wzdncrfhvjl
 Start-Process https://www.papercut-smtp.com/

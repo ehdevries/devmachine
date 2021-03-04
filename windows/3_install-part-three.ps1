@@ -6,6 +6,11 @@ Write-Output ""
 PowerShellGet\Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force
 
 Write-Output ""
+Write-Output "Installing Nushell"
+Write-Output ""
+scoop install nu
+
+Write-Output ""
 Write-Output "Installing VS Code extensions"
 Write-Output ""
 
