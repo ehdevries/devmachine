@@ -23,6 +23,7 @@ Start-Process https://desktop.github.com/
 Start-Process https://insomnia.rest/
 Start-Process https://www.linqpad.net/
 Start-Process https://www.microsoft.com/en-us/p/microsoft-remote-desktop/9wzdncrfj3ps
+Start-Process https://www.nushell.sh/
 Start-Process https://github.com/coreybutler/nvm-windows
 Start-Process https://www.microsoft.com/en-us/p/onenote-for-windows-10/9wzdncrfhvjl
 Start-Process https://www.papercut-smtp.com/
