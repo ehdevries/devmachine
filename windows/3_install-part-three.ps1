@@ -17,6 +17,7 @@ code --install-extension eamodio.gitlens
 code --install-extension editorconfig.editorconfig
 code --install-extension esbenp.prettier-vscode
 code --install-extension johnpapa.vscode-peacock
+code --install-extension ms-azure-devops.azure-pipelines
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension pkief.material-icon-theme
 
