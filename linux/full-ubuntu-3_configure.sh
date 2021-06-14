@@ -18,6 +18,7 @@ code --install-extension esbenp.prettier-vscode
 code --install-extension johnpapa.vscode-peacock
 code --install-extension ms-azure-devops.azure-pipelines
 code --install-extension ms-vsliveshare.vsliveshare
+code --install-extension pflannery.vscode-versionlens
 code --install-extension pkief.material-icon-theme
 
 # Themes
