@@ -18,6 +18,7 @@ Invoke-WebRequest https://deno.land/x/install/install.ps1 -useb | Invoke-Express
 Start-Process https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio
 Start-Process https://www.docker.com/products/docker-desktop
 Start-Process https://draculatheme.com/notepad-plus-plus/
+Start-Process https://github.com/tonsky/FiraCode
 Start-Process https://www.mozilla.org/en-US/firefox/new/
 Start-Process https://desktop.github.com/
 Start-Process https://insomnia.rest/
