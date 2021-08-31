@@ -15,6 +15,13 @@ sudo add-apt-repository ppa:git-core/ppa
 # update all packages
 sudo apt update && sudo apt upgrade
 
+# install apt packages
+sudo apt install bat
+
+# fix naming collision with a different bat package
+mkdir -p ~/.local/bin
+ln -s /usr/bin/batcat ~/.local/bin/bat
+
 # install Node.js LTS using Node Version Manager
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 source ~/.bashrc
