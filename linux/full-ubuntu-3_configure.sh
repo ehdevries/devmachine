@@ -36,7 +36,6 @@ code --install-extension burkeholland.simple-react-snippets
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension eg2.vscode-npm-script
 code --install-extension firefox-devtools.vscode-firefox-debug
-code --install-extension johnpapa.angular-essentials
 code --install-extension nrwl.angular-console
 
 # Docker
