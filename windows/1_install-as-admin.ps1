@@ -4,7 +4,6 @@
 Write-Output ""
 Write-Output "Installing software with Chocolatey"
 Write-Output ""
-choco install -y dejavufonts
 choco install -y git
 choco install -y notepadplusplus
 
