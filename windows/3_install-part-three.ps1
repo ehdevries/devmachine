@@ -6,6 +6,12 @@ Write-Output ""
 PowerShellGet\Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force
 
 Write-Output ""
+Write-Output "Installing software with Scoop"
+Write-Output ""
+scoop update
+scoop install bat
+
+Write-Output ""
 Write-Output "Installing VS Code extensions"
 Write-Output ""
 

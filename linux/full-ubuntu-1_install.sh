@@ -11,10 +11,15 @@ sudo add-apt-repository ppa:git-core/ppa
 sudo apt update && sudo apt upgrade
 
 # install apt packages
+sudo apt install bat
 sudo apt install extremetuxracer
 sudo apt install fonts-firacode
 sudo apt install git
 sudo apt install vim
+
+# fix naming collision with a different bat package
+mkdir -p ~/.local/bin
+ln -s /usr/bin/batcat ~/.local/bin/bat
 
 # install snap packages
 sudo snap install code --classic
