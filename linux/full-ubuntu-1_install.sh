@@ -24,7 +24,7 @@ ln -s /usr/bin/batcat ~/.local/bin/bat
 # install snap packages
 sudo snap install code --classic
 sudo snap install dotnet-sdk --classic
-sudo snap install node --channel=14/stable --classic
+sudo snap install node --channel=16/stable --classic
 sudo snap install slack --classic
 sudo snap install supertuxkart
 
