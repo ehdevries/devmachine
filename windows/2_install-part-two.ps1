@@ -1,6 +1,11 @@
 ### Set-ExecutionPolicy Bypass -Scope Process -Force; .\2_install-part-two.ps1
 
 Write-Output ""
+Write-Output "Installing software with Windows Package Manager"
+Write-Output ""
+winget install --id notepad++.notepad++
+
+Write-Output ""
 Write-Output "Installing PowerShellGet for Windows PowerShell"
 Write-Output ""
 Install-Module PowerShellGet -Scope CurrentUser -Force -AllowClobber

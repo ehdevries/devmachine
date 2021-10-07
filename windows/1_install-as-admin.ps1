@@ -5,7 +5,6 @@ Write-Output ""
 Write-Output "Installing software with Chocolatey"
 Write-Output ""
 choco install -y git
-choco install -y notepadplusplus
 
 Write-Output ""
 Write-Output "Enabling Windows Subsystem for Linux 2"
