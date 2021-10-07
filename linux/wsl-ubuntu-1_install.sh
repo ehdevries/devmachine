@@ -1,4 +1,4 @@
-# before you run this script, make it executable: chmod +x wsl-ubuntu.sh
+# before you run this script, make it executable: chmod +x wsl-ubuntu-1_install.sh
 
 # if you're at work and 'sudo apt update' fails, you might need to configure a proxy for http(s) traffic
 # un-comment the following lines and replace the URL to point to your proxy
