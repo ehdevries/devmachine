@@ -41,10 +41,6 @@ GIT_PROMPT_THEME=Single_line_Minimalist
 source ~/.bash-git-prompt/gitprompt.sh" >> ~/.bashrc
 
 # customize your shell experience
-echo "
-# show useful info when the shell launches
-echo \$(lsb_release -ds) \$(lsb_release -cs) # Ubuntu version
-df -h /                                    # disk usage" >> ~/.bashrc
 echo "alias cls=clear
 alias check='sudo apt update && apt list --upgradable'
 alias uv='echo \$(lsb_release -ds) \$(lsb_release -cs)'" >> ~/.bash_aliases
@@ -77,5 +73,5 @@ echo
 echo "All done!"
 echo
 echo "REMINDERS:"
-echo " - Change the WSL console host's default font to something with better Unicode support (i.e. DejaVu Sans Mono)"
+echo " - Run the next script to generate SSH keys"
 echo " - Run 'sudo apt autoremove' if you want to clean up unused packages"
