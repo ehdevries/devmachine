@@ -33,6 +33,7 @@ Start-Process https://www.linqpad.net/
 Start-Process https://www.microsoft.com/en-us/p/microsoft-remote-desktop/9wzdncrfj3ps
 Start-Process https://github.com/coreybutler/nvm-windows
 Start-Process https://www.microsoft.com/en-us/p/onenote-for-windows-10/9wzdncrfhvjl
+Start-Process https://github.com/ehdevries/panache-git
 Start-Process https://www.papercut-smtp.com/
 Start-Process https://github.com/microsoft/PowerToys
 Start-Process https://www.rust-lang.org/tools/install
