@@ -60,7 +60,11 @@ echo
 dotnet tool install -g dotnet-ef
 
 echo
-configDir="source/devconfig/config"  # Location of my configuration files - change as needed
+
+# Locations of my configuration files and scripts - change as needed
+configDir="source/devconfig/config"
+scriptDir="source/devconfig/scripts"
+
 if [ -d  ~/$configDir ]
 then
   echo "Restoring configuration files"
@@ -72,7 +76,16 @@ then
   cp ~/$configDir/VSCode/keybindings.json ~/$configDir/VSCode/settings.json ~/.config/Code/User
 else
   echo "Configuration files not found in $configDir"
-  echo "If they're somewhere else, edit this script and try again"
+fi
+
+echo
+
+if [ -d ~/$scriptDir ]
+then
+  echo "Restoring scripts"
+  cp -r ~/$scriptDir/. ~/.scripts
+else
+  echo "Scripts not found in $scriptDir"
 fi
 
 echo
