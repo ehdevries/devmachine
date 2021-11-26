@@ -60,6 +60,16 @@ code --install-extension sfodje.perltidy
 code --install-extension thenuprojectcontributors.vscode-nushell-lang
 
 Write-Output ""
+Write-Output "Installing Azure Data Studio extensions"
+Write-Output ""
+
+azuredatastudio --install-extension microsoft.profiler
+azuredatastudio --install-extension microsoft.schema-compare
+azuredatastudio --install-extension microsoft.sql-database-projects
+azuredatastudio --install-extension seanprice.simple-data-scripter
+azuredatastudio --install-extension wsrpublishing.poor-sql-formatter
+
+Write-Output ""
 Write-Output "Installing npm global tools"
 Write-Output ""
 npm install -g @angular/cli
