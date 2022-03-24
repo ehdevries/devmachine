@@ -69,7 +69,6 @@ if [ -d  ~/$configDir ]
 then
   echo "Restoring configuration files"
   cp ~/$configDir/.gitconfig ~
-  cp ~/$configDir/starship.toml ~/.config
   cp ~/$configDir/Nushell/config.nu ~/.config/nushell
   cp ~/$configDir/Vim/.gvimrc ~
   cp ~/$configDir/Vim/.vimrc ~

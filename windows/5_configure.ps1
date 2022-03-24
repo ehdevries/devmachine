@@ -9,7 +9,6 @@ Write-Output "Restoring the following configuration files:"
 Write-Output ""
 Copy-Item -Path $configDir\.gitconfig        -Destination $home                -PassThru | Split-Path -Leaf
 Copy-Item -Path $configDir\Nushell\config.nu -Destination $env:APPDATA\nushell -PassThru | Split-Path -Leaf
-Copy-Item -Path $configDir\starship.toml     -Destination $home\.config        -PassThru | Split-Path -Leaf
 Copy-Item -Path $configDir\Vim\.gvimrc       -Destination $home\_gvimrc        -PassThru | Split-Path -Leaf
 Copy-Item -Path $configDir\Vim\.vimrc        -Destination $home\_vimrc         -PassThru | Split-Path -Leaf
 Copy-Item -Path $configDir\.wslconfig        -Destination $home                -PassThru | Split-Path -Leaf
