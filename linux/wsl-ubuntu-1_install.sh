@@ -43,6 +43,7 @@ source ~/.bash-git-prompt/gitprompt.sh" >> ~/.bashrc
 # customize your shell experience
 echo "alias cls=clear
 alias check='sudo apt update && apt list --upgradable'
+alias ucheck='do-release-upgrade -c'
 alias uv='echo \$(lsb_release -ds) \$(lsb_release -cs)'" >> ~/.bash_aliases
 
 # create a symbolic link to your source code in Windows
