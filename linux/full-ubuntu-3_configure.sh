@@ -43,7 +43,7 @@ code --install-extension ms-vscode-remote.remote-containers
 
 # Other Languages
 code --install-extension ms-python.python
-code --install-extension rust-lang.rust
+code --install-extension rust-lang.rust-analyzer
 code --install-extension sfodje.perlcritic
 code --install-extension sfodje.perltidy
 code --install-extension thenuprojectcontributors.vscode-nushell-lang
