@@ -47,3 +47,4 @@ Start-Process https://code.visualstudio.com/
 Start-Process https://aka.ms/wslstore
 Start-Process https://github.com/Microsoft/Terminal
 Start-Process https://aka.ms/windowsterminal
+Start-Process https://aka.ms/wslstorepage
