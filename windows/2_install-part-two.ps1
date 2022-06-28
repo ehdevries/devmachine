@@ -42,10 +42,8 @@ Start-Process https://slack.com/downloads/windows
 Start-Process https://www.microsoft.com/en-us/sql-server/sql-server-downloads
 Start-Process https://www.microsoft.com/en-us/p/microsoft-to-do-lists-tasks-reminders/9nblggh5r558
 Start-Process https://toggl.com/toggl-desktop/
-Start-Process https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6
 Start-Process https://visualstudio.microsoft.com/downloads/
 Start-Process https://code.visualstudio.com/
-Start-Process https://aka.ms/wslstore
 Start-Process https://github.com/Microsoft/Terminal
 Start-Process https://aka.ms/windowsterminal
 Start-Process https://aka.ms/wslstorepage
