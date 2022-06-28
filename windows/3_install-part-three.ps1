@@ -1,9 +1,9 @@
 ### Set-ExecutionPolicy Bypass -Scope Process -Force; .\3_install-part-three.ps1
 
 Write-Output ""
-Write-Output "Installing posh-git for Windows PowerShell"
+Write-Output "Installing posh-git"
 Write-Output ""
-PowerShellGet\Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force
+Install-Module -Name posh-git -Scope CurrentUser
 
 Write-Output ""
 Write-Output "Installing software with Scoop"
