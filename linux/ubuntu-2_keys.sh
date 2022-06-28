@@ -1,4 +1,4 @@
-# before you run this script, make it executable: chmod +x wsl-ubuntu-2_keys.sh
+# before you run this script, make it executable: chmod +x ubuntu-2_keys.sh
 
 # Step 2: generate an SSH key pair so that you can access your machine configuration repos
 
