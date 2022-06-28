@@ -4,6 +4,7 @@ Write-Output ""
 Write-Output "Installing software with Windows Package Manager"
 Write-Output ""
 winget install --id git.git
+winget install --id microsoft.powershell
 winget install --id notepad++.notepad++
 winget install --id nushell.nushell
 
