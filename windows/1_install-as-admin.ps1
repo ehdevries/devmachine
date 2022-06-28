@@ -5,4 +5,3 @@ Write-Output ""
 Write-Output "Installing Windows Subsystem for Linux 2"
 Write-Output ""
 wsl --install
-wsl --set-default-version 2
