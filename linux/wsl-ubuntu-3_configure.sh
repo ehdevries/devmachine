@@ -8,7 +8,6 @@ echo
 echo "Installing npm global tools"
 echo
 npm install -g @angular/cli
-npm install -g typescript
 
 echo
 

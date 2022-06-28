@@ -73,7 +73,6 @@ Write-Output ""
 Write-Output "Installing npm global tools"
 Write-Output ""
 npm install -g @angular/cli
-npm install -g typescript
 
 Write-Output ""
 Write-Output "Installing dotnet global tools"
