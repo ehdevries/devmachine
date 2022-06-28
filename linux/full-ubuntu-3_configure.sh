@@ -57,7 +57,8 @@ echo
 echo "Installing dotnet global tools"
 echo
 dotnet tool install -g dotnet-ef
-dotnet tool install -g Rnwood.Smtp4dev
+dotnet tool install -g dotnet-tools-outdated
+dotnet tool install -g rnwood.smtp4dev
 
 echo
 
