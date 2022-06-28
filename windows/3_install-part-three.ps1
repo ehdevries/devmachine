@@ -79,3 +79,4 @@ Write-Output ""
 Write-Output "Installing dotnet global tools"
 Write-Output ""
 dotnet tool install -g dotnet-ef
+dotnet tool install -g Rnwood.Smtp4dev
