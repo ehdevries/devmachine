@@ -1,4 +1,4 @@
-### Set-ExecutionPolicy Bypass -Scope Process -Force; .\4_keys.ps1
+### Set-ExecutionPolicy Bypass -Scope Process -Force; .\4_generate-keys.ps1
 
 Write-Output ""
 Write-Output "Generating RSA SSH keys"

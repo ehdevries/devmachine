@@ -2,13 +2,6 @@
 
 # Step 3: configure installed software
 
-cd
-
-echo
-echo "Installing npm global tools"
-echo
-npm install -g @angular/cli
-
 echo
 
 # Locations of my configuration files and scripts - change as needed
