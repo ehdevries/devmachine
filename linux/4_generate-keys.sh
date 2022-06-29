@@ -1,4 +1,4 @@
-# before you run this script, make it executable: chmod +x 4_generate-keys.sh
+### before you run this script, make it executable: chmod +x 4_generate-keys.sh
 
 echo
 echo "Generating RSA SSH keys"
