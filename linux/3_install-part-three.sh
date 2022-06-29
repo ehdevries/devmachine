@@ -33,16 +33,14 @@ code --install-extension eg2.vscode-npm-script
 code --install-extension firefox-devtools.vscode-firefox-debug
 code --install-extension nrwl.angular-console
 
-# Docker
+# Docker & WSL
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-vscode-remote.remote-containers
-
-# Windows
-code --install-extension ms-vscode.powershell
 code --install-extension ms-vscode-remote.remote-wsl
 
 # Other Languages
 code --install-extension ms-python.python
+code --install-extension ms-vscode.powershell
 code --install-extension rust-lang.rust-analyzer
 code --install-extension sfodje.perlcritic
 code --install-extension sfodje.perltidy
