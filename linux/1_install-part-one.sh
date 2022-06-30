@@ -1,31 +1,45 @@
 ### before you run this script, make it executable: chmod +x 1_install-part-one.sh
 
-# add package source for Git stable channel
+echo
+echo "adding package repository for Git stable channel"
+echo
 sudo add-apt-repository ppa:git-core/ppa
 
-# update all packages
+echo
+echo "updating all packages"
+echo
 sudo apt update && sudo apt upgrade
 
-# install apt packages
+echo
+echo "installing apt packages"
+echo
 sudo apt install bat
 sudo apt install git
 sudo apt install neofetch
 sudo apt install vim
 
-# fix naming collision with a different bat package
+echo
+echo "fixing naming collision with a different bat package"
+echo
 mkdir -p ~/.local/bin
 ln -s /usr/bin/batcat ~/.local/bin/bat
 
-# install Node.js LTS using Node Version Manager
+echo
+echo "installing Node.js LTS using Node Version Manager"
+echo
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 source ~/.bashrc
 nvm install --lts
 nvm use --lts
 
-# install rust using rustup
+echo
+echo "installing Rust using rustup"
+echo
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-# install bash-git-prompt
+echo
+echo "installing bash-git-prompt"
+echo
 git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
 echo "
 # configure and run bash-git-prompt
