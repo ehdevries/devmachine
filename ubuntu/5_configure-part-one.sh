@@ -9,6 +9,7 @@ echo
 if [ -d  ~/$configDir ]
 then
   echo "Restoring configuration files"
+  cp ~/$configDir/.bash_aliases ~
   cp ~/$configDir/.gitconfig ~
   cp ~/$configDir/Nushell/config.nu ~/$configDir/Nushell/env.nu ~/.config/nushell
   cp ~/$configDir/Vim/.gvimrc ~
@@ -36,13 +37,6 @@ git clone git@github.com:ehdevries/panache-git.git ~/.panache-git
 echo
 echo "Adding Linux-specific Git configuration"
 git config --global core.editor "vim"
-
-echo
-echo "creating bash aliases"
-echo "alias cls=clear
-alias check='sudo apt update && apt list --upgradable'
-alias ucheck='do-release-upgrade -c'
-alias uv='echo \$(lsb_release -ds) \$(lsb_release -cs)'" >> ~/.bash_aliases
 
 echo
 echo "All done!"
