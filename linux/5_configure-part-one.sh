@@ -1,4 +1,4 @@
-### before you run this script, make it executable: chmod +x 5_configure.sh
+### before you run this script, make it executable: chmod +x 5_configure-part-one.sh
 
 # Locations of my configuration files and scripts - change as needed
 configDir="source/devconfig/config"
@@ -36,6 +36,13 @@ git clone git@github.com:ehdevries/panache-git.git ~/.panache-git
 echo
 echo "Adding Linux-specific Git configuration"
 git config --global core.editor "vim"
+
+echo
+echo "creating bash aliases"
+echo "alias cls=clear
+alias check='sudo apt update && apt list --upgradable'
+alias ucheck='do-release-upgrade -c'
+alias uv='echo \$(lsb_release -ds) \$(lsb_release -cs)'" >> ~/.bash_aliases
 
 echo
 echo "All done!"

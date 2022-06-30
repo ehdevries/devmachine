@@ -21,7 +21,7 @@ echo "
 echo \$(lsb_release -ds) \$(lsb_release -cs) # Ubuntu version
 df -h /                                    # disk usage" >> ~/.bashrc
 echo "
-# set PATH so it includes dotnet core sdk snap and tools
+# set PATH so it includes the dotnet sdk snap and tools
 if [ -d /snap/dotnet-sdk/current ]
 then
   PATH=\"\$PATH:/snap/dotnet-sdk/current\"

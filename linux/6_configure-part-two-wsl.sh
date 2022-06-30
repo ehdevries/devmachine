@@ -1,6 +1,4 @@
-### before you run this script, make it executable: chmod +x 2_install-part-two-wsl.sh
-
-# create a symbolic link to your Windows home directory
+### before you run this script, make it executable: chmod +x 6_configure-part-two-wsl.sh
 
 winHomeDefault="/mnt/c/Users/$(whoami)/"
 
