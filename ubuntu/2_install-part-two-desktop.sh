@@ -35,8 +35,6 @@ then
   PATH=\"\$PATH:\$HOME/.dotnet/tools\"
 fi" >> ~/.profile
 
-source ~/.profile
-
 echo
 echo "configuring bash to show some useful info on launch"
 echo
@@ -44,3 +42,6 @@ echo "
 # show useful info when the shell launches
 echo \$(lsb_release -ds) \$(lsb_release -cs) # Ubuntu version
 df -h /                                    # disk usage" >> ~/.bashrc
+
+source ~/.bashrc
+source ~/.profile

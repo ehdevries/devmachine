@@ -14,6 +14,9 @@ echo
 echo "installing apt packages"
 echo
 sudo apt install bat
+sudo apt install build-essential
+sudo apt install curl
+sudo apt install file
 sudo apt install git
 sudo apt install neofetch
 sudo apt install vim
@@ -47,4 +50,13 @@ GIT_PROMPT_ONLY_IN_REPO=1
 GIT_PROMPT_THEME=Single_line_Minimalist
 source ~/.bash-git-prompt/gitprompt.sh" >> ~/.bashrc
 
+echo
+echo "installing Homebrew"
+echo
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
+test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.profile
+
 source ~/.bashrc
+source ~/.profile
