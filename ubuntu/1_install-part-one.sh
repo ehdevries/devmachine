@@ -13,19 +13,12 @@ sudo apt update && sudo apt upgrade
 echo
 echo "installing apt packages"
 echo
-sudo apt install bat
 sudo apt install build-essential
 sudo apt install curl
 sudo apt install file
 sudo apt install git
 sudo apt install neofetch
 sudo apt install vim
-
-echo
-echo "fixing naming collision with a different bat package"
-echo
-mkdir -p ~/.local/bin
-ln -s /usr/bin/batcat ~/.local/bin/bat
 
 echo
 echo "installing Node.js LTS using Node Version Manager"
@@ -61,6 +54,7 @@ echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.profile
 echo
 echo "installing software with Homebrew"
 echo
+brew install bat
 brew install nushell
 
 source ~/.bashrc
