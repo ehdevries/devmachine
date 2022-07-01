@@ -1,20 +1,20 @@
-### before you run this script, make it executable: chmod +x 2_install-part-two-desktop.sh
+### Before you run this script, make it executable: chmod +x 2_install-part-two-desktop.sh
 
 echo
-echo "adding package repository for RetroArch stable channel"
+echo "Adding package repository for RetroArch stable channel"
 echo
 sudo add-apt-repository ppa:libretro/stable
 sudo apt update
 
 echo
-echo "installing apt packages"
+echo "Installing apt packages"
 echo
 sudo apt install extremetuxracer
 sudo apt install fonts-firacode
 sudo apt install retroarch
 
 echo
-echo "installing snap packages"
+echo "Installing snap packages"
 echo
 sudo snap install code --classic
 sudo snap install dotnet-sdk --classic
@@ -22,7 +22,7 @@ sudo snap install slack
 sudo snap install supertuxkart
 
 echo
-echo "adding the dotnet sdk snap and tools to PATH"
+echo "Adding the dotnet sdk snap and tools to PATH"
 echo
 echo "
 # set PATH so it includes the dotnet sdk snap and tools
@@ -36,7 +36,7 @@ then
 fi" >> ~/.profile
 
 echo
-echo "configuring bash to show some useful info on launch"
+echo "Configuring bash to show some useful info on launch"
 echo
 echo "
 # show useful info when the shell launches
