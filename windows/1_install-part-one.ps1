@@ -11,7 +11,7 @@ winget install --id nushell.nushell
 Write-Output ""
 Write-Output "Installing PowerShellGet for Windows PowerShell"
 Write-Output ""
-Install-Module -Name PowerShellGet -Scope CurrentUser
+Install-Module -Name PowerShellGet -Scope CurrentUser -Force -AllowClobber
 
 Write-Output ""
 Write-Output "Installing Scoop"
