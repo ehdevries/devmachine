@@ -22,6 +22,3 @@ Write-Output ""
 Write-Output "Here are some handy links:"
 Write-Output "https://gitlab.com/-/profile/keys"
 Write-Output "https://github.com/settings/keys"
-
-Start-Process "https://gitlab.com/-/profile/keys"
-Start-Process "https://github.com/settings/keys"
