@@ -50,12 +50,15 @@ echo
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 echo
-echo "Installing Node.js LTS using Node Version Manager"
+echo "Installing Node Version Manager"
 echo
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 source ~/.bashrc
 source ~/.profile
 
-nvm install --lts
-nvm use --lts
+echo
+echo "Almost done."
+echo "Close and reopen your shell, then invoke this command to install Node.js:"
+echo "nvm install --lts"
+echo
