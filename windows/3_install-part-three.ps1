@@ -6,6 +6,7 @@ Write-Output ""
 
 # Common
 code --install-extension be5invis.toml
+code --install-extension bierner.markdown-mermaid
 code --install-extension davidanson.vscode-markdownlint
 code --install-extension eamodio.gitlens
 code --install-extension editorconfig.editorconfig
