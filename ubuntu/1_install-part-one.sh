@@ -33,6 +33,8 @@ echo "Installing software with Homebrew"
 echo
 brew install bat
 brew install nushell
+brew tap rsteube/homebrew-tap
+brew install rsteube/tap/carapace
 
 echo
 echo "Installing bash-git-prompt"

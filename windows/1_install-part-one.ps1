@@ -7,6 +7,7 @@ winget install --id git.git
 winget install --id microsoft.powershell
 winget install --id notepad++.notepad++
 winget install --id nushell.nushell
+winget install --id rsteube.carapace
 
 Write-Output ""
 Write-Output "Installing PowerShellGet for Windows PowerShell"
