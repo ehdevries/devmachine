@@ -35,6 +35,7 @@ brew install bat
 brew install nushell
 brew tap rsteube/homebrew-tap
 brew install rsteube/tap/carapace
+brew install zola
 
 echo
 echo "Installing bash-git-prompt"

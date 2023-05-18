@@ -10,3 +10,4 @@ Write-Output "Installing software with Scoop"
 Write-Output ""
 scoop update
 scoop install bat
+scoop install zola
