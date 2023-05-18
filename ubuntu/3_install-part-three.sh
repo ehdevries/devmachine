@@ -23,6 +23,7 @@ code --install-extension robbowen.synthwave-vscode
 # .NET
 code --install-extension adrianwilczynski.user-secrets
 code --install-extension ms-dotnettools.csharp
+code --install-extension ms-dotnettools.dotnet-interactive-vscode
 code --install-extension ionide.ionide-fsharp
 
 # Web dev
