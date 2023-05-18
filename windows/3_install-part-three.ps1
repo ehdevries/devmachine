@@ -12,6 +12,7 @@ code --install-extension eamodio.gitlens
 code --install-extension editorconfig.editorconfig
 code --install-extension esbenp.prettier-vscode
 code --install-extension johnpapa.vscode-peacock
+code --install-extension marp-team.marp-vscode
 code --install-extension ms-azure-devops.azure-pipelines
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension pflannery.vscode-versionlens
