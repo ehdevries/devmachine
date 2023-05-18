@@ -30,6 +30,7 @@ code --install-extension angular.ng-template
 code --install-extension burkeholland.simple-react-snippets
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension firefox-devtools.vscode-firefox-debug
+code --install-extension meganrogge.template-string-converter
 code --install-extension nrwl.angular-console
 
 # Docker & WSL
