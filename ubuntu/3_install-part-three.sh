@@ -6,13 +6,10 @@ echo
 
 # Common
 code --install-extension be5invis.toml
-code --install-extension bierner.markdown-mermaid
-code --install-extension davidanson.vscode-markdownlint
 code --install-extension eamodio.gitlens
 code --install-extension editorconfig.editorconfig
 code --install-extension esbenp.prettier-vscode
 code --install-extension johnpapa.vscode-peacock
-code --install-extension marp-team.marp-vscode
 code --install-extension ms-azure-devops.azure-pipelines
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension pflannery.vscode-versionlens
@@ -22,10 +19,15 @@ code --install-extension pkief.material-icon-theme
 code --install-extension liviuschera.noctis
 code --install-extension robbowen.synthwave-vscode
 
+# Docs
+code --install-extension bierner.markdown-mermaid
+code --install-extension davidanson.vscode-markdownlint
+code --install-extension marp-team.marp-vscode
+code --install-extension ms-dotnettools.dotnet-interactive-vscode
+
 # .NET
 code --install-extension adrianwilczynski.user-secrets
 code --install-extension ms-dotnettools.csharp
-code --install-extension ms-dotnettools.dotnet-interactive-vscode
 code --install-extension ionide.ionide-fsharp
 
 # Web dev
