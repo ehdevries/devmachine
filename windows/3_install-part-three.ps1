@@ -69,6 +69,7 @@ npm install -g @angular/cli
 Write-Output ""
 Write-Output "Installing dotnet global tools"
 Write-Output ""
+dotnet tool install -g csharprepl
 dotnet tool install -g dotnet-ef
 dotnet tool install -g dotnet-tools-outdated
 dotnet tool install -g rnwood.smtp4dev
