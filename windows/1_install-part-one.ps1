@@ -9,7 +9,8 @@ winget install --id helix.helix
 winget install --id microsoft.azuredatastudio --interactive
 winget install --id microsoft.powershell
 winget install --id microsoft.visualstudiocode --interactive
-winget install --id notepad++.notepad++
+winget install --id mozilla.firefox --interactive
+winget install --id notepad++.notepad++ --interactive
 winget install --id nushell.nushell
 winget install --id rsteube.carapace
 
@@ -31,7 +32,6 @@ Invoke-WebRequest https://deno.land/x/install/install.ps1 -useb | Invoke-Express
 Start-Process https://dotnet.microsoft.com/en-us/download
 Start-Process https://draculatheme.com/notepad-plus-plus/
 Start-Process https://github.com/tonsky/FiraCode
-Start-Process https://www.mozilla.org/en-US/firefox/new/
 Start-Process https://desktop.github.com/
 Start-Process https://insomnia.rest/
 Start-Process https://www.linqpad.net/
