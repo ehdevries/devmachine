@@ -8,6 +8,7 @@ winget install --id git.git
 winget install --id helix.helix
 winget install --id microsoft.azuredatastudio --interactive
 winget install --id microsoft.powershell
+winget install --id microsoft.visualstudiocode --interactive
 winget install --id notepad++.notepad++
 winget install --id nushell.nushell
 winget install --id rsteube.carapace
@@ -45,7 +46,6 @@ Start-Process https://slack.com/downloads/windows
 Start-Process https://apps.microsoft.com/store/detail/microsoft-to-do-lists-tasks-reminders/9NBLGGH5R558
 Start-Process https://toggl.com/track/toggl-desktop/
 Start-Process https://visualstudio.microsoft.com/downloads/
-Start-Process https://code.visualstudio.com/
 Start-Process https://github.com/Microsoft/Terminal
 Start-Process https://aka.ms/windowsterminal
 Start-Process https://aka.ms/wslstorepage
