@@ -13,6 +13,7 @@ Copy-Item -Path $configDir\Vim\.gvimrc                            -Destination $
 Copy-Item -Path $configDir\Vim\.vimrc                             -Destination $home\_vimrc                      -PassThru | Split-Path -Leaf
 Copy-Item -Path $configDir\.wslconfig                             -Destination $home                             -PassThru | Split-Path -Leaf
 Get-ChildItem -Path $configDir\AzureDataStudio\*.json | Copy-Item -Destination $env:APPDATA\azuredatastudio\User -PassThru | Split-Path -Leaf
+Get-ChildItem -Path $configDir\Helix\*.toml           | Copy-Item -Destination $env:APPDATA\helix                -PassThru | Split-Path -Leaf
 Get-ChildItem -Path $configDir\Nushell\*.nu           | Copy-Item -Destination $env:APPDATA\nushell              -PassThru | Split-Path -Leaf
 Get-ChildItem -Path $configDir\PowerShell\*.ps1       | Copy-Item -Destination $home\Documents\PowerShell        -PassThru | Split-Path -Leaf
 Get-ChildItem -Path $configDir\PowerShell\*.ps1       | Copy-Item -Destination $home\Documents\WindowsPowerShell -PassThru | Split-Path -Leaf
