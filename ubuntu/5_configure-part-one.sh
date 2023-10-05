@@ -37,7 +37,7 @@ git clone git@github.com:ehdevries/panache-git.git ~/.panache-git
 
 echo
 echo "Adding Linux-specific Git configuration"
-git config --global core.editor "vim"
+git config --global core.editor hx
 
 echo
 echo "All done!"
