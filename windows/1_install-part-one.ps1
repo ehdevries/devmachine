@@ -3,10 +3,10 @@
 Write-Output ""
 Write-Output "Installing software with Windows Package Manager"
 Write-Output ""
-winget install --id docker.dockerdesktop
+winget install --id docker.dockerdesktop --interactive
 winget install --id git.git
 winget install --id helix.helix
-winget install --id microsoft.azuredatastudio
+winget install --id microsoft.azuredatastudio --interactive
 winget install --id microsoft.powershell
 winget install --id notepad++.notepad++
 winget install --id nushell.nushell
