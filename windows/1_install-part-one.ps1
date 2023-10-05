@@ -4,7 +4,8 @@ Write-Output ""
 Write-Output "Installing software with Windows Package Manager"
 Write-Output ""
 winget install --id docker.dockerdesktop --interactive
-winget install --id git.git
+winget install --id git.git --interactive
+winget install --id github.githubdesktop --interactive
 winget install --id helix.helix
 winget install --id microsoft.azuredatastudio --interactive
 winget install --id microsoft.powershell
@@ -32,7 +33,6 @@ Invoke-WebRequest https://deno.land/x/install/install.ps1 -useb | Invoke-Express
 Start-Process https://dotnet.microsoft.com/en-us/download
 Start-Process https://draculatheme.com/notepad-plus-plus/
 Start-Process https://github.com/tonsky/FiraCode
-Start-Process https://desktop.github.com/
 Start-Process https://insomnia.rest/
 Start-Process https://www.linqpad.net/
 Start-Process https://apps.microsoft.com/store/detail/microsoft-remote-desktop/9WZDNCRFJ3PS
