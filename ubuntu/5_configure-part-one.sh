@@ -13,8 +13,6 @@ then
   cp ~/$configDir/.gitconfig ~
   cp ~/$configDir/Helix/config.toml ~/$configDir/Helix/languages.toml ~/.config/helix
   cp ~/$configDir/Nushell/config.nu ~/$configDir/Nushell/env.nu ~/.config/nushell
-  cp ~/$configDir/Vim/.gvimrc ~
-  cp ~/$configDir/Vim/.vimrc ~
   cp ~/$configDir/VSCode/keybindings.json ~/$configDir/VSCode/settings.json ~/.config/Code/User
 else
   echo "Configuration files not found in $configDir"

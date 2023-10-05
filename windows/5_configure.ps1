@@ -9,8 +9,6 @@ Write-Output "Restoring configuration files"
 Write-Output ""
 Copy-Item -Path $configDir\.gitconfig                             -Destination $home                             -PassThru | Split-Path -Leaf
 Copy-Item -Path $configDir\smtp4dev\appsettings.json              -Destination $env:APPDATA\smtp4dev             -PassThru | Split-Path -Leaf
-Copy-Item -Path $configDir\Vim\.gvimrc                            -Destination $home\_gvimrc                     -PassThru | Split-Path -Leaf
-Copy-Item -Path $configDir\Vim\.vimrc                             -Destination $home\_vimrc                      -PassThru | Split-Path -Leaf
 Copy-Item -Path $configDir\.wslconfig                             -Destination $home                             -PassThru | Split-Path -Leaf
 Get-ChildItem -Path $configDir\AzureDataStudio\*.json | Copy-Item -Destination $env:APPDATA\azuredatastudio\User -PassThru | Split-Path -Leaf
 Get-ChildItem -Path $configDir\Helix\*.toml           | Copy-Item -Destination $env:APPDATA\helix                -PassThru | Split-Path -Leaf

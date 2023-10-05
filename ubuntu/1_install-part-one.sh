@@ -18,7 +18,6 @@ sudo apt install curl
 sudo apt install file
 sudo apt install git
 sudo apt install neofetch
-sudo apt install vim
 
 echo
 echo "Installing Homebrew"
