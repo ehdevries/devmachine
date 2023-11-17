@@ -7,6 +7,7 @@ winget install --id docker.dockerdesktop --interactive
 winget install --id git.git --interactive
 winget install --id github.githubdesktop --interactive
 winget install --id helix.helix
+winget install --id jesseduffield.lazygit
 winget install --id microsoft.azuredatastudio --interactive
 winget install --id microsoft.powershell
 winget install --id microsoft.visualstudiocode --interactive
