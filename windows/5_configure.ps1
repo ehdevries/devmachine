@@ -38,6 +38,7 @@ Write-Output ""
 Write-Output "Adding Windows-specific Git configuration"
 git config --global core.autocrlf true
 git config --global core.editor hx
+git config --global core.whitespace cr-at-eol
 
 Write-Output ""
 Write-Output "All done!"
