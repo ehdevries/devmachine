@@ -16,6 +16,7 @@ winget install --id notepad++.notepad++ --interactive
 winget install --id nushell.nushell
 winget install --id rsteube.carapace
 winget install --id sharkdp.bat
+winget install --id wilfred.difftastic
 
 Write-Output ""
 Write-Output "Installing PowerShellGet for Windows PowerShell"

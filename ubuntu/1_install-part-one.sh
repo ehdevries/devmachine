@@ -31,6 +31,7 @@ echo
 echo "Installing software with Homebrew"
 echo
 brew install bat
+brew install difftastic
 brew install helix
 brew install lazygit
 brew install nushell
