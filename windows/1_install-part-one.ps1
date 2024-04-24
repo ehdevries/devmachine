@@ -12,6 +12,7 @@ winget install --id helix.helix
 winget install --id jesseduffield.lazygit
 winget install --id microsoft.azuredatastudio --interactive
 winget install --id microsoft.powershell
+winget install --id microsoft.reportbuilder --interactive
 winget install --id microsoft.visualstudiocode --interactive
 winget install --id mozilla.firefox --interactive
 winget install --id notepad++.notepad++ --interactive
