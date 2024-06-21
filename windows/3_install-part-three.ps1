@@ -1,8 +1,8 @@
 ### Set-ExecutionPolicy Bypass -Scope Process -Force; .\3_install-part-three.ps1
 
-Write-Output ""
-Write-Output "Installing VS Code extensions"
-Write-Output ""
+echo ""
+echo "Installing VS Code extensions"
+echo ""
 
 # Common
 code --install-extension be5invis.toml
@@ -50,9 +50,9 @@ code --install-extension sfodje.perlcritic
 code --install-extension sfodje.perltidy
 code --install-extension thenuprojectcontributors.vscode-nushell-lang
 
-Write-Output ""
-Write-Output "Installing Azure Data Studio extensions"
-Write-Output ""
+echo ""
+echo "Installing Azure Data Studio extensions"
+echo ""
 
 azuredatastudio --install-extension microsoft.profiler
 azuredatastudio --install-extension microsoft.schema-compare
@@ -60,21 +60,21 @@ azuredatastudio --install-extension microsoft.sql-database-projects
 azuredatastudio --install-extension seanprice.simple-data-scripter
 azuredatastudio --install-extension wsrpublishing.poor-sql-formatter
 
-Write-Output ""
-Write-Output "Installing npm global tools"
-Write-Output ""
+echo ""
+echo "Installing npm global tools"
+echo ""
 npm install -g @angular/cli
 
-Write-Output ""
-Write-Output "Installing dotnet global tools"
-Write-Output ""
+echo ""
+echo "Installing dotnet global tools"
+echo ""
 dotnet tool install -g csharp-ls
 dotnet tool install -g csharprepl
 dotnet tool install -g dotnet-ef
 dotnet tool install -g dotnet-tools-outdated
 dotnet tool install -g rnwood.smtp4dev
 
-Write-Output ""
-Write-Output "Installing Rust global tools"
-Write-Output ""
+echo ""
+echo "Installing Rust global tools"
+echo ""
 rustup component add rust-analyzer
