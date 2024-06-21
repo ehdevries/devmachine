@@ -60,6 +60,11 @@ echo "Installing Node Version Manager"
 echo
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 
+echo
+echo "Installing Deno"
+echo
+curl -fsSL https://deno.land/install.sh | sh
+
 source ~/.bashrc
 source ~/.profile
 
