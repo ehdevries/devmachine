@@ -4,6 +4,7 @@ Write-Output ""
 Write-Output "Installing software with Windows Package Manager"
 Write-Output ""
 winget install --id bruno.bruno --interactive
+winget install --id denoland.deno
 winget install --id docker.dockerdesktop --interactive
 winget install --id getzola.zola
 winget install --id git.git --interactive
@@ -26,11 +27,6 @@ Write-Output ""
 Write-Output "Installing PowerShellGet for Windows PowerShell"
 Write-Output ""
 Install-Module -Name PowerShellGet -Scope CurrentUser -Force -AllowClobber
-
-Write-Output ""
-Write-Output "Installing Deno"
-Write-Output ""
-Invoke-WebRequest https://deno.land/x/install/install.ps1 -useb | Invoke-Expression
 
 Start-Process https://dotnet.microsoft.com/en-us/download
 Start-Process https://draculatheme.com/notepad-plus-plus/
