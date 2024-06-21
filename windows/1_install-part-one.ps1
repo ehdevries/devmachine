@@ -28,11 +28,6 @@ Write-Output ""
 Install-Module -Name PowerShellGet -Scope CurrentUser -Force -AllowClobber
 
 Write-Output ""
-Write-Output "Installing Scoop"
-Write-Output ""
-Invoke-WebRequest https://get.scoop.sh -useb | Invoke-Expression
-
-Write-Output ""
 Write-Output "Installing Deno"
 Write-Output ""
 Invoke-WebRequest https://deno.land/x/install/install.ps1 -useb | Invoke-Expression
