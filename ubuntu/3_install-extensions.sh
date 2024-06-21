@@ -1,4 +1,4 @@
-### Before you run this script, make it executable: chmod +x 3_install-part-three.sh
+### Before you run this script, make it executable: chmod +x 3_install-extensions.sh
 
 echo ""
 echo "Installing VS Code extensions"
