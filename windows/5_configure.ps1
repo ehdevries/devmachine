@@ -28,7 +28,7 @@ Get-ChildItem -Path $scriptDir | Copy-Item -Destination "$home\.scripts" -PassTh
 Write-Output ""
 Write-Output "Downloading panache-git"
 Write-Output ""
-git clone git@github.com:ehdevries/panache-git.git $home\.panache-git
+git clone https://github.com/ehdevries/panache-git.git $home\.panache-git
 
 Write-Output ""
 Write-Output "Adding posh-git to all console hosts"
