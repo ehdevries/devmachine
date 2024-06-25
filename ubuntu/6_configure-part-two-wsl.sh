@@ -27,4 +27,3 @@ echo "'winHome' in your WSL home directory now links to your Windows home direct
 echo
 echo "Adding WSL-specific Git configuration"
 git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe"
-git config --global credential.useHttpPath true
