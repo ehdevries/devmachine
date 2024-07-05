@@ -22,6 +22,7 @@ winget install --id notepad++.notepad++ --interactive
 winget install --id nushell.nushell
 winget install --id rsteube.carapace
 winget install --id sharkdp.bat
+winget install --id toggl.toggltrack --interactive
 winget install --id wilfred.difftastic
 
 Write-Output ""
@@ -42,7 +43,6 @@ Start-Process https://www.papercut-smtp.com/
 Start-Process https://www.rust-lang.org/tools/install
 Start-Process https://slack.com/downloads/windows
 Start-Process https://apps.microsoft.com/store/detail/microsoft-to-do-lists-tasks-reminders/9NBLGGH5R558
-Start-Process https://toggl.com/track/toggl-desktop/
 Start-Process https://visualstudio.microsoft.com/downloads/
 Start-Process https://github.com/Microsoft/Terminal
 Start-Process https://aka.ms/windowsterminal
