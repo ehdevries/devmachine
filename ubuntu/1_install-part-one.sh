@@ -17,7 +17,7 @@ sudo apt install build-essential
 sudo apt install curl
 sudo apt install file
 sudo apt install git
-sudo apt install neofetch
+sudo apt install hyfetch
 
 echo
 echo "Installing Homebrew"
