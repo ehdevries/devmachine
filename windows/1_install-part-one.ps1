@@ -13,13 +13,13 @@ winget install --id gokcehan.lf
 winget install --id helix.helix
 winget install --id jesseduffield.lazygit
 winget install --id microsoft.azuredatastudio --interactive
-winget install --id microsoft.powershell
+winget install --id microsoft.powershell --interactive
 winget install --id microsoft.powertoys --interactive
 winget install --id microsoft.reportbuilder --interactive
 winget install --id microsoft.visualstudiocode --interactive
 winget install --id mozilla.firefox --interactive
 winget install --id notepad++.notepad++ --interactive
-winget install --id nushell.nushell
+winget install --id nushell.nushell --interactive
 winget install --id rsteube.carapace
 winget install --id sharkdp.bat
 winget install --id toggl.toggltrack --interactive
