@@ -30,8 +30,14 @@ Write-Output "Installing PowerShellGet for Windows PowerShell"
 Write-Output ""
 Install-Module -Name PowerShellGet -Scope CurrentUser -Force -AllowClobber
 
+Write-Output ""
+Write-Output "Installing Dracula theme for Notepad++"
+Write-Output ""
+$git = "C:\Program Files\Git\cmd\git.exe"
+& $git clone https://github.com/dracula/notepad-plus-plus.git $home\.dracula-npp
+Copy-Item $home\.dracula-npp\Dracula.xml $env:APPDATA\Notepad++\themes
+
 Start-Process https://dotnet.microsoft.com/en-us/download
-Start-Process https://draculatheme.com/notepad-plus-plus/
 Start-Process https://github.com/tonsky/FiraCode
 Start-Process https://insomnia.rest/
 Start-Process https://www.linqpad.net/
