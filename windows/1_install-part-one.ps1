@@ -14,6 +14,7 @@ winget install --id helix.helix
 winget install --id jesseduffield.lazygit
 winget install --id microsoft.azuredatastudio --interactive
 winget install --id microsoft.powershell
+winget install --id microsoft.powertoys --interactive
 winget install --id microsoft.reportbuilder --interactive
 winget install --id microsoft.visualstudiocode --interactive
 winget install --id mozilla.firefox --interactive
@@ -38,7 +39,6 @@ Start-Process https://github.com/coreybutler/nvm-windows
 Start-Process https://apps.microsoft.com/store/detail/onenote/9WZDNCRFHVJL
 Start-Process https://github.com/ehdevries/panache-git
 Start-Process https://www.papercut-smtp.com/
-Start-Process https://github.com/microsoft/PowerToys
 Start-Process https://www.rust-lang.org/tools/install
 Start-Process https://slack.com/downloads/windows
 Start-Process https://apps.microsoft.com/store/detail/microsoft-to-do-lists-tasks-reminders/9NBLGGH5R558
