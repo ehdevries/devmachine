@@ -26,11 +26,6 @@ if (!(Test-Path -Path "$home\.scripts")) {
 Get-ChildItem -Path $scriptDir | Copy-Item -Destination "$home\.scripts" -PassThru | Split-Path -Leaf
 
 Write-Output ""
-Write-Output "Downloading panache-git"
-Write-Output ""
-git clone https://github.com/ehdevries/panache-git.git $home\.panache-git
-
-Write-Output ""
 Write-Output "Adding posh-git to all console hosts"
 Add-PoshGitToProfile -AllHosts
 

@@ -41,6 +41,11 @@ brew install rsteube/tap/carapace
 brew install zola
 
 echo
+echo "Downloading panache-git"
+echo
+git clone https://github.com/ehdevries/panache-git.git ~/.panache-git
+
+echo
 echo "Installing bash-git-prompt"
 echo
 git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1

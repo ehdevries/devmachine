@@ -35,6 +35,12 @@ Write-Output "Downloading Dracula theme for Notepad++"
 Write-Output ""
 Invoke-WebRequest -Uri https://raw.githubusercontent.com/dracula/notepad-plus-plus/master/Dracula.xml -OutFile $env:APPDATA\Notepad++\themes
 
+Write-Output ""
+Write-Output "Downloading panache-git"
+Write-Output ""
+$git = "C:\Program Files\Git\cmd\git.exe"
+& $git clone https://github.com/ehdevries/panache-git.git $home\.panache-git
+
 Start-Process https://dotnet.microsoft.com/en-us/download
 Start-Process https://github.com/tonsky/FiraCode
 Start-Process https://insomnia.rest/

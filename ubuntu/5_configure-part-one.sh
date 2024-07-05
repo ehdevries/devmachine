@@ -29,9 +29,4 @@ else
 fi
 
 echo
-echo "Downloading panache-git"
-echo
-git clone https://github.com/ehdevries/panache-git.git ~/.panache-git
-
-echo
 echo "All done!"
