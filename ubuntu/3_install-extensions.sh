@@ -64,6 +64,10 @@ echo ""
 echo "Installing npm global tools"
 echo ""
 npm install -g @angular/cli
+npm install -g @angular/language-server
+npm install -g typescript
+npm install -g typescript-language-server
+npm install -g vscode-langservers-extracted
 
 echo ""
 echo "Installing dotnet global tools"
