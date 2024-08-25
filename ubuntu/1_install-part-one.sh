@@ -46,16 +46,6 @@ echo
 git clone https://github.com/ehdevries/panache-git.git ~/.panache-git
 
 echo
-echo "Installing bash-git-prompt"
-echo
-git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
-echo "
-# configure and run bash-git-prompt
-GIT_PROMPT_ONLY_IN_REPO=1
-GIT_PROMPT_THEME=Single_line_Minimalist
-source ~/.bash-git-prompt/gitprompt.sh" >> ~/.bashrc
-
-echo
 echo "Installing Rust using rustup"
 echo
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
