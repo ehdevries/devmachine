@@ -59,6 +59,10 @@ echo
 echo "Installing Deno"
 echo
 curl -fsSL https://deno.land/install.sh | sh
+echo '
+# add deno to path
+export DENO_INSTALL="/home/ed/.deno"
+export PATH="$PATH:$DENO_INSTALL/bin"' >> ~/.bashrc
 
 source ~/.bashrc
 source ~/.profile
