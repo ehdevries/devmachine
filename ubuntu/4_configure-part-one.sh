@@ -1,4 +1,4 @@
-### Before you run this script, make it executable: chmod +x 5_configure-part-one.sh
+### Before you run this script, make it executable: chmod +x 4_configure-part-one.sh
 
 # Locations of my configuration files and scripts - change as needed
 configDir="source/devconfig/config"

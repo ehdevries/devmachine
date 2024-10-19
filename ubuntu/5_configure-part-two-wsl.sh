@@ -1,4 +1,4 @@
-### Before you run this script, make it executable: chmod +x 6_configure-part-two-wsl.sh
+### Before you run this script, make it executable: chmod +x 5_configure-part-two-wsl.sh
 
 winHomeDefault="/mnt/c/Users/$(whoami)/"
 

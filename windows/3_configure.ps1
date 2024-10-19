@@ -1,4 +1,4 @@
-### Set-ExecutionPolicy Bypass -Scope Process -Force; .\5_configure.ps1
+### Set-ExecutionPolicy Bypass -Scope Process -Force; .\3_configure.ps1
 
 # Locations of my configuration files and scripts - change as needed
 $configDir = "$home\source\devconfig\config"

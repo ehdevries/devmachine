@@ -1,4 +1,4 @@
-### Set-ExecutionPolicy Bypass -Scope Process -Force; .\1_install-part-one.ps1
+### Set-ExecutionPolicy Bypass -Scope Process -Force; .\1_install.ps1
 
 Write-Output ""
 Write-Output "Installing software with Windows Package Manager"

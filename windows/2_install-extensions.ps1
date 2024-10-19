@@ -1,4 +1,4 @@
-### Set-ExecutionPolicy Bypass -Scope Process -Force; .\3_install-extensions.ps1
+### Set-ExecutionPolicy Bypass -Scope Process -Force; .\2_install-extensions.ps1
 
 echo ""
 echo "Installing VS Code extensions"
