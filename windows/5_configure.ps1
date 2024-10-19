@@ -28,10 +28,6 @@ if (!(Test-Path -Path "$home\.scripts")) {
 Get-ChildItem -Path $scriptDir | Copy-Item -Destination "$home\.scripts" -PassThru | Split-Path -Leaf
 
 Write-Output ""
-Write-Output "Adding posh-git to all console hosts"
-Add-PoshGitToProfile -AllHosts
-
-Write-Output ""
 Write-Output "Adding Windows-specific Git configuration"
 git config --global core.autocrlf true
 git config --global core.whitespace cr-at-eol
