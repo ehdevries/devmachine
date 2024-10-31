@@ -65,6 +65,13 @@ echo '
 export DENO_INSTALL="/home/ed/.deno"
 export PATH="$PATH:$DENO_INSTALL/bin"' >> ~/.bashrc
 
+echo
+echo "Setting Helix as the default editor"
+echo
+echo '
+# set Helix as the default editor
+export EDITOR="/home/linuxbrew/.linuxbrew/bin/hx"' >> ~/.profile
+
 source ~/.bashrc
 source ~/.profile
 
