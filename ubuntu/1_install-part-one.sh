@@ -18,6 +18,7 @@ sudo apt install curl
 sudo apt install file
 sudo apt install git
 sudo apt install hyfetch
+sudo apt install unzip
 
 echo
 echo "Installing Homebrew"
@@ -60,10 +61,6 @@ echo
 echo "Installing Deno"
 echo
 curl -fsSL https://deno.land/install.sh | sh
-echo '
-# add deno to path
-export DENO_INSTALL="/home/ed/.deno"
-export PATH="$PATH:$DENO_INSTALL/bin"' >> ~/.bashrc
 
 echo
 echo "Setting Helix as the default editor"
