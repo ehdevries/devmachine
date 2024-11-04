@@ -67,7 +67,7 @@ echo "Setting Helix as the default editor"
 echo
 echo '
 # set Helix as the default editor
-export EDITOR="/home/linuxbrew/.linuxbrew/bin/hx"' >> ~/.profile
+export EDITOR="hx"' >> ~/.profile
 
 source ~/.bashrc
 source ~/.profile
