@@ -39,6 +39,7 @@ brew install lf
 brew install nushell
 brew tap rsteube/homebrew-tap
 brew install rsteube/tap/carapace
+brew install yazi
 brew install zellij
 brew install zola
 
