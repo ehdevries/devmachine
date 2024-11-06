@@ -12,7 +12,7 @@ then
   cp ~/$configDir/.bash_aliases ~
   cp ~/$configDir/.gitconfig ~
   cp ~/$configDir/.wezterm.lua ~
-  cp ~/$configDir/lfrc ~/.config/lf
+  cp ~/$configDir/lfrc ~/.config/lf/lfrc
   cp ~/$configDir/Helix/config.toml ~/$configDir/Helix/languages.toml ~/.config/helix
   cp ~/$configDir/Nushell/config.nu ~/$configDir/Nushell/env.nu ~/.config/nushell
   cp ~/$configDir/VSCode/keybindings.json ~/$configDir/VSCode/settings.json ~/.config/Code/User
