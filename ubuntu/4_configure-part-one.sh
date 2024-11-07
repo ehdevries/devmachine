@@ -1,8 +1,8 @@
 ### Before you run this script, make it executable: chmod +x 4_configure-part-one.sh
 
 # Locations of my configuration files and scripts - change as needed
-configDir="source/devconfig/config"
-scriptDir="source/devconfig/scripts"
+configDir="source/machine/devconfig/config"
+scriptDir="source/machine/devconfig/scripts"
 
 echo
 

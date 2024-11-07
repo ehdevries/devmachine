@@ -1,8 +1,8 @@
 ### Set-ExecutionPolicy Bypass -Scope Process -Force; .\3_configure.ps1
 
 # Locations of my configuration files and scripts - change as needed
-$configDir = "$home\source\devconfig\config"
-$scriptDir = "$home\source\devconfig\scripts"
+$configDir = "$home\source\machine\devconfig\config"
+$scriptDir = "$home\source\machine\devconfig\scripts"
 
 Write-Output ""
 Write-Output "Restoring configuration files"
