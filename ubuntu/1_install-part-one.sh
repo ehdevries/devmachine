@@ -1,8 +1,9 @@
 ### Before you run this script, make it executable: chmod +x 1_install-part-one.sh
 
 echo
-echo "Adding package repository for Git stable channel"
+echo "Adding package repositories"
 echo
+sudo add-apt-repository ppa:dotnet/backports
 sudo add-apt-repository ppa:git-core/ppa
 
 echo
@@ -15,6 +16,8 @@ echo "Installing apt packages"
 echo
 sudo apt install build-essential
 sudo apt install curl
+sudo apt install dotnet-sdk-8.0
+sudo apt install dotnet-sdk-9.0
 sudo apt install file
 sudo apt install git
 sudo apt install hyfetch
