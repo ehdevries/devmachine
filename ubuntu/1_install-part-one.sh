@@ -35,7 +35,6 @@ brew install bat
 brew install difftastic
 brew install helix
 brew install lazygit
-brew install lf
 brew install nushell
 brew tap rsteube/homebrew-tap
 brew install rsteube/tap/carapace

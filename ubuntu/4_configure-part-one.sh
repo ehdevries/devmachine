@@ -12,7 +12,6 @@ then
   cp ~/$configDir/.bash_aliases ~
   cp ~/$configDir/.gitconfig ~
   cp ~/$configDir/.wezterm.lua ~
-  cp ~/$configDir/lfrc ~/.config/lf/lfrc
   cp ~/$configDir/yazi.toml ~/.config/yazi/yazi.toml
   cp ~/$configDir/Helix/config.toml ~/$configDir/Helix/languages.toml ~/.config/helix
   cp ~/$configDir/Nushell/config.nu ~/$configDir/Nushell/env.nu ~/.config/nushell
