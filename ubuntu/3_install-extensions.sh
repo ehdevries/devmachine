@@ -79,6 +79,11 @@ dotnet tool install -g dotnet-tools-outdated
 dotnet tool install -g rnwood.smtp4dev
 
 echo ""
+echo "Trusting dotnet dev certificate"
+echo ""
+dotnet dev-certs https --trust
+
+echo ""
 echo "Installing Rust global tools"
 echo ""
 rustup component add rust-analyzer
