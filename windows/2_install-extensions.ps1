@@ -43,6 +43,7 @@ code --install-extension ms-vscode-remote.remote-containers
 code --install-extension ms-vscode-remote.remote-wsl
 
 # Other Languages
+code --install-extension ms-mssql.mssql
 code --install-extension ms-python.python
 code --install-extension ms-vscode.powershell
 code --install-extension rust-lang.rust-analyzer
