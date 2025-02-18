@@ -57,9 +57,9 @@ echo
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 echo
-echo "Installing Node Version Manager"
+echo "Installing Volta"
 echo
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+curl https://get.volta.sh | bash
 
 echo
 echo "Installing Deno"
@@ -79,5 +79,5 @@ source ~/.profile
 echo
 echo "Almost done."
 echo "Close and reopen your shell, then invoke this command to install Node.js:"
-echo "nvm install --lts"
+echo "volta install node"
 echo
