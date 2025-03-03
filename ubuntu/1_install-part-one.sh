@@ -37,6 +37,8 @@ echo
 brew install bat
 brew install difftastic
 brew install helix
+brew tap hougesen/homebrew-tap
+brew install hougesen/tap/kdlfmt
 brew install lazygit
 brew install nushell
 brew tap rsteube/homebrew-tap
