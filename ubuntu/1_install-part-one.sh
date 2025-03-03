@@ -35,14 +35,13 @@ echo
 echo "Installing software with Homebrew"
 echo
 brew install bat
+brew install carapace
 brew install difftastic
 brew install helix
 brew tap hougesen/homebrew-tap
 brew install hougesen/tap/kdlfmt
 brew install lazygit
 brew install nushell
-brew tap rsteube/homebrew-tap
-brew install rsteube/tap/carapace
 brew install slides
 brew install yazi
 brew install zellij
