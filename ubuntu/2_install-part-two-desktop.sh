@@ -18,6 +18,7 @@ echo "Installing snap packages"
 echo
 sudo snap install code --classic
 sudo snap install dotnet-sdk --classic
+sudo snap install ghostty --classic
 sudo snap install slack
 sudo snap install supertuxkart
 
