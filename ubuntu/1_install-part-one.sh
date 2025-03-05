@@ -72,7 +72,8 @@ echo "Setting Helix as the default editor"
 echo
 echo '
 # set Helix as the default editor
-export EDITOR="hx"' >> ~/.profile
+export EDITOR="hx"
+export VISUAL="hx"' >> ~/.profile
 
 source ~/.bashrc
 source ~/.profile
