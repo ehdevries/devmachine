@@ -17,24 +17,9 @@ echo
 echo "Installing snap packages"
 echo
 sudo snap install code --classic
-sudo snap install dotnet-sdk --classic
 sudo snap install ghostty --classic
 sudo snap install slack
 sudo snap install supertuxkart
-
-echo
-echo "Adding the dotnet sdk snap and tools to PATH"
-echo
-echo "
-# set PATH so it includes the dotnet sdk snap and tools
-if [ -d /snap/dotnet-sdk/current ]
-then
-  PATH=\"\$PATH:/snap/dotnet-sdk/current\"
-fi
-if [ -d \$HOME/.dotnet/tools ]
-then
-  PATH=\"\$PATH:\$HOME/.dotnet/tools\"
-fi" >> ~/.profile
 
 echo
 echo "Configuring bash to show some useful info on launch"
