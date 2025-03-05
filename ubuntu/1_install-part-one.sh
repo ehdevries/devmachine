@@ -37,6 +37,7 @@ echo
 brew install bat
 brew install carapace
 brew install difftastic
+brew install fastfetch
 brew install helix
 brew tap hougesen/homebrew-tap
 brew install hougesen/tap/kdlfmt
