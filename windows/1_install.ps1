@@ -6,6 +6,7 @@ Write-Output ""
 winget install --id bruno.bruno --interactive
 winget install --id denoland.deno
 winget install --id docker.dockerdesktop --interactive
+winget install --id fastfetch-cli.fastfetch
 winget install --id getzola.zola
 winget install --id git.git --interactive
 winget install --id github.githubdesktop --interactive
