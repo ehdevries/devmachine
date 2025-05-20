@@ -28,6 +28,7 @@ code --install-extension ms-dotnettools.dotnet-interactive-vscode
 
 # .NET
 code --install-extension adrianwilczynski.user-secrets
+code --install-extension csharpier.csharpier-vscode
 code --install-extension ms-dotnettools.csharp
 code --install-extension ionide.ionide-fsharp
 
@@ -74,6 +75,7 @@ npm install -g vscode-langservers-extracted
 echo ""
 echo "Installing dotnet global tools"
 echo ""
+dotnet tool install -g csharpier
 dotnet tool install -g csharp-ls
 dotnet tool install -g csharprepl
 dotnet tool install -g dotnet-ef
