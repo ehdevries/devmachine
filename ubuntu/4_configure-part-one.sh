@@ -12,10 +12,10 @@ then
   cp ~/$configDir/.bash_aliases ~
   cp ~/$configDir/.gitconfig ~
   cp ~/$configDir/.wezterm.lua ~
-  cp ~/$configDir/yazi.toml ~/.config/yazi/yazi.toml
   cp ~/$configDir/Helix/config.toml ~/$configDir/Helix/languages.toml ~/.config/helix
   cp ~/$configDir/Nushell/config.nu ~/$configDir/Nushell/env.nu ~/.config/nushell
   cp ~/$configDir/VSCode/keybindings.json ~/$configDir/VSCode/settings.json ~/.config/Code/User
+  cp ~/$configDir/Yazi/yazi.toml ~/.config/yazi/yazi.toml
 else
   echo "Configuration files not found in $configDir"
 fi
