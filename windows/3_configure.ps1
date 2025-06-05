@@ -12,6 +12,7 @@ Copy-Item -Path $configDir\.wezterm.lua                           -Destination $
 Copy-Item -Path $configDir\.wslconfig                             -Destination $home                             -PassThru | Split-Path -Leaf
 Copy-Item -Path $configDir\lfrc                                   -Destination $home\AppData\Local\lf            -PassThru | Split-Path -Leaf
 Copy-Item -Path $configDir\smtp4dev\appsettings.json              -Destination $env:APPDATA\smtp4dev             -PassThru | Split-Path -Leaf
+Copy-Item -Path $configDir\yazi.toml                              -Destination $env:APPDATA\yazi                 -PassThru | Split-Path -Leaf
 Get-ChildItem -Path $configDir\AzureDataStudio\*.json | Copy-Item -Destination $env:APPDATA\azuredatastudio\User -PassThru | Split-Path -Leaf
 Get-ChildItem -Path $configDir\Helix\*.toml           | Copy-Item -Destination $env:APPDATA\helix                -PassThru | Split-Path -Leaf
 Get-ChildItem -Path $configDir\Nushell\*.nu           | Copy-Item -Destination $env:APPDATA\nushell              -PassThru | Split-Path -Leaf
@@ -31,6 +32,10 @@ Write-Output ""
 Write-Output "Adding Windows-specific Git configuration"
 git config --global core.autocrlf true
 git config --global core.whitespace cr-at-eol
+
+Write-Output ""
+Write-Output "Adding Windows-specific Yazi configuration"
+[Environment]::SetEnvironmentVariable("YAZI_FILE_ONE", "C:\Program Files\Git\usr\bin\file.exe", 1)
 
 Write-Output ""
 Write-Output "All done!"

@@ -23,6 +23,7 @@ winget install --id notepad++.notepad++ --interactive
 winget install --id nushell.nushell --interactive
 winget install --id rsteube.carapace
 winget install --id sharkdp.bat
+winget install --id sxyazi.yazi
 winget install --id toggl.toggltrack --interactive
 winget install --id wilfred.difftastic
 
