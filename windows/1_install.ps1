@@ -18,6 +18,7 @@ winget install --id microsoft.powertoys --interactive
 winget install --id microsoft.reportbuilder --interactive
 winget install --id microsoft.visualstudiocode --interactive
 winget install --id mozilla.firefox --interactive
+winget install --id nevcairiel.lavfilters --interactive
 winget install --id notepad++.notepad++ --interactive
 winget install --id nushell.nushell --interactive
 winget install --id raphamorim.rio --interactive
