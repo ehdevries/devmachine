@@ -16,8 +16,7 @@ echo "Installing apt packages"
 echo
 sudo apt install build-essential
 sudo apt install curl
-sudo apt install dotnet-sdk-8.0
-sudo apt install dotnet-sdk-9.0
+sudo apt install dotnet-sdk-10.0
 sudo apt install file
 sudo apt install git
 sudo apt install hyfetch
