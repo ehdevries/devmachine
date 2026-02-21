@@ -20,6 +20,7 @@ winget install --id mozilla.firefox --interactive
 winget install --id nevcairiel.lavfilters --interactive
 winget install --id notepad++.notepad++ --interactive
 winget install --id nushell.nushell --interactive
+winget install --id obsidian.obsidian --interactive
 winget install --id raphamorim.rio --interactive
 winget install --id rsteube.carapace
 winget install --id sharkdp.bat
