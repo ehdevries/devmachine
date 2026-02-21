@@ -36,7 +36,7 @@ Install-Module -Name PowerShellGet -Scope CurrentUser -Force -AllowClobber
 Write-Output ""
 Write-Output "Downloading Dracula theme for Notepad++"
 Write-Output ""
-Invoke-WebRequest -Uri https://raw.githubusercontent.com/dracula/notepad-plus-plus/master/Dracula.xml -OutFile $env:APPDATA\Notepad++\themes
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/dracula/notepad-plus-plus/main/generated/Dracula.xml -OutFile $env:APPDATA\Notepad++\themes
 
 Write-Output ""
 Write-Output "Downloading panache-git"
