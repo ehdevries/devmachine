@@ -36,8 +36,8 @@ code --install-extension firefox-devtools.vscode-firefox-debug
 code --install-extension meganrogge.template-string-converter
 
 # Docker & WSL
-code --install-extension ms-azuretools.vscode-docker
-code --install-extension ms-vscode-remote.remote-containers
+code --install-extension docker.docker
+code --install-extension ms-azuretools.vscode-containers
 code --install-extension ms-vscode-remote.remote-wsl
 
 # Other Languages
