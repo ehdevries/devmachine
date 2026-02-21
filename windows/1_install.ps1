@@ -12,7 +12,6 @@ winget install --id git.git --interactive
 winget install --id github.githubdesktop --interactive
 winget install --id helix.helix
 winget install --id jesseduffield.lazygit
-winget install --id microsoft.azuredatastudio --interactive
 winget install --id microsoft.powershell --interactive
 winget install --id microsoft.powertoys --interactive
 winget install --id microsoft.reportbuilder --interactive

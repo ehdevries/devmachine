@@ -34,16 +34,6 @@ code --install-extension rust-lang.rust-analyzer
 code --install-extension thenuprojectcontributors.vscode-nushell-lang
 
 echo ""
-echo "Installing Azure Data Studio extensions"
-echo ""
-
-azuredatastudio --install-extension microsoft.profiler
-azuredatastudio --install-extension microsoft.schema-compare
-azuredatastudio --install-extension microsoft.sql-database-projects
-azuredatastudio --install-extension seanprice.simple-data-scripter
-azuredatastudio --install-extension wsrpublishing.poor-sql-formatter
-
-echo ""
 echo "Installing npm global tools"
 echo ""
 npm install -g @angular/cli

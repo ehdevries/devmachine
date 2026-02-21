@@ -11,7 +11,6 @@ Copy-Item -Path $configDir\.gitconfig                             -Destination $
 Copy-Item -Path $configDir\.wezterm.lua                           -Destination $home                             -PassThru | Split-Path -Leaf
 Copy-Item -Path $configDir\.wslconfig                             -Destination $home                             -PassThru | Split-Path -Leaf
 Copy-Item -Path $configDir\smtp4dev\appsettings.json              -Destination $env:APPDATA\smtp4dev             -PassThru | Split-Path -Leaf
-Get-ChildItem -Path $configDir\AzureDataStudio\*.json | Copy-Item -Destination $env:APPDATA\azuredatastudio\User -PassThru | Split-Path -Leaf
 Get-ChildItem -Path $configDir\Helix\*.toml           | Copy-Item -Destination $env:APPDATA\helix                -PassThru | Split-Path -Leaf
 Get-ChildItem -Path $configDir\Nushell\*.nu           | Copy-Item -Destination $env:APPDATA\nushell              -PassThru | Split-Path -Leaf
 Get-ChildItem -Path $configDir\PowerShell\*.ps1       | Copy-Item -Destination $home\Documents\PowerShell        -PassThru | Split-Path -Leaf
