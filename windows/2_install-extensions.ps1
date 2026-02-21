@@ -14,10 +14,6 @@ code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension pflannery.vscode-versionlens
 code --install-extension pkief.material-icon-theme
 
-# Themes
-code --install-extension liviuschera.noctis
-code --install-extension robbowen.synthwave-vscode
-
 # Docs
 code --install-extension bierner.markdown-mermaid
 code --install-extension davidanson.vscode-markdownlint
