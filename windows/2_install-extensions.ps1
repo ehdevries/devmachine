@@ -22,7 +22,6 @@ code --install-extension robbowen.synthwave-vscode
 code --install-extension bierner.markdown-mermaid
 code --install-extension davidanson.vscode-markdownlint
 code --install-extension marp-team.marp-vscode
-code --install-extension ms-dotnettools.dotnet-interactive-vscode
 
 # .NET
 code --install-extension adrianwilczynski.user-secrets
