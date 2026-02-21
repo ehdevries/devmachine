@@ -13,7 +13,6 @@ code --install-extension ms-azure-devops.azure-pipelines
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension pflannery.vscode-versionlens
 code --install-extension pkief.material-icon-theme
-code --install-extension redhat.vscode-xml
 
 # Themes
 code --install-extension liviuschera.noctis
