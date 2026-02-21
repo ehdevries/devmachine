@@ -6,7 +6,6 @@ echo ""
 
 # Common
 code --install-extension be5invis.toml
-code --install-extension eamodio.gitlens
 code --install-extension editorconfig.editorconfig
 code --install-extension esbenp.prettier-vscode
 code --install-extension johnpapa.vscode-peacock
