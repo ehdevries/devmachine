@@ -31,6 +31,7 @@ code --install-extension ionide.ionide-fsharp
 
 # Web dev
 code --install-extension angular.ng-template
+code --install-extension bruno-api-client.bruno
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension firefox-devtools.vscode-firefox-debug
 code --install-extension meganrogge.template-string-converter
