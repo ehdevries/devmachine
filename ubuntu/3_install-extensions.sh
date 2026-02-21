@@ -4,43 +4,32 @@ echo ""
 echo "Installing VS Code extensions"
 echo ""
 
-# Common
+code --install-extension adrianwilczynski.user-secrets
+code --install-extension angular.ng-template
 code --install-extension be5invis.toml
+code --install-extension bierner.markdown-mermaid
+code --install-extension bruno-api-client.bruno
+code --install-extension csharpier.csharpier-vscode
+code --install-extension davidanson.vscode-markdownlint
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension docker.docker
 code --install-extension editorconfig.editorconfig
 code --install-extension esbenp.prettier-vscode
+code --install-extension firefox-devtools.vscode-firefox-debug
+code --install-extension ionide.ionide-fsharp
 code --install-extension johnpapa.vscode-peacock
+code --install-extension joshuamorony.angular-inline-jumper
+code --install-extension marp-team.marp-vscode
+code --install-extension meganrogge.template-string-converter
 code --install-extension ms-azure-devops.azure-pipelines
+code --install-extension ms-azuretools.vscode-containers
+code --install-extension ms-dotnettools.csharp
+code --install-extension ms-mssql.mssql
+code --install-extension ms-vscode.powershell
+code --install-extension ms-vscode-remote.remote-wsl
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension pflannery.vscode-versionlens
 code --install-extension pkief.material-icon-theme
-
-# Docs
-code --install-extension bierner.markdown-mermaid
-code --install-extension davidanson.vscode-markdownlint
-code --install-extension marp-team.marp-vscode
-
-# .NET
-code --install-extension adrianwilczynski.user-secrets
-code --install-extension csharpier.csharpier-vscode
-code --install-extension ms-dotnettools.csharp
-code --install-extension ionide.ionide-fsharp
-
-# Web dev
-code --install-extension angular.ng-template
-code --install-extension bruno-api-client.bruno
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension firefox-devtools.vscode-firefox-debug
-code --install-extension joshuamorony.angular-inline-jumper
-code --install-extension meganrogge.template-string-converter
-
-# Docker & WSL
-code --install-extension docker.docker
-code --install-extension ms-azuretools.vscode-containers
-code --install-extension ms-vscode-remote.remote-wsl
-
-# Other Languages
-code --install-extension ms-mssql.mssql
-code --install-extension ms-vscode.powershell
 code --install-extension rust-lang.rust-analyzer
 code --install-extension thenuprojectcontributors.vscode-nushell-lang
 
