@@ -29,6 +29,11 @@ echo
 brew install nushell
 
 echo
+echo "Installing Volta"
+echo
+curl https://get.volta.sh | bash
+
+echo
 echo "Setting environment variables"
 echo
 echo '

@@ -11,6 +11,11 @@ Write-Output ""
 winget install --id nushell.nushell --interactive
 
 Write-Output ""
+Write-Output "Installing Volta"
+Write-Output ""
+winget install --id volta.volta
+
+Write-Output ""
 Write-Output "Setting environment variables"
 Write-Output ""
 [Environment]::SetEnvironmentVariable("DOTNET_CLI_TELEMETRY_OPTOUT", "true", 1)
