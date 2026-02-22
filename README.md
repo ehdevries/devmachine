@@ -4,7 +4,7 @@ Here are some scripts to make my life a little easier when setting up and config
 
 ## Ubuntu
 
-- Install the software that you'll need in order to run the remaining scripts:
+- Install the software that you'll need in order to run the remaining scripts. From bash:
 
   ```bash
   chmod +x install-ubuntu-essentials.sh && ./install-ubuntu-essentials.sh
@@ -14,8 +14,8 @@ Here are some scripts to make my life a little easier when setting up and config
 
 - If it's not installed already, install Windows Terminal: <https://aka.ms/terminal>
 
-- Install the software that you'll need in order to run the remaining scripts:
+- Install the software that you'll need in order to run the remaining scripts. From PowerShell:
 
   ```powershell
-  Set-ExecutionPolicy Bypass -Scope Process -Force; .\install-windows-essentials.ps1
+  Set-ExecutionPolicy Bypass -Scope Process -Force ; .\install-windows-essentials.ps1
   ```
