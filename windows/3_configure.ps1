@@ -36,4 +36,8 @@ Write-Output "Adding Windows-specific Yazi configuration"
 [Environment]::SetEnvironmentVariable("YAZI_FILE_ONE", "C:\Program Files\Git\usr\bin\file.exe", 1)
 
 Write-Output ""
+Write-Output "Opting out of dotnet CLI telemetry"
+[Environment]::SetEnvironmentVariable("DOTNET_CLI_TELEMETRY_OPTOUT", "true", 1)
+
+Write-Output ""
 Write-Output "All done!"

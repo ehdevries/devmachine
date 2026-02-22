@@ -74,7 +74,16 @@ echo
 echo '
 # set Helix as the default editor
 export EDITOR="hx"
-export VISUAL="hx"' >> ~/.profile
+export VISUAL="hx"
+' >> ~/.profile
+
+echo
+echo "Opting out of dotnet CLI telemetry"
+echo
+echo '
+# opt out of dotnet CLI telemetry
+export DOTNET_CLI_TELEMETRY_OPTOUT=true
+' >> ~/.profile
 
 source ~/.bashrc
 source ~/.profile
