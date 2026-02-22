@@ -44,3 +44,18 @@ export VISUAL="hx"
 # Opt out of dotnet CLI telemetry
 export DOTNET_CLI_TELEMETRY_OPTOUT=true
 ' >> ~/.profile
+
+echo
+echo "Do you want to install Flatpak? [y/n]"
+read installFlatpak
+if [ "$installFlatpak" == "y" ]
+then
+  echo "Installing Flatpak"
+  echo
+  sudo apt install flatpak
+  flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+  echo
+  echo "Please reboot before using Flatpak"
+else
+  echo "Skipping Flatpak installation"
+fi
