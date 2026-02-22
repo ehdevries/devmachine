@@ -1,7 +1,11 @@
-# devmachine
+Here are some scripts to make my life a little easier when setting up and configuring my development machine.
 
-These are some quick and dirty scripts to make my life a little easier when I set up a development machine from scratch, whether Windows or Linux or both.
+## Windows
 
-1. Read 'em - there are handy comments at the top
-2. Make 'em executable or set the execution policy
-3. Run 'em in order, install stuff as you go, skip anything you don't need
+- If it's not installed already, install Windows Terminal from the Microsoft Store: <https://aka.ms/terminal>
+
+- Install the software that you'll need in order to run the remaining scripts:
+
+  ```powershell
+  Set-ExecutionPolicy Bypass -Scope Process -Force; .\install-windows-essentials.ps1
+  ```
