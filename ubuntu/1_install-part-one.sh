@@ -20,7 +20,6 @@ sudo apt install dotnet-sdk-9.0
 sudo apt install dotnet-sdk-10.0
 sudo apt install file
 sudo apt install git
-sudo apt install hyfetch
 sudo apt install unzip
 
 echo
