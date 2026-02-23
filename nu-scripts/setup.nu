@@ -27,6 +27,7 @@ export def install-apps-on-windows [] {
   install-powertoys
   install-report-builder
   install-slack
+  install-teams
   install-toggl-track
   install-visual-studio
   install-vscode

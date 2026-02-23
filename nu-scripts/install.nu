@@ -293,6 +293,13 @@ export def install-slack [] {
   }
 }
 
+export def install-teams [] {
+  if (is-windows) {
+    print-pad "Installing Teams"
+    winget install --id microsoft.teams --interactive
+  }
+}
+
 export def install-toggl-track [] {
   if (is-windows) {
     print-pad "Installing Toggl Track"
