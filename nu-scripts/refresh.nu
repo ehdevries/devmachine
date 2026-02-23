@@ -6,7 +6,7 @@ use utils.nu is-windows
 
 # Refresh scripts from backup
 export def 'refresh scripts' [] {
-  let source_files = ([(config-repo) 'scripts' '*.*'] | path join | into glob)
+  let source_files = ([$nu.home-dir 'source' 'machine' 'devmachine' 'nu-scripts' '*.*'] | path join | into glob)
   let dest_dir = ([$nu.home-dir '.scripts'] | path join)
   copy-files $source_files $dest_dir
 }
