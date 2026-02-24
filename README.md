@@ -58,6 +58,12 @@ Here are some scripts to make my life a little easier when setting up and config
   Set-ExecutionPolicy Bypass -Scope Process -Force ; .\install-windows-essentials.ps1
   ```
 
+- Open your terminal as an administrator and install WSL:
+
+  ```powershell
+  wsl --install
+  ```
+
 - Restart your terminal, then launch Nushell. All subsequent commands are to be invoked from Nushell.
 
 - Install applications:
@@ -88,11 +94,3 @@ Here are some scripts to make my life a little easier when setting up and config
   use nu-scripts/setup.nu *
   restore-config-on-windows
   ```
-
-- Open your terminal as an administrator and install WSL:
-
-  ```nu
-  wsl --install
-  ```
-
-- After the WSL installation finishes, open a WSl shell and follow the Ubuntu setup instructions
