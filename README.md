@@ -12,6 +12,12 @@ Here are some scripts to make my life a little easier when setting up and config
 
 - From your terminal, launch Nushell. All subsequent commands are to be invoked from Nushell.
 
+- If you're in WSL, configure Git to use the same credential manager as Windows:
+
+  ```nu
+  git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe"
+  ```
+
 - Install the appropriate applications for your environment:
 
   ```nu
@@ -64,7 +70,7 @@ Here are some scripts to make my life a little easier when setting up and config
   wsl --install
   ```
 
-- Restart your terminal, then launch Nushell. All subsequent commands are to be invoked from Nushell.
+- Close your terminal, re-open it as a regular non-admin user, then launch Nushell. All subsequent commands are to be invoked from Nushell.
 
 - Install applications:
 
