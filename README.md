@@ -54,6 +54,8 @@ Here are some scripts to make my life a little easier when setting up and config
   restore-config-on-ubuntu-wsl             # for Ubuntu on WSL
   ```
 
+- Open your global ~/.gitconfig, un-comment any settings specific to your environment, and save
+
 ## Windows
 
 - If it's not installed already, install Windows Terminal: <https://aka.ms/terminal>
@@ -79,7 +81,7 @@ Here are some scripts to make my life a little easier when setting up and config
   install-apps-on-windows
   ```
 
-- Manually install any applications from Microsoft that opened up in a browser tab or printed a reminder in the terminal.
+- Manually install any applications from Microsoft that opened up in a browser tab or printed a reminder in the terminal
 
 - Restart your terminal
 
@@ -100,3 +102,5 @@ Here are some scripts to make my life a little easier when setting up and config
   use nu-scripts/setup.nu *
   restore-config-on-windows
   ```
+
+- Open your global ~/.gitconfig, un-comment any settings specific to your environment, and save
