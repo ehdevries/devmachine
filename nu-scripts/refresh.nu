@@ -183,7 +183,7 @@ def lazygit-source-dir [] {
 
 def lazygit-config-dir [] {
   if (is-windows) {
-    [$env.APPDATA 'lazygit'] | path join
+    [$env.LOCALAPPDATA 'lazygit'] | path join
   } else {
     [$nu.home-dir '.config' 'lazygit'] | path join
   }
