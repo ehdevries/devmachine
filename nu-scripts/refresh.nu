@@ -381,7 +381,7 @@ def yazi-source-dir [] {
 
 def yazi-config-dir [] {
   if (is-windows) {
-    [$env.APPDATA 'yazi'] | path join
+    [$env.APPDATA 'yazi' 'config'] | path join
   } else {
     [$nu.home-dir '.config' 'yazi'] | path join
   }
