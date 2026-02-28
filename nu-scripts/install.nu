@@ -79,6 +79,15 @@ export def install-carapace [] {
   }
 }
 
+export def install-cascadia-code [] {
+  print "Install Cascadia Code by downloading and extracting the latest release:"
+  if (is-windows) {
+    print "(if you're using Windows Terminal, install the Nerd Fonts version so Yazi can render icons)"
+  }
+  print "https://github.com/microsoft/cascadia-code/releases"
+  start "https://github.com/microsoft/cascadia-code/releases"
+}
+
 export def install-chrome [] {
   if (is-windows) {
     print-pad "Installing Chrome"

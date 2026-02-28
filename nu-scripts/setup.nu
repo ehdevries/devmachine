@@ -10,6 +10,7 @@ export def install-apps-on-windows [] {
   install-bat
   install-bruno
   install-carapace
+  install-cascadia-code
   install-chrome
   install-deno
   install-difftastic
@@ -91,6 +92,7 @@ export def install-apps-on-ubuntu-desktop [] {
   install-bat
   install-bruno
   install-carapace
+  install-cascadia-code
   install-deno
   install-difftastic
   install-dotnet
@@ -143,6 +145,7 @@ export def install-apps-on-ubuntu-desktop-minimal [] {
   install-1password
   install-bat
   install-carapace
+  install-cascadia-code
   install-deno
   install-difftastic
   install-fastfetch
