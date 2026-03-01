@@ -31,6 +31,10 @@ export def check [] {
     print ""
   }
   if (is-linux) {
+    if (which flatpak | is-not-empty) {
+      flatpak update
+      print ""
+    }
     brew outdated
     print ""
     sudo apt update
