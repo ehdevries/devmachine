@@ -24,6 +24,7 @@ export def install-apps-on-windows [] {
   install-node
   install-notepad-plus-plus
   download-notepad-plus-plus-dracula-theme
+  install-obsidian
   install-powershell
   install-powertoys
   install-report-builder
