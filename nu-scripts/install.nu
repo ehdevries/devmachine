@@ -186,6 +186,13 @@ export def install-git [] {
   }
 }
 
+export def install-gnome-music [] {
+  if (is-linux) {
+    print-pad "Installing Gnome Music"
+    flatpak install flathub org.gnome.music
+  }
+}
+
 export def install-helix [] {
   print-pad "Installing Helix"
   if (is-windows) {
