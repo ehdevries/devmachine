@@ -27,6 +27,7 @@ export def install-apps-on-windows [] {
   install-obsidian
   install-powershell
   install-powertoys
+  install-proton-authenticator
   install-report-builder
   install-slack
   install-teams
@@ -107,6 +108,7 @@ export def install-apps-on-ubuntu-desktop [] {
   install-lazygit
   install-node
   install-obsidian
+  install-proton-authenticator
   install-rust
   install-slack
   install-vscode
@@ -159,6 +161,7 @@ export def install-apps-on-ubuntu-desktop-minimal [] {
   install-lazygit
   install-node
   install-obsidian
+  install-proton-authenticator
   install-rust
   install-yazi
   install-zellij

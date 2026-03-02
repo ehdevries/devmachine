@@ -275,6 +275,17 @@ export def install-powertoys [] {
   }
 }
 
+export def install-proton-authenticator [] {
+  print-pad "Installing Proton Authenticator"
+  if (is-windows) {
+    winget install --id proton.protonauthenticator --interactive
+  } else {
+    print "To install Proton Authenticator on Linux, download the package file directly:"
+    print "https://proton.me/authenticator"
+    start https://proton.me/authenticator
+  }
+}
+
 export def install-report-builder [] {
   if (is-windows) {
     print-pad "Installing Microsoft Report Builder"
