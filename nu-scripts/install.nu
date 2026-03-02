@@ -286,6 +286,26 @@ export def install-proton-authenticator [] {
   }
 }
 
+export def install-proton-drive [] {
+  print-pad "Installing Proton Drive"
+  if (is-windows) {
+    winget install --id proton.protondrive --interactive
+  } else {
+    print-pad "Proton Drive is not yet available on Linux"
+  }
+}
+
+export def install-proton-vpn [] {
+  print-pad "Installing Proton VPN"
+  if (is-windows) {
+    winget install --id proton.protonvpn --interactive
+  } else {
+    print "To install Proton VPN on Linux, consult Proton's documentation:"
+    print "https://protonvpn.com/support/official-linux-vpn-ubuntu"
+    start https://protonvpn.com/support/official-linux-vpn-ubuntu
+  }
+}
+
 export def install-report-builder [] {
   if (is-windows) {
     print-pad "Installing Microsoft Report Builder"

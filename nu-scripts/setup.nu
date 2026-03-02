@@ -109,6 +109,7 @@ export def install-apps-on-ubuntu-desktop [] {
   install-node
   install-obsidian
   install-proton-authenticator
+  install-proton-vpn
   install-rust
   install-slack
   install-vscode
@@ -162,6 +163,7 @@ export def install-apps-on-ubuntu-desktop-minimal [] {
   install-node
   install-obsidian
   install-proton-authenticator
+  install-proton-vpn
   install-rust
   install-yazi
   install-zellij
