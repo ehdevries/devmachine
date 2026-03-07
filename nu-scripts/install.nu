@@ -227,6 +227,13 @@ export def install-lazygit [] {
   }
 }
 
+export def install-lutris [] {
+  if (is-linux) {
+    print-pad "Installing Lutris"
+    flatpak install flathub net.lutris.Lutris
+  }
+}
+
 export def install-node [] {
   print-pad "Installing Node"
   volta install node
