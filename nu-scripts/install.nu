@@ -65,7 +65,7 @@ export def install-bruno [] {
   if (is-windows) {
     winget install --id bruno.bruno --interactive
   } else {
-    flatpak install flathub com.usebruno.bruno
+    flatpak install flathub com.usebruno.Bruno
     # sudo snap install bruno # if snap is preferred
   }
 }
@@ -189,7 +189,7 @@ export def install-git [] {
 export def install-gnome-music [] {
   if (is-linux) {
     print-pad "Installing Gnome Music"
-    flatpak install flathub org.gnome.music
+    flatpak install flathub org.gnome.Music
   }
 }
 
@@ -325,7 +325,7 @@ export def install-rio [] {
   if (is-windows) {
     winget install --id raphamorim.rio --interactive
   } else {
-    flatpak install flathub com.rioterm.rio
+    flatpak install flathub com.rioterm.Rio
   }
 }
 
