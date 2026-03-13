@@ -76,8 +76,8 @@ export def 'compare ghostty' [] {
     print 'Ghostty is not yet supported on Windows'
     return
   }
-  let source_config = (ghostty-source-dir | path join 'config')
-  let dest_config = (ghostty-config-dir | path join 'config')
+  let source_config = (ghostty-source-dir | path join 'config.ghostty')
+  let dest_config = (ghostty-config-dir | path join 'config.ghostty')
   difft $source_config $dest_config
 }
 
@@ -87,7 +87,7 @@ export def 'refresh ghostty' [] {
     print 'Ghostty is not yet supported on Windows'
     return
   }
-  let source_files = (ghostty-source-dir | path join 'config' | into glob)
+  let source_files = (ghostty-source-dir | path join 'config.ghostty' | into glob)
   let dest_dir = (ghostty-config-dir)
   copy-files $source_files $dest_dir
 }
