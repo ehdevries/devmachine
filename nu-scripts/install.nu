@@ -186,6 +186,13 @@ export def install-git [] {
   }
 }
 
+export def install-gnome-document-scanner [] {
+  if (is-linux) {
+    print-pad "Installing Gnome Document Scanner"
+    flatpak install flathub org.gnome.SimpleScan
+  }
+}
+
 export def install-gnome-music [] {
   if (is-linux) {
     print-pad "Installing Gnome Music"

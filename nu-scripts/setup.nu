@@ -102,6 +102,7 @@ export def install-apps-on-ubuntu-desktop [] {
   install-firacode
   install-firefox
   install-ghostty
+  install-gnome-document-scanner
   install-gnome-music
   install-helix
   install-kdlfmt
@@ -156,6 +157,7 @@ export def install-apps-on-ubuntu-desktop-minimal [] {
   install-fastfetch
   install-firefox
   install-ghostty
+  install-gnome-document-scanner
   install-gnome-music
   install-helix
   install-kdlfmt
