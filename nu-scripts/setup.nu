@@ -104,6 +104,7 @@ export def install-apps-on-ubuntu-desktop [] {
   install-ghostty
   install-gnome-document-scanner
   install-gnome-music
+  install-gnome-video-player
   install-helix
   install-kdlfmt
   install-lazygit
@@ -159,6 +160,7 @@ export def install-apps-on-ubuntu-desktop-minimal [] {
   install-ghostty
   install-gnome-document-scanner
   install-gnome-music
+  install-gnome-video-player
   install-helix
   install-kdlfmt
   install-lazygit

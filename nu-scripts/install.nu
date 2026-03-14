@@ -200,6 +200,13 @@ export def install-gnome-music [] {
   }
 }
 
+export def install-gnome-video-player [] {
+  if (is-linux) {
+    print-pad "Installing Gnome Video Player"
+    flatpak install flathub org.gnome.Showtime
+  }
+}
+
 export def install-helix [] {
   print-pad "Installing Helix"
   if (is-windows) {
