@@ -135,6 +135,13 @@ export def install-dotnet [] {
   }
 }
 
+export def install-ear-tag [] {
+  if (is-linux) {
+    print-pad "Installing Ear Tag"
+    flatpak install flathub app.drey.EarTag
+  }
+}
+
 export def install-fastfetch [] {
   print-pad "Installing Fastfetch"
   if (is-windows) {

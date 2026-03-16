@@ -98,6 +98,7 @@ export def install-apps-on-ubuntu-desktop [] {
   install-deno
   install-difftastic
   install-dotnet
+  install-ear-tag
   install-fastfetch
   install-firacode
   install-firefox
@@ -155,6 +156,7 @@ export def install-apps-on-ubuntu-desktop-minimal [] {
   install-cascadia-code
   install-deno
   install-difftastic
+  install-ear-tag
   install-fastfetch
   install-firefox
   install-ghostty
