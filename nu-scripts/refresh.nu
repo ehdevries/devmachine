@@ -393,10 +393,6 @@ def yazi-config-dir [] {
 
 # Compare backup with active Zellij configuration
 export def 'compare zellij' [] {
-  if (is-windows) {
-    print 'Zellij is not yet supported on Windows'
-    return
-  }
   let source_config = (zellij-source-dir | path join 'config.kdl')
   let dest_config = (zellij-config-dir | path join 'config.kdl')
   difft $source_config $dest_config
@@ -404,10 +400,6 @@ export def 'compare zellij' [] {
 
 # Refresh Zellij configuration from backup
 export def 'refresh zellij' [] {
-  if (is-windows) {
-    print 'Zellij is not yet supported on Windows'
-    return
-  }
   let source_files = (zellij-source-dir | path join '*' | into glob)
   let dest_dir = (zellij-config-dir)
   copy-files $source_files $dest_dir
@@ -419,7 +411,7 @@ def zellij-source-dir [] {
 
 def zellij-config-dir [] {
   if (is-windows) {
-    '' # Zellij is not yet supported on Windows, this is only a placeholder
+    [$env.APPDATA 'Zellij' 'config'] | path join
   } else {
     [$nu.home-dir '.config' 'zellij'] | path join
   }
