@@ -408,10 +408,10 @@ export def install-yazi [] {
 }
 
 export def install-zellij [] {
+  print-pad "Installing Zellij"
   if (is-windows) {
-    print-pad "Zellij is not yet supported on Windows"
+    winget install --id zellij.zellij
   } else {
-    print-pad "Installing Zellij"
     brew install zellij
   }
 }

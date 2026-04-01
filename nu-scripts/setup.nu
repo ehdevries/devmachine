@@ -35,6 +35,7 @@ export def install-apps-on-windows [] {
   install-visual-studio
   install-vscode
   install-yazi
+  install-zellij
   install-zen
   install-zola
   print ""
@@ -83,6 +84,7 @@ export def restore-config-on-windows [] {
   refresh smtp4dev
   refresh vscode
   refresh yazi
+  refresh zellij
 }
 
 #
