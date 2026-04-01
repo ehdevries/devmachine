@@ -109,7 +109,6 @@ export def install-apps-on-ubuntu-desktop [] {
   install-gnome-music
   install-gnome-video-player
   install-helix
-  install-kdlfmt
   install-lazygit
   install-node
   install-obsidian
@@ -166,7 +165,6 @@ export def install-apps-on-ubuntu-desktop-minimal [] {
   install-gnome-music
   install-gnome-video-player
   install-helix
-  install-kdlfmt
   install-lazygit
   install-node
   install-obsidian
@@ -209,7 +207,6 @@ export def install-apps-on-ubuntu-wsl [] {
   install-dotnet
   install-fastfetch
   install-helix
-  install-kdlfmt
   install-lazygit
   install-node
   install-rust
