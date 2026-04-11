@@ -30,6 +30,7 @@ export def install-apps-on-windows [] {
   install-proton-authenticator
   install-report-builder
   install-slack
+  install-spotify
   install-teams
   install-toggl-track
   install-visual-studio
@@ -116,6 +117,7 @@ export def install-apps-on-ubuntu-desktop [] {
   install-proton-vpn
   install-rust
   install-slack
+  install-spotify
   install-vscode
   install-yazi
   install-zellij
@@ -171,6 +173,7 @@ export def install-apps-on-ubuntu-desktop-minimal [] {
   install-proton-authenticator
   install-proton-vpn
   install-rust
+  install-spotify
   install-yazi
   install-zellij
   install-zen

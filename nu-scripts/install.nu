@@ -359,6 +359,17 @@ export def install-slack [] {
   }
 }
 
+export def install-spotify [] {
+  print-pad "Installing Spotify"
+  if (is-windows) {
+    print "Install Spotify from the Windows Store:"
+    print "https://www.spotify.com/us/download/windows/"
+    start https://www.spotify.com/us/download/windows/
+  } else {
+    sudo snap install spotify
+  }
+}
+
 export def install-teams [] {
   if (is-windows) {
     print-pad "Installing Teams"
