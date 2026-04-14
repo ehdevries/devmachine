@@ -128,10 +128,9 @@ export def install-dotnet [] {
     winget install --id microsoft.dotnet.sdk.9 --interactive
     winget install --id microsoft.dotnet.sdk.10 --interactive
   } else {
-    sudo add-apt-repository ppa:dotnet/backports # for non-LTS versions
-    sudo apt update
-    sudo apt install dotnet-sdk-9.0
-    sudo apt install dotnet-sdk-10.0
+    sudo snap install dotnet --classic
+    dotnet-installer install sdk 9
+    dotnet-installer install sdk 10
   }
 }
 
