@@ -41,8 +41,9 @@ echo '
 export EDITOR="hx"
 export VISUAL="hx"
 
-# Opt out of dotnet CLI telemetry
+# Opt out of telemetry and set an explicit path for the dotnet CLI
 export DOTNET_CLI_TELEMETRY_OPTOUT=true
+export DOTNET_ROOT=/var/snap/dotnet/common/dotnet
 ' >> ~/.profile
 
 echo
