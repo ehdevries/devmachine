@@ -30,25 +30,16 @@ export def check [] {
     dotnet-tools-outdated
     print ""
   }
-
   if (is-linux) {
     if (which flatpak | is-not-empty) {
       flatpak update
       print ""
     }
-
-    if (which snap | is-not-empty) {
-      sudo snap refresh
-      print ""
-    }
-
     brew outdated
     print ""
-
     sudo apt update
     apt list --upgradable
   }
-
   if (is-windows) {
     winget list --upgrade-available --include-unknown
   }
