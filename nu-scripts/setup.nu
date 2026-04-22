@@ -20,6 +20,7 @@ export def install-apps-on-windows [] {
   install-firacode
   install-firefox
   install-helix
+  install-kdlfmt
   install-lazygit
   install-node
   install-notepad-plus-plus

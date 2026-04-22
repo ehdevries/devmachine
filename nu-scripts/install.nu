@@ -223,10 +223,10 @@ export def install-helix [] {
 }
 
 export def install-kdlfmt [] {
+  print-pad "Installing kdlfmt"
   if (is-windows) {
-    print-pad "Skipping kdlfmt on Windows for now"
+    npm install -g kdlfmt
   } else {
-    print-pad "Installing kdlfmt"
     brew install hougesen/tap/kdlfmt
   }
 }
