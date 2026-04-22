@@ -222,6 +222,15 @@ export def install-helix [] {
   }
 }
 
+export def install-kdlfmt [] {
+  if (is-windows) {
+    print-pad "Skipping kdlfmt on Windows for now"
+  } else {
+    print-pad "Installing kdlfmt"
+    brew install hougesen/tap/kdlfmt
+  }
+}
+
 export def install-lavfilters [] {
   if (is-windows) {
     print-pad "Installing LAV Filters"
