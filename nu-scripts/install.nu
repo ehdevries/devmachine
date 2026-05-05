@@ -40,6 +40,19 @@ export def install-volta-and-node [] {
 # Install software with package managers
 #
 
+export def install-terminal-essentials [] {
+  install-node
+  install-bat
+  install-carapace
+  install-difftastic
+  install-fastfetch
+  install-helix
+  install-kdlfmt
+  install-lazygit
+  install-yazi
+  install-zellij
+}
+
 export def install-1password [] {
   print-pad "Installing 1Password"
   if (is-windows) {
@@ -80,6 +93,7 @@ export def install-carapace [] {
 }
 
 export def install-cascadia-code [] {
+  print ""
   print "Install Cascadia Code by downloading and extracting the latest release:"
   if (is-windows) {
     print "(if you're using Windows Terminal, install the Nerd Fonts version so Yazi can render icons)"
