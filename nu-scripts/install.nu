@@ -106,6 +106,8 @@ export def install-chrome [] {
   if (is-windows) {
     print-pad "Installing Chrome"
     winget install --id google.chrome.exe --interactive
+  } else {
+    print-pad "Skipping Chrome on Linux for now"
   }
 }
 
