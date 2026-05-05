@@ -1,6 +1,51 @@
 use install.nu *
 use refresh.nu *
 
+export def install-apps [] {
+  let apps = [
+    [name category command];
+    ["Terminal essentials (node, zellij, helix, etc.)" Terminal install-terminal-essentials]
+    [Deno Terminal install-deno]
+    [".NET" Terminal install-dotnet]
+    [PowerShell Terminal install-powershell]
+    [Rust Terminal install-rust]
+    [Zola Terminal install-zola]
+    ["Cascadia Code" Font install-cascadia-code]
+    ["Fira Code" Font install-fira-code]
+    [1Password Desktop install-1password]
+    [Bruno Desktop install-bruno]
+    [Chrome Desktop install-chrome]
+    ["Docker Desktop" Desktop install-docker-desktop]
+    ["Ear Tag" "Desktop (Linux)" install-ear-tag]
+    [Firefox Desktop install-firefox]
+    [Ghostty Desktop install-ghostty]
+    ["Gnome Document Scanner" "Desktop (Linux)" install-gnome-document-scanner]
+    ["Gnome Music" "Desktop (Linux)" install-gnome-music]
+    ["Gnome Video Player" "Desktop (Linux)" install-gnome-video-player]
+    ["Microsoft PowerToys" "Desktop (Windows)" install-powertoys]
+    ["Microsoft Report Builder" "Desktop (Windows)" install-report-builder]
+    ["Microsoft Teams" "Desktop (Windows)" install-teams]
+    [Notepad++ "Desktop (Windows)" install-notepad-plus-plus]
+    [Obsidian Desktop install-obsidian]
+    ["Proton Authenticator" Desktop install-proton-authenticator]
+    ["Proton Drive" Desktop install-proton-drive]
+    ["Proton VPN" Desktop install-proton-vpn]
+    [Rio Desktop install-rio]
+    [Slack Desktop install-slack]
+    [Spotify Desktop install-spotify]
+    ["Toggl Track" "Desktop (Windows)" install-toggl-track]
+    ["Visual Studio" "Desktop (Windows)" install-visual-studio]
+    ["VS Code" Desktop install-vscode]
+    ["Zen Browser" Desktop install-zen]
+    ["LAV Filters" "Fun (Windows)" install-lavfilters]
+    [Lutris "Fun (Linux)" install-lutris]
+  ]
+
+  let commands = $apps | input list --multi "Which apps would you like to install?" | get command
+
+  for $command in $commands { nu -c $command }
+}
+
 #
 # Windows
 #
