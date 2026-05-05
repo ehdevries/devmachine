@@ -24,7 +24,6 @@ export def install-apps-on-windows [] {
   install-lazygit
   install-node
   install-notepad-plus-plus
-  download-notepad-plus-plus-dracula-theme
   install-obsidian
   install-powershell
   install-powertoys
@@ -70,6 +69,7 @@ export def install-apps-on-windows [] {
 
 export def install-extensions-on-windows [] {
   install-dotnet-global-tools
+  install-notepad-plus-plus-themes
   install-npm-global-tools
   install-vscode-extensions
   install-yazi-packages

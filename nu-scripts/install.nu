@@ -282,17 +282,6 @@ export def install-notepad-plus-plus [] {
   }
 }
 
-export def download-notepad-plus-plus-dracula-theme [] {
-  if (is-windows) {
-    print-pad "Downloading Dracula theme for Notepad++"
-    let url = 'https://raw.githubusercontent.com/dracula/notepad-plus-plus/main/generated/Dracula.xml'
-    let theme_dir = ([$env.APPDATA 'Notepad++' 'themes'] | path join)
-    if ($theme_dir | path exists) != true { mkdir $theme_dir }
-    let theme_file = ([$theme_dir 'Dracula.xml'] | path join)
-    http get --raw $url | save --force $theme_file
-  }
-}
-
 export def install-obsidian [] {
   print-pad "Installing Obsidian"
   if (is-windows) {
@@ -473,6 +462,17 @@ export def install-dotnet-global-tools [] {
   dotnet tool install -g dotnet-tools-outdated
   dotnet tool install -g rnwood.smtp4dev
   dotnet tool install -g roslyn-language-server --prerelease
+}
+
+export def install-notepad-plus-plus-themes [] {
+  if (is-windows) {
+    print-pad "Installing Dracula theme for Notepad++"
+    let url = 'https://raw.githubusercontent.com/dracula/notepad-plus-plus/main/generated/Dracula.xml'
+    let theme_dir = ([$env.APPDATA 'Notepad++' 'themes'] | path join)
+    if ($theme_dir | path exists) != true { mkdir $theme_dir }
+    let theme_file = ([$theme_dir 'Dracula.xml'] | path join)
+    http get --raw $url | save --force $theme_file
+  }
 }
 
 export def install-npm-global-tools [] {
