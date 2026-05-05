@@ -164,7 +164,7 @@ export def install-fastfetch [] {
   }
 }
 
-export def install-firacode [] {
+export def install-fira-code [] {
   print-pad "Installing Fira Code"
   if (is-windows) {
     print "Install Fira Code according to the documentation on its GitHub page:"

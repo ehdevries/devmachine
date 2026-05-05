@@ -17,7 +17,7 @@ export def install-apps-on-windows [] {
   install-docker-desktop
   install-dotnet
   install-fastfetch
-  install-firacode
+  install-fira-code
   install-firefox
   install-helix
   install-kdlfmt
@@ -104,7 +104,7 @@ export def install-apps-on-ubuntu-desktop [] {
   install-dotnet
   install-ear-tag
   install-fastfetch
-  install-firacode
+  install-fira-code
   install-firefox
   install-ghostty
   install-gnome-document-scanner
