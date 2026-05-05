@@ -49,6 +49,7 @@ export def install-terminal-essentials [] {
   install-helix
   install-kdlfmt
   install-lazygit
+  install-prettier
   install-yazi
   install-zellij
 }
@@ -305,6 +306,11 @@ export def install-powertoys [] {
     print-pad "Installing PowerToys"
     winget install --id microsoft.powertoys --interactive
   }
+}
+
+export def install-prettier [] {
+  print-pad "Installing Prettier"
+  npm install -g prettier
 }
 
 export def install-proton-authenticator [] {
