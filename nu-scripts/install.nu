@@ -437,6 +437,15 @@ export def install-zellij [] {
   }
 }
 
+export def install-zed [] {
+  print-pad "Installing Zed"
+  if (is-windows) {
+    winget install --id zedindustries.zed --interactive
+  } else {
+    curl -f https://zed.dev/install.sh | bash
+  }
+}
+
 export def install-zen [] {
   print-pad "Installing Zen Browser"
   if (is-windows) {

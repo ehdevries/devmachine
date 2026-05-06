@@ -36,6 +36,7 @@ export def install-apps [] {
     ["Toggl Track" "Desktop (Windows)" install-toggl-track]
     ["Visual Studio" "Desktop (Windows)" install-visual-studio]
     ["VS Code" Desktop install-vscode]
+    [Zed Desktop install-zed]
     ["Zen Browser" Desktop install-zen]
     ["LAV Filters" "Fun (Windows)" install-lavfilters]
     [Lutris "Fun (Linux)" install-lutris]
@@ -43,7 +44,7 @@ export def install-apps [] {
 
   let commands = $apps | input list --multi "Which apps would you like to install?" | get command
 
-  for $command in $commands { nu -c $command }
+  for $cmd in $commands { nu --commands $cmd }
 }
 
 #
