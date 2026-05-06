@@ -115,7 +115,7 @@ export def install-chrome [] {
 export def install-deno [] {
   print-pad "Installing Deno"
   if (is-windows) {
-    winget install --id denoland.deno
+    powershell -ExecutionPolicy Bypass -NoProfile -Command "Invoke-RestMethod https://deno.land/install.ps1 | Invoke-Expression"
   } else {
     curl -fsSL https://deno.land/install.sh | bash
   }
