@@ -52,6 +52,24 @@ export def install-apps [] {
   for $cmd in $commands { nu --commands $cmd }
 }
 
+export def install-extensions [] {
+  let extensions = [
+    [name command];
+    [".NET global tools" install-dotnet-global-tools]
+    ["Notepad++ themes" install-notepad-plus-plus-themes]
+    ["NPM global tools" install-npm-global-tools]
+    ["Panache Git (clone with HTTPS)" clone-panache-git-https]
+    ["Panache Git (clone with SSH)" clone-panache-git-ssh]
+    ["Rust components" install-rust-components]
+    ["VS Code extensions" install-vscode-extensions]
+    ["Yazi packages" install-yazi-packages]
+  ]
+
+  let commands = $extensions | input list --multi "Which extensions would you like to install?" | get command
+
+  for $cmd in $commands { nu --commands $cmd }
+}
+
 #
 # Windows
 #
