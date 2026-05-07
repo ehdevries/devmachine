@@ -239,6 +239,15 @@ export def install-helix [] {
   }
 }
 
+export def install-hp-smart [] {
+  if (is-windows) {
+    print ""
+    print "Install HP Smart from the Microsoft Store:"
+    print "https://apps.microsoft.com/detail/9wzdncrfhwlh"
+    start https://apps.microsoft.com/detail/9wzdncrfhwlh
+  }
+}
+
 export def install-kdlfmt [] {
   print-pad "Installing kdlfmt"
   if (is-windows) {
@@ -268,6 +277,15 @@ export def install-lutris [] {
   if (is-linux) {
     print-pad "Installing Lutris"
     flatpak install flathub net.lutris.Lutris
+  }
+}
+
+export def install-ms-office [] {
+  if (is-windows) {
+    print ""
+    print "Log in to Outlook to install Microsoft Office 365 apps:"
+    print "https://outlook.cloud.microsoft/mail/"
+    start https://outlook.cloud.microsoft/mail/
   }
 }
 
@@ -396,6 +414,15 @@ export def install-teams [] {
   }
 }
 
+export def install-todo [] {
+  if (is-windows) {
+    print ""
+    print "Install Microsoft To Do from the Microsoft Store:"
+    print "https://apps.microsoft.com/detail/9nblggh5r558"
+    start https://apps.microsoft.com/detail/9nblggh5r558
+  }
+}
+
 export def install-toggl-track [] {
   if (is-windows) {
     print-pad "Installing Toggl Track"
@@ -416,6 +443,24 @@ export def install-vscode [] {
     winget install --id microsoft.visualstudiocode --interactive
   } else {
     sudo snap install code --classic
+  }
+}
+
+export def install-windows-app [] {
+  if (is-windows) {
+    print ""
+    print "Install Windows App from the Microsoft Store:"
+    print "https://apps.microsoft.com/detail/9n1f85v9t8bn"
+    start https://apps.microsoft.com/detail/9n1f85v9t8bn
+  }
+}
+
+export def install-windows-media-player [] {
+  if (is-windows) {
+    print ""
+    print "Install Windows Media Player from the Microsoft Store:"
+    print "https://apps.microsoft.com/detail/9wzdncrfj3pt"
+    start https://apps.microsoft.com/detail/9wzdncrfj3pt
   }
 }
 
