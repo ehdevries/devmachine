@@ -65,13 +65,13 @@ export def install-extensions [] {
     ["Yazi packages" install-yazi-packages]
   ]
 
-  let commands = $extensions | input list --multi "Which extensions would you like to install?" | get command
+  let commands = $extensions | input list --multi --display name "Which extensions would you like to install?" | get command
 
   for $cmd in $commands { nu --commands $cmd }
 }
 
 export def restore-config [] {
-  let apps = [
+  let config = [
     [name command];
     ["Bash aliases" "refresh bash aliases"]
     ["Ghostty" "refresh ghostty"]
@@ -89,7 +89,7 @@ export def restore-config [] {
     ["Zellij" "refresh zellij"]
   ]
 
-  let commands = $apps | input list --multi "Which apps' config would you like to restore?" | get command
+  let commands = $config | input list --multi --display name "Which apps' configuration would you like to restore?" | get command
 
   for $cmd in $commands { nu --commands $cmd }
 }
