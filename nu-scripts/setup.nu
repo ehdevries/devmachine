@@ -4,7 +4,7 @@ use refresh.nu *
 export def install-apps [] {
   let apps = [
     [name category command];
-    ["Terminal essentials (node, zellij, helix, etc.)" Terminal install-terminal-essentials]
+    ["Terminal essentials (Node, Zellij, Helix, etc.)" Terminal install-terminal-essentials]
     [Deno Terminal install-deno]
     [".NET" Terminal install-dotnet]
     [PowerShell Terminal install-powershell]
@@ -66,6 +66,30 @@ export def install-extensions [] {
   ]
 
   let commands = $extensions | input list --multi "Which extensions would you like to install?" | get command
+
+  for $cmd in $commands { nu --commands $cmd }
+}
+
+export def restore-config [] {
+  let apps = [
+    [name command];
+    ["Bash aliases" "refresh bash aliases"]
+    ["Ghostty" "refresh ghostty"]
+    ["Git" "refresh git"]
+    ["Helix" "refresh helix"]
+    ["Lazygit" "refresh lazygit"]
+    ["Nushell config" "refresh nushell"]
+    ["Nushell scripts" "refresh scripts"]
+    ["PowerShell" "refresh powershell"]
+    ["Rio" "refresh rio"]
+    ["smtp4dev" "refresh smtp4dev"]
+    ["VS Code" "refresh vscode"]
+    ["WezTerm" "refresh wezterm"]
+    ["Yazi" "refresh yazi"]
+    ["Zellij" "refresh zellij"]
+  ]
+
+  let commands = $apps | input list --multi "Which apps' config would you like to restore?" | get command
 
   for $cmd in $commands { nu --commands $cmd }
 }
