@@ -40,20 +40,6 @@ export def install-volta-and-node [] {
 # Install software with package managers
 #
 
-export def install-terminal-essentials [] {
-  install-node
-  install-bat
-  install-carapace
-  install-difftastic
-  install-fastfetch
-  install-helix
-  install-kdlfmt
-  install-lazygit
-  install-prettier
-  install-yazi
-  install-zellij
-}
-
 export def install-1password [] {
   print-pad "Installing 1Password"
   if (is-windows) {

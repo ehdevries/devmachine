@@ -70,6 +70,20 @@ export def install-extensions [] {
   for $cmd in $commands { nu --commands $cmd }
 }
 
+def install-terminal-essentials [] {
+  install-node
+  install-bat
+  install-carapace
+  install-difftastic
+  install-fastfetch
+  install-helix
+  install-kdlfmt
+  install-lazygit
+  install-prettier
+  install-yazi
+  install-zellij
+}
+
 #
 # Windows
 #
