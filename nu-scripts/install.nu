@@ -550,7 +550,6 @@ export def install-vscode-extensions [] {
   code --install-extension adrianwilczynski.user-secrets
   code --install-extension angular.ng-template
   code --install-extension be5invis.toml
-  code --install-extension bierner.markdown-mermaid
   code --install-extension bruno-api-client.bruno
   code --install-extension csharpier.csharpier-vscode
   code --install-extension davidanson.vscode-markdownlint
