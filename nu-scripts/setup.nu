@@ -4,7 +4,7 @@ use refresh.nu *
 export def install-apps [] {
   let apps = [
     [name category command];
-    ["Terminal essentials (Node, Zellij, Helix, etc.)" Terminal install-terminal-essentials]
+    ["Terminal essentials" Terminal install-terminal-essentials]
     [Deno Terminal install-deno]
     [".NET" Terminal install-dotnet]
     [PowerShell Terminal install-powershell]
