@@ -98,25 +98,11 @@ export def restore-config [] {
   for $cmd in $commands { nu --commands $cmd }
 }
 
-def install-terminal-essentials [] {
-  install-node
-  install-bat
-  install-carapace
-  install-difftastic
-  install-fastfetch
-  install-helix
-  install-kdlfmt
-  install-lazygit
-  install-prettier
-  install-yazi
-  install-zellij
-}
-
 #
 # Install package managers and version managers
 #
 
-export def install-flatpak [] {
+let install_flatpak = {||
   if (is-linux) {
     print-pad "Installing Flatpak"
     sudo apt install flatpak
@@ -125,7 +111,7 @@ export def install-flatpak [] {
   }
 }
 
-export def install-volta [] {
+let install_volta = {||
   print-pad "Installing Volta"
   if (is-windows) {
     winget install --id volta.volta
@@ -134,7 +120,7 @@ export def install-volta [] {
   }
 }
 
-export def install-volta-and-node [] {
+let install_volta_and_node = {||
   print-pad "Installing Volta and Node"
   if (is-windows) {
     winget install --id volta.volta
@@ -152,7 +138,7 @@ export def install-volta-and-node [] {
 # Install software with package managers
 #
 
-export def install-1password [] {
+let install_1password = {||
   print-pad "Installing 1Password"
   if (is-windows) {
     winget install --id agilebits.1password --interactive
@@ -163,7 +149,7 @@ export def install-1password [] {
   }
 }
 
-export def install-bat [] {
+let install_bat = {||
   print-pad "Installing bat"
   if (is-windows) {
     winget install --id sharkdp.bat
@@ -172,7 +158,7 @@ export def install-bat [] {
   }
 }
 
-export def install-bruno [] {
+let install_bruno = {||
   print-pad "Installing Bruno"
   if (is-windows) {
     winget install --id bruno.bruno --interactive
@@ -182,7 +168,7 @@ export def install-bruno [] {
   }
 }
 
-export def install-carapace [] {
+let install_carapace = {||
   print-pad "Installing Carapace"
   if (is-windows) {
     winget install --id rsteube.carapace
@@ -191,7 +177,7 @@ export def install-carapace [] {
   }
 }
 
-export def install-cascadia-code [] {
+let install_cascadia_code = {||
   print ""
   print "Install Cascadia Code by downloading and extracting the latest release:"
   if (is-windows) {
@@ -201,7 +187,7 @@ export def install-cascadia-code [] {
   start "https://github.com/microsoft/cascadia-code/releases"
 }
 
-export def install-chrome [] {
+let install_chrome = {||
   if (is-windows) {
     print-pad "Installing Chrome"
     winget install --id google.chrome.exe --interactive
@@ -210,7 +196,7 @@ export def install-chrome [] {
   }
 }
 
-export def install-deno [] {
+let install_deno = {||
   print-pad "Installing Deno"
   if (is-windows) {
     powershell -ExecutionPolicy Bypass -NoProfile -Command "Invoke-RestMethod https://deno.land/install.ps1 | Invoke-Expression"
@@ -219,7 +205,7 @@ export def install-deno [] {
   }
 }
 
-export def install-difftastic [] {
+let install_difftastic = {||
   print-pad "Installing Difftastic"
   if (is-windows) {
     winget install --id wilfred.difftastic
@@ -228,7 +214,7 @@ export def install-difftastic [] {
   }
 }
 
-export def install-docker-desktop [] {
+let install_docker_desktop = {||
   if (is-windows) {
     print-pad "Installing Docker Desktop"
     winget install --id docker.dockerdesktop --interactive
@@ -237,7 +223,7 @@ export def install-docker-desktop [] {
   }
 }
 
-export def install-dotnet [] {
+let install_dotnet = {||
   print-pad "Installing .NET"
   if (is-windows) {
     winget install --id microsoft.dotnet.sdk.9 --interactive
@@ -249,14 +235,14 @@ export def install-dotnet [] {
   }
 }
 
-export def install-ear-tag [] {
+let install_ear_tag = {||
   if (is-linux) {
     print-pad "Installing Ear Tag"
     flatpak install flathub app.drey.EarTag
   }
 }
 
-export def install-fastfetch [] {
+let install_fastfetch = {||
   print-pad "Installing Fastfetch"
   if (is-windows) {
     winget install --id fastfetch-cli.fastfetch
@@ -265,7 +251,7 @@ export def install-fastfetch [] {
   }
 }
 
-export def install-fira-code [] {
+let install_fira_code = {||
   print-pad "Installing Fira Code"
   if (is-windows) {
     print "Install Fira Code according to the documentation on its GitHub page:"
@@ -276,7 +262,7 @@ export def install-fira-code [] {
   }
 }
 
-export def install-firefox [] {
+let install_firefox = {||
   print-pad "Installing Firefox"
   if (is-windows) {
     winget install --id mozilla.firefox --interactive
@@ -287,7 +273,7 @@ export def install-firefox [] {
   }
 }
 
-export def install-ghostty [] {
+let install_ghostty = {||
   if (is-windows) {
     print-pad "Ghostty is not yet supported on Windows"
   } else {
@@ -296,7 +282,7 @@ export def install-ghostty [] {
   }
 }
 
-export def install-git [] {
+let install_git = {||
   print-pad "Installing Git"
   if (is-windows) {
     winget install --id git.git --interactive
@@ -307,28 +293,28 @@ export def install-git [] {
   }
 }
 
-export def install-gnome-document-scanner [] {
+let install_gnome_document_scanner = {||
   if (is-linux) {
     print-pad "Installing Gnome Document Scanner"
     flatpak install flathub org.gnome.SimpleScan
   }
 }
 
-export def install-gnome-music [] {
+let install_gnome_music = {||
   if (is-linux) {
     print-pad "Installing Gnome Music"
     flatpak install flathub org.gnome.Music
   }
 }
 
-export def install-gnome-video-player [] {
+let install_gnome_video_player = {||
   if (is-linux) {
     print-pad "Installing Gnome Video Player"
     flatpak install flathub org.gnome.Showtime
   }
 }
 
-export def install-helix [] {
+let install_helix = {||
   print-pad "Installing Helix"
   if (is-windows) {
     winget install --id helix.helix
@@ -337,7 +323,7 @@ export def install-helix [] {
   }
 }
 
-export def install-hp-smart [] {
+let install_hp_smart = {||
   if (is-windows) {
     print ""
     print "Install HP Smart from the Microsoft Store:"
@@ -346,7 +332,7 @@ export def install-hp-smart [] {
   }
 }
 
-export def install-kdlfmt [] {
+let install_kdlfmt = {||
   print-pad "Installing kdlfmt"
   if (is-windows) {
     npm install -g kdlfmt
@@ -355,14 +341,14 @@ export def install-kdlfmt [] {
   }
 }
 
-export def install-lavfilters [] {
+let install_lavfilters = {||
   if (is-windows) {
     print-pad "Installing LAV Filters"
     winget install --id nevcairiel.lavfilters --interactive
   }
 }
 
-export def install-lazygit [] {
+let install_lazygit = {||
   print-pad "Installing Lazygit"
   if (is-windows) {
     winget install --id jesseduffield.lazygit
@@ -371,14 +357,14 @@ export def install-lazygit [] {
   }
 }
 
-export def install-lutris [] {
+let install_lutris = {||
   if (is-linux) {
     print-pad "Installing Lutris"
     flatpak install flathub net.lutris.Lutris
   }
 }
 
-export def install-ms-office [] {
+let install_ms_office = {||
   if (is-windows) {
     print ""
     print "Log in to Outlook to install Microsoft Office 365 apps:"
@@ -387,19 +373,19 @@ export def install-ms-office [] {
   }
 }
 
-export def install-node [] {
+let install_node = {||
   print-pad "Installing Node"
   volta install node
 }
 
-export def install-notepad-plus-plus [] {
+let install_notepad_plus_plus = {||
   if (is-windows) {
     print-pad "Installing Notepad++"
     winget install --id notepad++.notepad++ --interactive
   }
 }
 
-export def install-obsidian [] {
+let install_obsidian = {||
   print-pad "Installing Obsidian"
   if (is-windows) {
     winget install --id obsidian.obsidian --interactive
@@ -408,7 +394,7 @@ export def install-obsidian [] {
   }
 }
 
-export def install-powershell [] {
+let install_powershell = {||
   if (is-windows) {
     print-pad "Installing PowerShell"
     winget install --id microsoft.powershell --interactive
@@ -417,19 +403,19 @@ export def install-powershell [] {
   }
 }
 
-export def install-powertoys [] {
+let install_powertoys = {||
   if (is-windows) {
     print-pad "Installing PowerToys"
     winget install --id microsoft.powertoys --interactive
   }
 }
 
-export def install-prettier [] {
+let install_prettier = {||
   print-pad "Installing Prettier"
   npm install -g prettier
 }
 
-export def install-proton-authenticator [] {
+let install_proton_authenticator = {||
   print-pad "Installing Proton Authenticator"
   if (is-windows) {
     winget install --id proton.protonauthenticator --interactive
@@ -440,7 +426,7 @@ export def install-proton-authenticator [] {
   }
 }
 
-export def install-proton-drive [] {
+let install_proton_drive = {||
   print-pad "Installing Proton Drive"
   if (is-windows) {
     winget install --id proton.protondrive --interactive
@@ -449,7 +435,7 @@ export def install-proton-drive [] {
   }
 }
 
-export def install-proton-vpn [] {
+let install_proton_vpn = {||
   print-pad "Installing Proton VPN"
   if (is-windows) {
     winget install --id proton.protonvpn --interactive
@@ -460,14 +446,14 @@ export def install-proton-vpn [] {
   }
 }
 
-export def install-report-builder [] {
+let install_report_builder = {||
   if (is-windows) {
     print-pad "Installing Microsoft Report Builder"
     winget install --id microsoft.reportbuilder --interactive
   }
 }
 
-export def install-rio [] {
+let install_rio = {||
   print-pad "Installing Rio"
   if (is-windows) {
     winget install --id raphamorim.rio --interactive
@@ -476,7 +462,7 @@ export def install-rio [] {
   }
 }
 
-export def install-rust [] {
+let install_rust = {||
   if (is-windows) {
     print-pad "Skipping Rust on Windows for now"
   } else {
@@ -485,7 +471,7 @@ export def install-rust [] {
   }
 }
 
-export def install-slack [] {
+let install_slack = {||
   print-pad "Installing Slack"
   if (is-windows) {
     winget install --id slacktechnologies.slack --interactive
@@ -494,7 +480,7 @@ export def install-slack [] {
   }
 }
 
-export def install-spotify [] {
+let install_spotify = {||
   print-pad "Installing Spotify"
   if (is-windows) {
     print "Install Spotify from the Windows Store:"
@@ -505,14 +491,14 @@ export def install-spotify [] {
   }
 }
 
-export def install-teams [] {
+let install_teams = {||
   if (is-windows) {
     print-pad "Installing Teams"
     winget install --id microsoft.teams --interactive
   }
 }
 
-export def install-todo [] {
+let install_todo = {||
   if (is-windows) {
     print ""
     print "Install Microsoft To Do from the Microsoft Store:"
@@ -521,21 +507,21 @@ export def install-todo [] {
   }
 }
 
-export def install-toggl-track [] {
+let install_toggl_track = {||
   if (is-windows) {
     print-pad "Installing Toggl Track"
     winget install --id toggl.toggltrack --interactive
   }
 }
 
-export def install-visual-studio [] {
+let install_visual_studio = {||
   if (is-windows) {
     print-pad "Installing Visual Studio"
     winget install --id microsoft.visualstudio.2022.professional --interactive
   }
 }
 
-export def install-vscode [] {
+let install_vscode = {||
   print-pad "Installing VS Code"
   if (is-windows) {
     winget install --id microsoft.visualstudiocode --interactive
@@ -544,7 +530,7 @@ export def install-vscode [] {
   }
 }
 
-export def install-windows-app [] {
+let install_windows_app = {||
   if (is-windows) {
     print ""
     print "Install Windows App from the Microsoft Store:"
@@ -553,7 +539,7 @@ export def install-windows-app [] {
   }
 }
 
-export def install-windows-media-player [] {
+let install_windows_media_player = {||
   if (is-windows) {
     print ""
     print "Install Windows Media Player from the Microsoft Store:"
@@ -562,7 +548,7 @@ export def install-windows-media-player [] {
   }
 }
 
-export def install-yazi [] {
+let install_yazi = {||
   print-pad "Installing Yazi"
   if (is-windows) {
     winget install --id sxyazi.yazi
@@ -571,7 +557,7 @@ export def install-yazi [] {
   }
 }
 
-export def install-zellij [] {
+let install_zellij = {||
   print-pad "Installing Zellij"
   if (is-windows) {
     winget install --id zellij.zellij
@@ -580,7 +566,7 @@ export def install-zellij [] {
   }
 }
 
-export def install-zed [] {
+let install_zed = {||
   print-pad "Installing Zed"
   if (is-windows) {
     winget install --id zedindustries.zed --interactive
@@ -589,7 +575,7 @@ export def install-zed [] {
   }
 }
 
-export def install-zen [] {
+let install_zen = {||
   print-pad "Installing Zen Browser"
   if (is-windows) {
     winget install --id zen-team.zen-browser --interactive
@@ -598,7 +584,7 @@ export def install-zen [] {
   }
 }
 
-export def install-zola [] {
+let install_zola = {||
   print-pad "Installing Zola"
   if (is-windows) {
     winget install --id getzola.zola
@@ -607,11 +593,25 @@ export def install-zola [] {
   }
 }
 
+let install_terminal_essentials = {||
+  do $install_node
+  do $install_bat
+  do $install_carapace
+  do $install_difftastic
+  do $install_fastfetch
+  do $install_helix
+  do $install_kdlfmt
+  do $install_lazygit
+  do $install_prettier
+  do $install_yazi
+  do $install_zellij
+}
+
 #
 # Install tools and extensions for existing software
 #
 
-export def install-dotnet-global-tools [] {
+let install_dotnet_global_tools = {||
   print-pad "Installing .NET global tools"
   dotnet tool install -g csharpier
   dotnet tool install -g csharp-ls
@@ -622,7 +622,7 @@ export def install-dotnet-global-tools [] {
   dotnet tool install -g roslyn-language-server --prerelease
 }
 
-export def install-notepad-plus-plus-themes [] {
+let install_notepad_plus_plus_themes = {||
   if (is-windows) {
     print-pad "Installing Dracula theme for Notepad++"
     let url = 'https://raw.githubusercontent.com/dracula/notepad-plus-plus/main/generated/Dracula.xml'
@@ -633,7 +633,7 @@ export def install-notepad-plus-plus-themes [] {
   }
 }
 
-export def install-npm-global-tools [] {
+let install_npm_global_tools = {||
   print-pad "Installing NPM global tools"
   npm install -g @angular/cli
   npm install -g @angular/language-server
@@ -642,22 +642,22 @@ export def install-npm-global-tools [] {
   npm install -g vscode-langservers-extracted
 }
 
-export def clone-panache-git-https [] {
+let clone_panache_git_https = {||
   print-pad "Cloning panache-git over HTTPS"
   git clone https://github.com/ehdevries/panache-git.git ~/.panache-git
 }
 
-export def clone-panache-git-ssh [] {
+let clone_panache_git_ssh = {||
   print-pad "Cloning panache-git over SSH"
   git clone git@github.com:ehdevries/panache-git.git ~/.panache-git
 }
 
-export def install-rust-components [] {
+let install_rust_components = {||
   print-pad "Installing Rust components"
   rustup component add rust-analyzer
 }
 
-export def install-vscode-extensions [] {
+let install_vscode_extensions = {||
   print-pad "Installing VS Code extensions"
   code --install-extension adrianwilczynski.user-secrets
   code --install-extension angular.ng-template
@@ -688,7 +688,7 @@ export def install-vscode-extensions [] {
   code --install-extension thenuprojectcontributors.vscode-nushell-lang
 }
 
-export def install-yazi-packages [] {
+let install_yazi_packages = {||
   print-pad "Installing Yazi packages"
   ya pkg add yazi-rs/flavors:dracula
 }
