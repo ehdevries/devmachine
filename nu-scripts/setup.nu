@@ -46,8 +46,8 @@ let install_1password = {||
   if (is-windows) {
     winget install --id agilebits.1password --interactive
   } else {
-    print 'The easiest way to install 1Password on Linux is to download the package file directly.'
-    print 'See https://1password.com/downloads/linux'
+    print 'The easiest way to install 1Password on Linux is to download the package file directly:'
+    print https://1password.com/downloads/linux
     start https://1password.com/downloads/linux
   }
 }
@@ -86,8 +86,8 @@ let install_cascadia_code = {||
   if (is-windows) {
     print "(if you're using Windows Terminal, install the Nerd Fonts version so Yazi can render icons)"
   }
-  print 'https://github.com/microsoft/cascadia-code/releases'
-  start 'https://github.com/microsoft/cascadia-code/releases'
+  print https://github.com/microsoft/cascadia-code/releases
+  start https://github.com/microsoft/cascadia-code/releases
 }
 
 let install_chrome = {||
@@ -158,7 +158,7 @@ let install_fira_code = {||
   print-pad 'Installing Fira Code'
   if (is-windows) {
     print 'Install Fira Code according to the documentation on its GitHub page:'
-    print 'https://github.com/tonsky/FiraCode'
+    print https://github.com/tonsky/FiraCode
     start https://github.com/tonsky/FiraCode
   } else {
     sudo apt install fonts-firacode
@@ -171,7 +171,7 @@ let install_firefox = {||
     winget install --id mozilla.firefox --interactive
   } else {
     print "To install the Firefox .deb package, consult Mozilla's documentation:"
-    print 'https://support.mozilla.org/en-US/kb/install-firefox-linux'
+    print https://support.mozilla.org/en-US/kb/install-firefox-linux
     start https://support.mozilla.org/en-US/kb/install-firefox-linux
   }
 }
@@ -230,7 +230,7 @@ let install_hp_smart = {||
   if (is-windows) {
     print ''
     print 'Install HP Smart from the Microsoft Store:'
-    print 'https://apps.microsoft.com/detail/9wzdncrfhwlh'
+    print https://apps.microsoft.com/detail/9wzdncrfhwlh
     start https://apps.microsoft.com/detail/9wzdncrfhwlh
   }
 }
@@ -271,7 +271,7 @@ let install_ms_office = {||
   if (is-windows) {
     print ''
     print 'Log in to Outlook to install Microsoft Office 365 apps:'
-    print 'https://outlook.cloud.microsoft/mail/'
+    print https://outlook.cloud.microsoft/mail/
     start https://outlook.cloud.microsoft/mail/
   }
 }
@@ -324,7 +324,7 @@ let install_proton_authenticator = {||
     winget install --id proton.protonauthenticator --interactive
   } else {
     print 'To install Proton Authenticator on Linux, download the package file directly:'
-    print 'https://proton.me/authenticator'
+    print https://proton.me/authenticator
     start https://proton.me/authenticator
   }
 }
@@ -344,7 +344,7 @@ let install_proton_vpn = {||
     winget install --id proton.protonvpn --interactive
   } else {
     print "To install Proton VPN on Linux, consult Proton's documentation:"
-    print 'https://protonvpn.com/support/official-linux-vpn-ubuntu'
+    print https://protonvpn.com/support/official-linux-vpn-ubuntu
     start https://protonvpn.com/support/official-linux-vpn-ubuntu
   }
 }
@@ -387,7 +387,7 @@ let install_spotify = {||
   print-pad 'Installing Spotify'
   if (is-windows) {
     print 'Install Spotify from the Windows Store:'
-    print 'https://www.spotify.com/us/download/windows/'
+    print https://www.spotify.com/us/download/windows/
     start https://www.spotify.com/us/download/windows/
   } else {
     sudo snap install spotify
@@ -405,7 +405,7 @@ let install_todo = {||
   if (is-windows) {
     print ''
     print 'Install Microsoft To Do from the Microsoft Store:'
-    print 'https://apps.microsoft.com/detail/9nblggh5r558'
+    print https://apps.microsoft.com/detail/9nblggh5r558
     start https://apps.microsoft.com/detail/9nblggh5r558
   }
 }
@@ -437,7 +437,7 @@ let install_windows_app = {||
   if (is-windows) {
     print ''
     print 'Install Windows App from the Microsoft Store:'
-    print 'https://apps.microsoft.com/detail/9n1f85v9t8bn'
+    print https://apps.microsoft.com/detail/9n1f85v9t8bn
     start https://apps.microsoft.com/detail/9n1f85v9t8bn
   }
 }
@@ -446,7 +446,7 @@ let install_windows_media_player = {||
   if (is-windows) {
     print ''
     print 'Install Windows Media Player from the Microsoft Store:'
-    print 'https://apps.microsoft.com/detail/9wzdncrfj3pt'
+    print https://apps.microsoft.com/detail/9wzdncrfj3pt
     start https://apps.microsoft.com/detail/9wzdncrfj3pt
   }
 }
