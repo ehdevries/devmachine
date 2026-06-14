@@ -126,15 +126,29 @@ let install_docker_desktop = {||
   }
 }
 
-let install_dotnet = {||
-  print-pad 'Installing .NET'
+let install_dotnet_9 = {||
+  print-pad 'Installing .NET 9'
   if (is-windows) {
     winget install --id microsoft.dotnet.sdk.9 --interactive
+  } else {
+    install-dotnet-snap
+    dotnet-installer install sdk 9
+  }
+}
+
+let install_dotnet_10 = {||
+  print-pad 'Installing .NET 10'
+  if (is-windows) {
     winget install --id microsoft.dotnet.sdk.10 --interactive
   } else {
-    sudo snap install dotnet --classic
-    dotnet-installer install sdk 9
+    install-dotnet-snap
     dotnet-installer install sdk 10
+  }
+}
+
+def install-dotnet-snap [] {
+  if (which dotnet-installer | is-empty) {
+    sudo snap install dotnet --classic
   }
 }
 
@@ -605,7 +619,8 @@ export def install-apps [] {
     [name category command];
     ['Terminal essentials' Terminal $install_terminal_essentials]
     [Deno Terminal $install_deno]
-    ['.NET' Terminal $install_dotnet]
+    ['.NET 9' Terminal $install_dotnet_9]
+    ['.NET 10' Terminal $install_dotnet_10]
     [PowerShell Terminal $install_powershell]
     [Rust Terminal $install_rust]
     [Zola Terminal $install_zola]
