@@ -13,29 +13,6 @@ let install_flatpak = {||
   }
 }
 
-let install_volta = {||
-  print-pad 'Installing Volta'
-  if (is-windows) {
-    winget install --id volta.volta
-  } else {
-    curl https://get.volta.sh | bash
-  }
-}
-
-let install_volta_and_node = {||
-  print-pad 'Installing Volta and Node'
-  if (is-windows) {
-    winget install --id volta.volta
-  } else {
-    curl https://get.volta.sh | bash
-  }
-
-  $env.VOLTA_HOME = ([$nu.home-dir '.volta'] | path join)
-  $env.PATH = ($env.PATH | prepend ([$env.VOLTA_HOME 'bin'] | path join))
-
-  volta install node
-}
-
 #
 # Install software with package managers
 #
