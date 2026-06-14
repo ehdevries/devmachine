@@ -617,11 +617,15 @@ let install_yazi_packages = {||
 # Scripts
 #
 
-# Refresh scripts from backup
-export def 'refresh scripts' [] {
+let refresh_scripts = {||
   let source_files = ([$nu.home-dir 'source' 'machine' 'devmachine' 'nu-scripts' '*.*'] | path join | into glob)
   let dest_dir = ([$nu.home-dir '.scripts'] | path join)
   copy-files $source_files $dest_dir
+}
+
+# Refresh scripts from backup
+export def 'refresh scripts' [] {
+  do $refresh_scripts
 }
 
 #
@@ -638,11 +642,15 @@ export def 'compare nushell' [] {
   difft $source_env $dest_env
 }
 
-# Refresh Nushell configuration from backup
-export def 'refresh nushell' [] {
+let refresh_nushell = {||
   let source_files = (nushell-source-dir | path join '*.nu' | into glob)
   let dest_dir = ($nu.config-path | path dirname)
   copy-files $source_files $dest_dir
+}
+
+# Refresh Nushell configuration from backup
+export def 'refresh nushell' [] {
+  do $refresh_nushell
 }
 
 def nushell-source-dir [] {
@@ -664,8 +672,7 @@ export def 'compare bash aliases' [] {
   difft $source_config $dest_config
 }
 
-# Refresh Bash aliases from backup
-export def 'refresh bash aliases' [] {
+let refresh_bash_aliases = {||
   if (is-windows) {
     print "I'm only using Bash on Linux right now"
     return
@@ -673,6 +680,11 @@ export def 'refresh bash aliases' [] {
   let source_files = (bash-aliases-source-dir | path join '.bash_aliases' | into glob)
   let dest_dir = ($nu.home-dir)
   copy-files $source_files $dest_dir
+}
+
+# Refresh Bash aliases from backup
+export def 'refresh bash aliases' [] {
+  do $refresh_bash_aliases
 }
 
 def bash-aliases-source-dir [] {
@@ -694,8 +706,7 @@ export def 'compare ghostty' [] {
   difft $source_config $dest_config
 }
 
-# Refresh Ghostty configuration from backup
-export def 'refresh ghostty' [] {
+let refresh_ghostty = {||
   if (is-windows) {
     print 'Ghostty is not yet supported on Windows'
     return
@@ -703,6 +714,11 @@ export def 'refresh ghostty' [] {
   let source_files = (ghostty-source-dir | path join 'config.ghostty' | into glob)
   let dest_dir = (ghostty-config-dir)
   copy-files $source_files $dest_dir
+}
+
+# Refresh Ghostty configuration from backup
+export def 'refresh ghostty' [] {
+  do $refresh_ghostty
 }
 
 def ghostty-source-dir [] {
@@ -728,11 +744,15 @@ export def 'compare git' [] {
   difft $source_config $dest_config
 }
 
-# Refresh Git configuration from backup
-export def 'refresh git' [] {
+let refresh_git = {||
   let source_files = (git-source-dir | path join '.gitconfig' | into glob)
   let dest_dir = ($nu.home-dir)
   copy-files $source_files $dest_dir
+}
+
+# Refresh Git configuration from backup
+export def 'refresh git' [] {
+  do $refresh_git
 }
 
 def git-source-dir [] {
@@ -753,11 +773,15 @@ export def 'compare helix' [] {
   difft $source_lang $dest_lang
 }
 
-# Refresh Helix configuration from backup
-export def 'refresh helix' [] {
+let refresh_helix = {||
   let source_files = (helix-source-dir | path join '*.toml' | into glob)
   let dest_dir = (helix-config-dir)
   copy-files $source_files $dest_dir
+}
+
+# Refresh Helix configuration from backup
+export def 'refresh helix' [] {
+  do $refresh_helix
 }
 
 def helix-source-dir [] {
@@ -783,11 +807,15 @@ export def 'compare lazygit' [] {
   difft $source_config $dest_config
 }
 
-# Refresh Lazygit configuration from backup
-export def 'refresh lazygit' [] {
+let refresh_lazygit = {||
   let source_files = (lazygit-source-dir | path join '*.yml' | into glob)
   let dest_dir = (lazygit-config-dir)
   copy-files $source_files $dest_dir
+}
+
+# Refresh Lazygit configuration from backup
+export def 'refresh lazygit' [] {
+  do $refresh_lazygit
 }
 
 def lazygit-source-dir [] {
@@ -819,8 +847,7 @@ export def 'compare powershell' [] {
   difft $source_config $dest_config_winps
 }
 
-# Refresh PowerShell configuration from backup
-export def 'refresh powershell' [] {
+let refresh_powershell = {||
   if (not (is-windows)) {
     print "I'm not using PowerShell on Linux right now"
     return
@@ -830,6 +857,11 @@ export def 'refresh powershell' [] {
   let dest_dir_winps = (windows-powershell-config-dir)
   copy-files $source_files $dest_dir_ps
   copy-files $source_files $dest_dir_winps
+}
+
+# Refresh PowerShell configuration from backup
+export def 'refresh powershell' [] {
+  do $refresh_powershell
 }
 
 def powershell-source-dir [] {
@@ -863,11 +895,15 @@ export def 'compare rio' [] {
   difft $source_config $dest_config
 }
 
-# Refresh Rio configuration from backup
-export def 'refresh rio' [] {
+let refresh_rio = {||
   let source_files = (rio-source-dir | path join '*.toml' | into glob)
   let dest_dir = (rio-config-dir)
   copy-files $source_files $dest_dir
+}
+
+# Refresh Rio configuration from backup
+export def 'refresh rio' [] {
+  do $refresh_rio
 }
 
 def rio-source-dir [] {
@@ -893,11 +929,15 @@ export def 'compare smtp4dev' [] {
   difft $source_config $dest_config
 }
 
-# Refresh smtp4dev configuration from backup
-export def 'refresh smtp4dev' [] {
+let refresh_smtp4dev = {||
   let source_files = (smtp4dev-source-dir | path join '*.json' | into glob)
   let dest_dir = (smtp4dev-config-dir)
   copy-files $source_files $dest_dir
+}
+
+# Refresh smtp4dev configuration from backup
+export def 'refresh smtp4dev' [] {
+  do $refresh_smtp4dev
 }
 
 def smtp4dev-source-dir [] {
@@ -926,11 +966,15 @@ export def 'compare vscode' [] {
   difft $source_keys $dest_keys
 }
 
-# Refresh VS Code configuration from backup
-export def 'refresh vscode' [] {
+let refresh_vscode = {||
   let source_files = (vscode-source-dir | path join '*.json' | into glob)
   let dest_dir = (vscode-config-dir)
   copy-files $source_files $dest_dir
+}
+
+# Refresh VS Code configuration from backup
+export def 'refresh vscode' [] {
+  do $refresh_vscode
 }
 
 def vscode-source-dir [] {
@@ -956,11 +1000,15 @@ export def 'compare wezterm' [] {
   difft $source_config $dest_config
 }
 
-# Refresh WezTerm configuration from backup
-export def 'refresh wezterm' [] {
+let refresh_wezterm = {||
   let source_files = (wezterm-source-dir | path join '.wezterm.lua' | into glob)
   let dest_dir = ($nu.home-dir)
   copy-files $source_files $dest_dir
+}
+
+# Refresh WezTerm configuration from backup
+export def 'refresh wezterm' [] {
+  do $refresh_wezterm
 }
 
 def wezterm-source-dir [] {
@@ -981,11 +1029,15 @@ export def 'compare yazi' [] {
   difft $source_theme $dest_theme
 }
 
-# Refresh Yazi configuration from backup
-export def 'refresh yazi' [] {
+let refresh_yazi = {||
   let source_files = (yazi-source-dir | path join '*.toml' | into glob)
   let dest_dir = (yazi-config-dir)
   copy-files $source_files $dest_dir
+}
+
+# Refresh Yazi configuration from backup
+export def 'refresh yazi' [] {
+  do $refresh_yazi
 }
 
 def yazi-source-dir [] {
@@ -1011,11 +1063,15 @@ export def 'compare zellij' [] {
   difft $source_config $dest_config
 }
 
-# Refresh Zellij configuration from backup
-export def 'refresh zellij' [] {
+let refresh_zellij = {||
   let source_files = (zellij-source-dir | path join '*' | into glob)
   let dest_dir = (zellij-config-dir)
   copy-files $source_files $dest_dir
+}
+
+# Refresh Zellij configuration from backup
+export def 'refresh zellij' [] {
+  do $refresh_zellij
 }
 
 def zellij-source-dir [] {
@@ -1107,25 +1163,25 @@ export def install-extensions [] {
 export def restore-config [] {
   let config = [
     [name command];
-    ['Bash aliases' 'refresh bash aliases']
-    ['Ghostty' 'refresh ghostty']
-    ['Git' 'refresh git']
-    ['Helix' 'refresh helix']
-    ['Lazygit' 'refresh lazygit']
-    ['Nushell config' 'refresh nushell']
-    ['Nushell scripts' 'refresh scripts']
-    ['PowerShell' 'refresh powershell']
-    ['Rio' 'refresh rio']
-    ['smtp4dev' 'refresh smtp4dev']
-    ['VS Code' 'refresh vscode']
-    ['WezTerm' 'refresh wezterm']
-    ['Yazi' 'refresh yazi']
-    ['Zellij' 'refresh zellij']
+    ['Bash aliases' $refresh_bash_aliases]
+    ['Ghostty' $refresh_ghostty]
+    ['Git' $refresh_git]
+    ['Helix' $refresh_helix]
+    ['Lazygit' $refresh_lazygit]
+    ['Nushell config' $refresh_nushell]
+    ['Nushell scripts' $refresh_scripts]
+    ['PowerShell' $refresh_powershell]
+    ['Rio' $refresh_rio]
+    ['smtp4dev' $refresh_smtp4dev]
+    ['VS Code' $refresh_vscode]
+    ['WezTerm' $refresh_wezterm]
+    ['Yazi' $refresh_yazi]
+    ['Zellij' $refresh_zellij]
   ]
 
   let commands = $config | input list --multi --display name "Which apps' configuration would you like to restore?" | get command
 
-  for $cmd in $commands { nu --commands $cmd }
+  for $cmd in $commands { do $cmd }
 }
 
 #
