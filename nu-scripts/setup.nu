@@ -675,6 +675,7 @@ def create-refresh-scripts [] {
   {||
     let source_files = ([$nu.home-dir 'source' 'machine' 'devmachine' 'nu-scripts' '*.*'] | path join | into glob)
     let dest_dir = ([$nu.home-dir '.scripts'] | path join)
+    print-pad 'Refreshing scripts'
     copy-files $source_files $dest_dir
   }
 }
@@ -702,6 +703,7 @@ def create-refresh-nushell [] {
   {||
     let source_files = (nushell-source-dir | path join '*.nu' | into glob)
     let dest_dir = ($nu.config-path | path dirname)
+    print-pad 'Refreshing Nushell config'
     copy-files $source_files $dest_dir
   }
 }
@@ -738,6 +740,7 @@ def create-refresh-bash-aliases [] {
     }
     let source_files = (bash-aliases-source-dir | path join '.bash_aliases' | into glob)
     let dest_dir = ($nu.home-dir)
+    print-pad 'Refreshing Bash aliases'
     copy-files $source_files $dest_dir
   }
 }
@@ -774,6 +777,7 @@ def create-refresh-ghostty [] {
     }
     let source_files = (ghostty-source-dir | path join 'config.ghostty' | into glob)
     let dest_dir = (ghostty-config-dir)
+    print-pad 'Refreshing Ghostty config'
     copy-files $source_files $dest_dir
   }
 }
@@ -810,6 +814,7 @@ def create-refresh-git [] {
   {||
     let source_files = (git-source-dir | path join '.gitconfig' | into glob)
     let dest_dir = ($nu.home-dir)
+    print-pad 'Refreshing Git config'
     copy-files $source_files $dest_dir
   }
 }
@@ -841,6 +846,7 @@ def create-refresh-helix [] {
   {||
     let source_files = (helix-source-dir | path join '*.toml' | into glob)
     let dest_dir = (helix-config-dir)
+    print-pad 'Refreshing Helix config'
     copy-files $source_files $dest_dir
   }
 }
@@ -877,6 +883,7 @@ def create-refresh-lazygit [] {
   {||
     let source_files = (lazygit-source-dir | path join '*.yml' | into glob)
     let dest_dir = (lazygit-config-dir)
+    print-pad 'Refreshing Lazygit config'
     copy-files $source_files $dest_dir
   }
 }
@@ -924,6 +931,7 @@ def create-refresh-powershell [] {
     let source_files = (powershell-source-dir | path join 'profile.ps1' | into glob)
     let dest_dir_ps = (powershell-config-dir)
     let dest_dir_winps = (windows-powershell-config-dir)
+    print-pad 'Refreshing PowerShell config'
     copy-files $source_files $dest_dir_ps
     copy-files $source_files $dest_dir_winps
   }
@@ -969,6 +977,7 @@ def create-refresh-rio [] {
   {||
     let source_files = (rio-source-dir | path join '*.toml' | into glob)
     let dest_dir = (rio-config-dir)
+    print-pad 'Refreshing Rio config'
     copy-files $source_files $dest_dir
   }
 }
@@ -1005,6 +1014,7 @@ def create-refresh-smtp4dev [] {
   {||
     let source_files = (smtp4dev-source-dir | path join '*.json' | into glob)
     let dest_dir = (smtp4dev-config-dir)
+    print-pad 'Refreshing smtp4dev config'
     copy-files $source_files $dest_dir
   }
 }
@@ -1044,6 +1054,7 @@ def create-refresh-vscode [] {
   {||
     let source_files = (vscode-source-dir | path join '*.json' | into glob)
     let dest_dir = (vscode-config-dir)
+    print-pad 'Refreshing VS Code config'
     copy-files $source_files $dest_dir
   }
 }
@@ -1080,6 +1091,7 @@ def create-refresh-wezterm [] {
   {||
     let source_files = (wezterm-source-dir | path join '.wezterm.lua' | into glob)
     let dest_dir = ($nu.home-dir)
+    print-pad 'Refreshing WezTerm config'
     copy-files $source_files $dest_dir
   }
 }
@@ -1111,6 +1123,7 @@ def create-refresh-yazi [] {
   {||
     let source_files = (yazi-source-dir | path join '*.toml' | into glob)
     let dest_dir = (yazi-config-dir)
+    print-pad 'Refreshing Yazi config'
     copy-files $source_files $dest_dir
   }
 }
@@ -1147,6 +1160,7 @@ def create-refresh-zellij [] {
   {||
     let source_files = (zellij-source-dir | path join '*' | into glob)
     let dest_dir = (zellij-config-dir)
+    print-pad 'Refreshing Zellij config'
     copy-files $source_files $dest_dir
   }
 }
