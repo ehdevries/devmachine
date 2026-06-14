@@ -1090,6 +1090,7 @@ def zellij-config-dir [] {
 # Install the apps of your choice and restore their configuration
 #
 
+# Select applications to install
 export def install-apps [] {
   let apps = [
     [name category command];
@@ -1142,6 +1143,7 @@ export def install-apps [] {
   for $cmd in $commands { do $cmd }
 }
 
+# Select extensions to install
 export def install-extensions [] {
   let extensions = [
     [name command];
@@ -1160,6 +1162,7 @@ export def install-extensions [] {
   for $cmd in $commands { do $cmd }
 }
 
+# Select configuration to restore
 export def restore-config [] {
   let config = [
     [name command];
