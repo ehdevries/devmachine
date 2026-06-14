@@ -1,19 +1,6 @@
 use utils.nu [is-windows is-linux]
 
 #
-# Install package managers and version managers
-#
-
-let install_flatpak = {||
-  if (is-linux) {
-    print-pad 'Installing Flatpak'
-    sudo apt install flatpak
-    flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-    print-pad 'Please reboot before using Flatpak'
-  }
-}
-
-#
 # Install software with package managers
 #
 
