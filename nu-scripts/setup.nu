@@ -235,6 +235,14 @@ export def install-apps [] {
     }
   }
 
+  let install_little_snitch = {||
+    if (is-linux) {
+      print 'To install Little Snitch for Linux, download the package file directly:'
+      print https://obdev.at/products/littlesnitch-linux/download.html
+      start https://obdev.at/products/littlesnitch-linux/download.html
+    }
+  }
+
   let install_lutris = {||
     if (is-linux) {
       print-pad 'Installing Lutris'
@@ -507,6 +515,7 @@ export def install-apps [] {
     ['Gnome Music' 'Desktop (Linux)' $install_gnome_music]
     ['Gnome Video Player' 'Desktop (Linux)' $install_gnome_video_player]
     ['HP Smart' 'Desktop (Windows)' $install_hp_smart]
+    ['Little Snitch' 'Desktop (Linux)' $install_little_snitch]
     ['Microsoft Office 365' 'Desktop (Windows)' $install_ms_office]
     ['Microsoft PowerToys' 'Desktop (Windows)' $install_powertoys]
     ['Microsoft Report Builder' 'Desktop (Windows)' $install_report_builder]
