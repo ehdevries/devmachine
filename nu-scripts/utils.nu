@@ -8,7 +8,7 @@ export def lse [
     | where type != symlink
     | update size { |item| if $item.type == dir { '' } else { $item.size } }
     | update modified { |item| $item.modified | format date '%Y-%m-%d %H:%M' }
-    | insert name-str { |item| $item.name | path basename | str downcase }
+    | insert name-str { |item| $item.name | path basename | str lowercase }
     | where name-str !~ ntuser and name-str !~ desktop.ini
     | select name type size modified
   }
