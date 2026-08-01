@@ -237,6 +237,7 @@ export def install-apps [] {
 
   let install_little_snitch = {||
     if (is-linux) {
+      print-pad 'Installing Little Snitch'
       print 'To install Little Snitch for Linux, download the package file directly:'
       print https://obdev.at/products/littlesnitch-linux/download.html
       start https://obdev.at/products/littlesnitch-linux/download.html
