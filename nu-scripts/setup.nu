@@ -297,6 +297,15 @@ export def install-apps [] {
     }
   }
 
+  let install_pnpm = {||
+    print-pad 'Installing pnpm'
+    if (is-windows) {
+      npx get-pnpm
+    } else {
+      bash -c 'npx get-pnpm'
+    }
+  }
+
   let install_prettier = {||
     print-pad 'Installing Prettier'
     npm install -g prettier
@@ -501,6 +510,7 @@ export def install-apps [] {
     ['.NET 9' Terminal $install_dotnet_9]
     ['.NET 10' Terminal $install_dotnet_10]
     [PowerShell Terminal $install_powershell]
+    [pnpm Terminal $install_pnpm]
     [Rust Terminal $install_rust]
     [Zola Terminal $install_zola]
     ['Cascadia Code' Font $install_cascadia_code]
