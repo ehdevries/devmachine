@@ -617,6 +617,7 @@ export def install-extensions [] {
     code --install-extension editorconfig.editorconfig
     code --install-extension esbenp.prettier-vscode
     code --install-extension firefox-devtools.vscode-firefox-debug
+    code --install-extension github.vscode-pull-request-github
     code --install-extension ionide.ionide-fsharp
     code --install-extension johnpapa.vscode-peacock
     code --install-extension joshuamorony.angular-inline-jumper
