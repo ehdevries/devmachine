@@ -1,5 +1,12 @@
-# Cherry-pick a commit from main to release, launching a TUI to select the source commit and target branch
+# Cherry-pick a selected commit from main to a selected release branch using a TUI
 export def 'kp cherry-pick' [] {
+  let in_git_repo = (do { git rev-parse --abbrev-ref HEAD } | complete | get stdout | is-not-empty)
+
+  if (not $in_git_repo) {
+    print 'Current directory is not a Git repository'
+    return
+  }
+
   print 'Fetching the latest changes ...'
   git fetch
 
@@ -43,26 +50,23 @@ def cherry-pick-commit-to-release-branch [commit_hash: string, release_branch: s
   let new_commit_message = build-new-commit-message $commit_hash
 
   print ''
-  print $'Creating and switching to new branch: ($new_branch_name)'
-  print ''
   git switch --no-track --create $new_branch_name $'origin/($release_branch)'
 
   print ''
-  print 'Cherry-picking selected commit to new branch'
+  print 'Cherry-picking to new branch'
   print ''
   git cherry-pick --no-commit $commit_hash
 
-  print ''
   print 'Committing changes with updated message'
   print ''
   git commit --message=($new_commit_message)
 
   print ''
   print 'Next steps:'
-  print '- Resolve any merge conflicts and commit if needed'
   print '- Review the diff'
+  print '- If needed, resolve any merge conflicts and commit'
   print '- Push the new branch'
-  print '- Review and submit the PR, including links to the original PR and work item'
+  print '- Review and submit the PR, targeting the release branch, including links to the original PR and work item'
   print ''
 }
 
