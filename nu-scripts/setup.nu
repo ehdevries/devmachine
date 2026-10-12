@@ -87,16 +87,6 @@ export def install-apps [] {
     }
   }
 
-  let install_dotnet_9 = {||
-    print-pad 'Installing .NET 9'
-    if (is-windows) {
-      winget install --id microsoft.dotnet.sdk.9 --interactive
-    } else {
-      install-dotnet-snap
-      dotnet-installer install sdk 9
-    }
-  }
-
   let install_dotnet_10 = {||
     print-pad 'Installing .NET 10'
     if (is-windows) {
@@ -511,7 +501,6 @@ export def install-apps [] {
     [name category command];
     ['Terminal essentials' Terminal $install_terminal_essentials]
     [Deno Terminal $install_deno]
-    ['.NET 9' Terminal $install_dotnet_9]
     ['.NET 10' Terminal $install_dotnet_10]
     [PowerShell Terminal $install_powershell]
     [pnpm Terminal $install_pnpm]
