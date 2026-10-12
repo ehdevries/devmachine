@@ -102,9 +102,13 @@ export def install-apps [] {
     if (is-windows) {
       winget install --id microsoft.dotnet.sdk.10 --interactive
     } else {
-      install-dotnet-snap
-      dotnet-installer install sdk 10
+      sudo apt install dotnet-sdk-10.0
     }
+  }
+
+  def install-dotnet-10-snap [] {
+    install-dotnet-snap
+    dotnet-installer install sdk 10
   }
 
   def install-dotnet-snap [] {
