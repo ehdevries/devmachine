@@ -43,6 +43,9 @@ export VISUAL="hx"
 
 # Opt out of .NET CLI telemetry
 export DOTNET_CLI_TELEMETRY_OPTOUT=true
+
+# Add .NET global tools to path
+export PATH="$PATH:$HOME/.dotnet/tools"
 ' >> ~/.profile
 
 echo
