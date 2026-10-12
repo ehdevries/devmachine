@@ -165,6 +165,15 @@ export def install-apps [] {
     }
   }
 
+  let install_github_cli = {||
+    print-pad 'Installing GitHub CLI'
+    if (is-windows) {
+      winget install --id github.cli
+    } else {
+      brew install gh
+    }
+  }
+
   let install_gnome_document_scanner = {||
     if (is-linux) {
       print-pad 'Installing Gnome Document Scanner'
@@ -501,6 +510,7 @@ export def install-apps [] {
     [name category command];
     ['Terminal essentials' Terminal $install_terminal_essentials]
     [Deno Terminal $install_deno]
+    ['GitHub CLI' Terminal $install_github_cli]
     ['.NET 10' Terminal $install_dotnet_10]
     [PowerShell Terminal $install_powershell]
     [pnpm Terminal $install_pnpm]
