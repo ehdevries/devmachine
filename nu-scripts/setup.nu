@@ -587,6 +587,7 @@ export def install-extensions [] {
     print-pad 'Installing NPM global tools'
     npm install -g @angular/cli
     npm install -g @angular/language-server
+    npm install -g corepack
     npm install -g typescript
     npm install -g typescript-language-server
     npm install -g vscode-langservers-extracted
