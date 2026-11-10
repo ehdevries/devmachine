@@ -254,6 +254,15 @@ export def install-apps [] {
     }
   }
 
+  let install_mitos = {||
+    print-pad 'Installing Mitos'
+    if (is-windows) {
+      powershell -ExecutionPolicy Bypass -NoProfile -Command '& ([scriptblock]::Create((Invoke-RestMethod https://mitos.computer/install.ps1)))'
+    } else {
+      curl -fsSL https://mitos.computer/install.sh | bash
+    }
+  }
+
   let install_ms_office = {||
     if (is-windows) {
       print ''
@@ -501,6 +510,7 @@ export def install-apps [] {
     do $install_helix
     do $install_kdlfmt
     do $install_lazygit
+    do $install_mitos
     do $install_prettier
     do $install_yazi
     do $install_zellij
