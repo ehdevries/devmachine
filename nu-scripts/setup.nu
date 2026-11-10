@@ -936,6 +936,46 @@ def lazygit-config-dir [] {
 }
 
 #
+# Mitos
+#
+
+# Compare backup with active Mitos configuration
+export def 'compare mitos' [] {
+  let source_config = (mitos-source-dir | path join 'config.toml')
+  let dest_config = (mitos-config-dir | path join 'config.toml')
+  let source_lang = (mitos-source-dir | path join 'languages.toml')
+  let dest_lang = (mitos-config-dir | path join 'languages.toml')
+  difft $source_config $dest_config
+  difft $source_lang $dest_lang
+}
+
+# Refresh Mitos configuration from backup
+export def 'refresh mitos' [] {
+  do (create-refresh-mitos)
+}
+
+def create-refresh-mitos [] {
+  {||
+    let source_files = (mitos-source-dir | path join '*.toml' | into glob)
+    let dest_dir = (mitos-config-dir)
+    print-pad 'Refreshing Mitos config'
+    copy-files $source_files $dest_dir
+  }
+}
+
+def mitos-source-dir [] {
+  [(config-repo) 'config' 'Mitos'] | path join
+}
+
+def mitos-config-dir [] {
+  if (is-windows) {
+    [$env.APPDATA 'mitos'] | path join
+  } else {
+    [$nu.home-dir '.config' 'mitos'] | path join
+  }
+}
+
+#
 # PowerShell
 #
 
