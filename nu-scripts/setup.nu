@@ -681,6 +681,7 @@ export def restore-config [] {
     ['Git' (create-refresh-git)]
     ['Helix' (create-refresh-helix)]
     ['Lazygit' (create-refresh-lazygit)]
+    ['Mitos' (create-refresh-mitos)]
     ['Nushell config' (create-refresh-nushell)]
     ['Nushell scripts' (create-refresh-scripts)]
     ['PowerShell' (create-refresh-powershell)]
