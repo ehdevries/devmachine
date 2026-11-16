@@ -27,7 +27,7 @@ export def nope [] {
 # Check for software updates
 export def check [] {
   if (which dotnet-tools-outdated | is-not-empty) {
-    dotnet-tools-outdated
+    do --ignore-errors { dotnet-tools-outdated }
     print ""
   }
   if (is-linux) {
