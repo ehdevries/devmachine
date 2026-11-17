@@ -27,7 +27,7 @@ export def nope [] {
 # Check for software updates
 export def check [] {
   if (which dotnet-tools-outdated | is-not-empty) {
-    do --ignore-errors { dotnet-tools-outdated }
+    dotnet-tools-outdated-safe | print
     print ""
   }
   if (is-linux) {
@@ -43,6 +43,15 @@ export def check [] {
   if (is-windows) {
     winget list --upgrade-available --include-unknown
   }
+}
+
+def dotnet-tools-outdated-safe [] {
+  dotnet-tools-outdated --format json --noIndent
+  | decode
+  | from json
+  | get dotnet-tools-outdated
+  | where packageName != '.locks'
+  | select packageName currentVer availableVer
 }
 
 # Check for a new Ubuntu release
