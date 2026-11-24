@@ -60,6 +60,15 @@ export def install-apps [] {
     }
   }
 
+  let install_claude_code = {||
+    if (is-windows) {
+      print-pad 'Skipping Claude Code on Windows for now'
+    } else {
+      print-pad 'Installing Claude Code'
+      curl -fsSL https://claude.ai/install.sh | bash
+    }
+  }
+
   let install_deno = {||
     print-pad 'Installing Deno'
     if (is-windows) {
@@ -519,6 +528,7 @@ export def install-apps [] {
   let apps = [
     [name category command];
     ['Terminal essentials' Terminal $install_terminal_essentials]
+    ['Claude Code' Terminal $install_claude_code]
     [Deno Terminal $install_deno]
     ['GitHub CLI' Terminal $install_github_cli]
     ['.NET 10' Terminal $install_dotnet_10]
@@ -677,6 +687,7 @@ export def restore-config [] {
   let config = [
     [name command];
     ['Bash aliases' (create-refresh-bash-aliases)]
+    ['Claude Code' (create-refresh-claude)]
     ['Ghostty' (create-refresh-ghostty)]
     ['Git' (create-refresh-git)]
     ['Helix' (create-refresh-helix)]
@@ -783,6 +794,54 @@ def create-refresh-bash-aliases [] {
 
 def bash-aliases-source-dir [] {
   [(config-repo) 'config'] | path join
+}
+
+#
+# Claude Code
+#
+
+# Compare backup with active Claude Code configuration
+export def 'compare claude' [] {
+  if (is-windows) {
+    print "I'm not currently using Claude Code on Windows"
+    return
+  }
+  let source_claudemd = (claude-source-dir | path join 'CLAUDE.md')
+  let dest_claudemd = (claude-config-dir | path join 'CLAUDE.md')
+  let source_settings = (claude-source-dir | path join 'settings.json')
+  let dest_settings = (claude-config-dir | path join 'settings.json')
+  difft $source_claudemd $dest_claudemd
+  difft $source_settings $dest_settings
+}
+
+# Refresh Claude Code configuration from backup
+export def 'refresh claude' [] {
+  do (create-refresh-claude)
+}
+
+def create-refresh-claude [] {
+  {||
+    if (is-windows) {
+      print "I'm not currently using Claude Code on Windows"
+      return
+    }
+    let source_files = (claude-source-dir | path join '*.*' | into glob)
+    let dest_dir = (claude-config-dir)
+    print-pad 'Refreshing Claude Code config'
+    copy-files $source_files $dest_dir
+  }
+}
+
+def claude-source-dir [] {
+  [(config-repo) 'config' 'Claude'] | path join
+}
+
+def claude-config-dir [] {
+  if (is-windows) {
+    '' # I'm not currently using Claude Code on Windows, this is only a placeholder
+  } else {
+    [$nu.home-dir '.claude'] | path join
+  }
 }
 
 #
