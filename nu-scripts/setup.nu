@@ -592,6 +592,11 @@ export def install-extensions [] {
     dotnet tool install -g roslyn-language-server --prerelease
   }
 
+  let install_github_cli_extensions = {||
+    print-pad 'Installing GitHub CLI extensions'
+    gh extension install github/gh-stack
+  }
+
   let install_notepad_plus_plus_themes = {||
     if (is-windows) {
       print-pad 'Installing Dracula theme for Notepad++'
@@ -667,6 +672,7 @@ export def install-extensions [] {
 
   let extensions = [
     [name command];
+    ['GitHub CLI extensions' $install_github_cli_extensions]
     ['.NET global tools' $install_dotnet_global_tools]
     ['Notepad++ themes' $install_notepad_plus_plus_themes]
     ['NPM global tools' $install_npm_global_tools]
