@@ -851,7 +851,7 @@ def claude-config-dir [] {
 # Compare backup with active Ghostty configuration
 export def 'compare ghostty' [] {
   if (is-windows) {
-    print 'Ghostty is not yet supported on Windows'
+    print 'Ghostty is not supported on Windows'
     return
   }
   let source_config = (ghostty-source-dir | path join 'config.ghostty')
@@ -867,7 +867,7 @@ export def 'refresh ghostty' [] {
 def create-refresh-ghostty [] {
   {||
     if (is-windows) {
-      print 'Ghostty is not yet supported on Windows'
+      print 'Ghostty is not supported on Windows'
       return
     }
     let source_files = (ghostty-source-dir | path join 'config.ghostty' | into glob)
@@ -883,7 +883,7 @@ def ghostty-source-dir [] {
 
 def ghostty-config-dir [] {
   if (is-windows) {
-    '' # Ghostty is not yet supported on Windows, this is only a placeholder
+    '' # Ghostty is not supported on Windows, this is only a placeholder
   } else {
     [$nu.home-dir '.config' 'ghostty'] | path join
   }
